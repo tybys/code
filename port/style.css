@@ -1,0 +1,9 @@
+.left,
+.right {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    background: #f1f1f1;
+}
