@@ -8,20 +8,23 @@
     };
 }(jQuery));
 
-var url = "https://api.vkontakte.ru/method/wall.get?domain=adme";
+var url = "https://api.vkontakte.ru/method/wall.get?";
 var offset = 0;
 var postsCount = 0;
-var months = ["??????", '???????', '????', '??????', '???', 'June', 'July', 'August', 'September', '0October', 'November', 'December'];
+var count = 10;
+var domain = "adme";
+var months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
 //var result = [];
-var old = {}
+var old = {};
 
 function newPost() {
     $.ajax({
         url: url,
         dataType: "jsonp",
         data: {
-            count: 10,
-            offset: offset
+            count: count,
+            offset: offset,
+            domain: domain
         },
         success: function (data) {
             var posts = data.response;
@@ -37,14 +40,47 @@ function newPost() {
     });
 }
 
-function nativeParse(data) {
-    data.forEach(function (item, i, arr) {
-        var timestamp = item.date;
-        var newDate = new Date(timestamp * 1000);
-        var gmDate = newDate.getDay().toString();
+var anchorArr = [];
+function pagination() {
+    var pagi = document.getElementsByClassName("pagination")[0];
+    var postsShow = 10;
+    var limitPosts = postsCount / postsShow;
+    var pagiOffset = 0;
 
-        console.log(gmDate);
-    });
+    var pagiUrl = "https://api.vkontakte.ru/method/wall.get?";
+
+    for (var i = 0; i < limitPosts; i++) {
+        if (i > 0) {
+            pagiOffset+=10;
+        }
+
+        var pageAnchor = document.createElement("A");
+
+        pageAnchor.setAttribute("href", pagiUrl+"&count="+count+"&offset="+pagiOffset+"&domain="+domain);
+        pageAnchor.setAttribute("class", "page");
+        pageAnchor.innerHTML = i;
+        anchorArr.push(pageAnchor);
+
+        //console.log(pageAnchor)
+        pagi.appendChild(pageAnchor);
+
+        //debugger
+    }
+}
+
+function nativeParse(data) {
+    function date() {
+        var iDate = document.createElement("I");
+        var udate = data[i].date;
+        var gmtDate = new Date(udate * 1000);
+        var humanDate = gmtDate.getDay().toString() + " " + months[gmtDate.getMonth().toString()];
+        var curDate = gmtDate.getDay();
+
+        iDate.setAttribute("class", "date");
+        iDate.innerHTML = humanDate;
+
+        li.appendChild(iDate);
+    }
 
     for (var i = 0; i < data.length; i++) {
         var id = data[i].id;
@@ -52,23 +88,14 @@ function nativeParse(data) {
         if (!old[id]) {
             old[id] = true;
 
-            var udate = data[i].date;
-            var gmtDate = new Date(udate * 1000);
-            var humanDate = gmtDate.getDay().toString() + " " + months[gmtDate.getMonth().toString()];
-            curDate = gmtDate.getDay();
-
             var li = document.createElement("LI");
             var p = document.createElement("P");
-            var iDate = document.createElement("I");
 
             p.setAttribute("class", "text");
-            iDate.setAttribute("class", "date");
-
             p.innerHTML = data[i].text;
-            iDate.innerHTML = humanDate;
-
             li.appendChild(p);
-            li.appendChild(iDate);
+
+            date();
 
             var src =
                 data[i].attachment
@@ -82,7 +109,7 @@ function nativeParse(data) {
                 img.setAttribute("src", data[i].attachment.photo.src);
                 img.setAttribute("data-adaptive-background", "1");
 
-                img.setAttribute("data-src-big", data[i].attachment.photo.src_big)
+                img.setAttribute("data-src-big", data[i].attachment.photo.src_big);
 
                 li.appendChild(img);
             }
@@ -92,42 +119,24 @@ function nativeParse(data) {
     }
 
     var liEnd = document.getElementById('resultText').lastElementChild;
+
     //$.adaptiveBackground.run();
     //liEnd.next Sibling.scrollTo(1000);
 }
 
-function parse(data) {
-    var liEnd = $('#resultText li:last');
-
-    $.each(data, function (indx, el) {
-        var id = el.id;
-
-        if (!old[id]) {
-            old[id] = true;
-
-            var li = $("<li/>");
-            var p = $("<p/>", {'class': 'text', html: el.text});
-
-            p.appendTo(li);
-
-            var src = el.attachment && el.attachment.photo && el.attachment.photo.src;
-
-            if (src) {
-                var img = $('<img/>', {src: el.attachment.photo.src});
-
-                img.appendTo(li);
-            }
-            li.appendTo('#resultText')
-        }
-    });
-    liEnd.next().scrollTo(1000);
-}
-
 window.addEventListener("DOMContentLoaded", function () {
+    var pagination = document.createElement("DIV");
+
+    pagination.setAttribute("class", "pagination");
+    document.getElementsByTagName("body")[0].appendChild(pagination);
+
     newPost();
+    pagination();
+
 
     document.getElementById("more").addEventListener("click", function (event) {
         event.preventDefault();
+
         newPost();
     });
 
@@ -145,5 +154,25 @@ window.addEventListener("DOMContentLoaded", function () {
             image.setAttribute("src", data_src_big);
             //debugger
         }
+
+        if (event.target.tagName.toLowerCase() === "a" && event.target.attributes[1].value == "page") {
+            event.preventDefault();
+
+            var _thisUrl = event.target.attributes[0].value;
+            function getPage() {
+                $.ajax({
+                    url: _thisUrl,
+                    dataType: "jsonp",
+                    success: function (data) {
+                        var posts = data.response;
+
+                        nativeParse(data);
+                    }
+                });
+            }
+
+            getPage();
+        }
     });
+
 });
