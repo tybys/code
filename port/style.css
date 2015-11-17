@@ -8,8 +8,21 @@
     background: #f1f1f1;
 }
 
+.pagination-wrap {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*width: calc(20em + 20px);*/
+    /*width: -webkit-calc(20em + 20px);*/
+    /*height: 20px;*/
+    /*overflow: hidden;*/
+}
 .pagination {
-
+    /*white-space: nowrap;*/
+    /*width: calc(20em + 20px);*/
+    /*width: -webkit-calc(20em + 20px);*/
+    /*overflow: hidden;*/
+    /*position: absolute;*/
+    /*left: 0;*/
 }
 .pagination a {
     display: inline-block;

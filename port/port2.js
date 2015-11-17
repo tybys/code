@@ -34,19 +34,36 @@ function newPost() {
             offset += 10;
 
             //parse(posts);
-            nativeParse(posts);
+            parse(posts);
             //$.adaptiveBackground.run();
+            pagination();
+        }
+    });
+}
+
+function getPage(param) {
+    $.ajax({
+        url: param,
+        dataType: "jsonp",
+        success: function (data) {
+            var posts = data.response;
+
+            postsCount = posts.shift();
+            pageParse(posts);
         }
     });
 }
 
 var anchorArr = [];
 function pagination() {
+    /*
+    ???-?? ??????? ??????? 10
+
+     */
     var pagi = document.getElementsByClassName("pagination")[0];
     var postsShow = 10;
     var limitPosts = postsCount / postsShow;
     var pagiOffset = 0;
-
     var pagiUrl = "https://api.vkontakte.ru/method/wall.get?";
 
     for (var i = 0; i < limitPosts; i++) {
@@ -58,17 +75,44 @@ function pagination() {
 
         pageAnchor.setAttribute("href", pagiUrl+"&count="+count+"&offset="+pagiOffset+"&domain="+domain);
         pageAnchor.setAttribute("class", "page");
-        pageAnchor.innerHTML = i;
+        pageAnchor.innerHTML = i+1;
         anchorArr.push(pageAnchor);
 
-        //console.log(pageAnchor)
         pagi.appendChild(pageAnchor);
-
-        //debugger
     }
 }
 
-function nativeParse(data) {
+function pageParse(data) {
+    for (var i = 0; i < data.length; i++) {
+        var li = document.createElement("LI");
+        var p = document.createElement("P");
+
+        p.setAttribute("class", "text");
+        p.innerHTML = data[i].text;
+        li.appendChild(p);
+
+        var src =
+            data[i].attachment
+            && data[i].attachment.photo
+            && data[i].attachment.photo.src
+            && data[i].attachment.photo.src_big;
+
+        if (src) {
+            var img = document.createElement("IMG");
+
+            img.setAttribute("src", data[i].attachment.photo.src);
+            img.setAttribute("data-adaptive-background", "1");
+
+            img.setAttribute("data-src-big", data[i].attachment.photo.src_big);
+
+            li.appendChild(img);
+        }
+
+        document.getElementById("resultText").appendChild(li);
+    }
+}
+
+function parse(data) {
     function date() {
         var iDate = document.createElement("I");
         var udate = data[i].date;
@@ -119,20 +163,12 @@ function nativeParse(data) {
     }
 
     var liEnd = document.getElementById('resultText').lastElementChild;
-
     //$.adaptiveBackground.run();
     //liEnd.next Sibling.scrollTo(1000);
 }
 
 window.addEventListener("DOMContentLoaded", function () {
-    var pagination = document.createElement("DIV");
-
-    pagination.setAttribute("class", "pagination");
-    document.getElementsByTagName("body")[0].appendChild(pagination);
-
     newPost();
-    pagination();
-
 
     document.getElementById("more").addEventListener("click", function (event) {
         event.preventDefault();
@@ -147,32 +183,24 @@ window.addEventListener("DOMContentLoaded", function () {
 
             rightSide.innerHTML = "";
             rightSide.insertAdjacentHTML("afterBegin", catched.innerHTML);
-            // debugger
+
             var image = rightSide.getElementsByTagName("IMG")[0];
             var data_src_big = image.getAttribute("data-src-big");
 
             image.setAttribute("src", data_src_big);
-            //debugger
         }
 
         if (event.target.tagName.toLowerCase() === "a" && event.target.attributes[1].value == "page") {
             event.preventDefault();
 
             var _thisUrl = event.target.attributes[0].value;
-            function getPage() {
-                $.ajax({
-                    url: _thisUrl,
-                    dataType: "jsonp",
-                    success: function (data) {
-                        var posts = data.response;
+            var left = document.getElementById('resultText');
 
-                        nativeParse(data);
-                    }
-                });
-            }
+            left.innerHTML = "";
 
-            getPage();
+            getPage(_thisUrl);
+//debugger
+            event.target.parentNode.style.left += "-100px"
         }
     });
-
 });
