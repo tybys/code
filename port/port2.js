@@ -36,10 +36,13 @@ function newPost() {
             //parse(posts);
             parse(posts);
             //$.adaptiveBackground.run();
-            pagination();
+            //pagination();
+            paginate.compile();
         }
     });
 }
+
+
 
 function getPage(param) {
     $.ajax({
@@ -52,34 +55,60 @@ function getPage(param) {
             pageParse(posts);
         }
     });
-}
+};
 
 var anchorArr = [];
-function pagination() {
-    /*
-    ???-?? ??????? ??????? 10
+var paginate = {
+    build: function () {
+        var pagi = document.getElementsByClassName("pagination")[0];
+        var postsShow = 10;
+        var limitPosts = postsCount / postsShow;
+        var pagiOffset = 0;
+        var pagiUrl = "https://api.vkontakte.ru/method/wall.get?";
 
-     */
-    var pagi = document.getElementsByClassName("pagination")[0];
-    var postsShow = 10;
-    var limitPosts = postsCount / postsShow;
-    var pagiOffset = 0;
-    var pagiUrl = "https://api.vkontakte.ru/method/wall.get?";
+        for (var i = 0; i < limitPosts; i++) {
+            if (i > 0)
+                pagiOffset+=10;
 
-    for (var i = 0; i < limitPosts; i++) {
-        if (i > 0) {
-            pagiOffset+=10;
+            var pageAnchor = document.createElement("A");
+
+            pageAnchor.setAttribute("href", pagiUrl+"&count="+count+"&offset="+pagiOffset+"&domain="+domain);
+            pageAnchor.setAttribute("class", "page");
+            pageAnchor.innerHTML = i+1;
+            anchorArr.push(pageAnchor);
+
+            if (i <= 9)
+                pagi.appendChild(pageAnchor);
+
+            /*
+             var previous = document.createElement("A");
+             var next = document.createElement("A");
+             previous.setAttribute("href", "#");
+             previous.innerHTML = "&laquo";
+             next.setAttribute("href", "#");
+             next.innerHTML = "&laquo";
+             var pagPar = document.getElementsByClassName("pagination")[0];
+             //rightSide.insertAdjacentHTML("afterBegin", catched.innerHTML);
+             */
         }
-
-        var pageAnchor = document.createElement("A");
-
-        pageAnchor.setAttribute("href", pagiUrl+"&count="+count+"&offset="+pagiOffset+"&domain="+domain);
-        pageAnchor.setAttribute("class", "page");
-        pageAnchor.innerHTML = i+1;
-        anchorArr.push(pageAnchor);
-
-        pagi.appendChild(pageAnchor);
+    },
+    events: function () {
+        document.querySelector("body").addEventListener("click", function (e) {
+            if (e.target.tagName.toLowerCase() === "a" && e.target.attributes[1].value == "page") {
+                //var thisPos =
+                console.log(indexOf(e.target))
+            }
+        });
+    },
+    compile: function () {
+        paginate.build();
+        paginate.events();
     }
+}
+
+
+function pagination() {
+
 }
 
 function pageParse(data) {
@@ -170,6 +199,7 @@ function parse(data) {
 window.addEventListener("DOMContentLoaded", function () {
     newPost();
 
+
     document.getElementById("more").addEventListener("click", function (event) {
         event.preventDefault();
 
@@ -199,8 +229,6 @@ window.addEventListener("DOMContentLoaded", function () {
             left.innerHTML = "";
 
             getPage(_thisUrl);
-//debugger
-            event.target.parentNode.style.left += "-100px"
         }
     });
 });
