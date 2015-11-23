@@ -1,0 +1,41 @@
+.sm-wrap {
+    background: gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#sm {
+
+    border: 1px solid black;
+    background: #fff;
+    height: 64px;
+}
+
+.wrap {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.card {
+    /*padding: 7.5px;*/
+    display: block;
+    height: 64px;
+}
+.card img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.card p {
+    display: inline-block;
+
+}
+
+/*refresh*/
+#refresh {
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
