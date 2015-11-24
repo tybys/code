@@ -115,7 +115,7 @@ $.fn.slotMachine = function(options) {
         var wrap = $('.wrap')
         $.each(wrap, function (i, v) {
             var cards = $(v).find('.card');
-            first = cards.eq(0).addClass('first');
+            first = cards.eq(0).addClass('first active');
             last = cards.eq(-1).addClass('last');
         });
 
@@ -127,30 +127,61 @@ $.fn.slotMachine = function(options) {
         refresh.on('click', function(e) {
             e.preventDefault();
 
-            var _this = this; // shitcode
+            //var _this = this; // shitcode
             //console.log(_this)
             drumRoll();
         });
 
+        var current = 0;
+
         function drumRoll() {
             var col = $('#sm').find('.wrap');
-            var heightOffset = 64;
-            var colHeight = col.height();
 
-            var firstTop = first.offset().top;
-            var lastBottom = last.offset().top;
+            var containerOfs = $('#sm')
+            var colOfs = col
 
-            //if (firstTop > 0) {
-            //    col.animate({
-            //        marginTop: "+="+heightOffset
-            //    });
-            //}
+          //  debugger;
 
-            col.animate({
-                marginTop: "-="+heightOffset
-            });
+            //var dimension = col.find('.card').length;
+            //var firstTop = first.offset().top;
+            //var lastBottom = last.offset().top;
+            current+=1
 
-            console.log(last.offset().top)
+            //var el = $('.card')
+
+
+            if (current < dimension / options.drumCount) {
+                $('.card').removeClass('active').next().addClass('active')
+                col.css({
+                    marginTop: "-=64"
+                });
+            }
+
+            if (current > dimension / options.drumCount) {
+                col.css({
+                    marginTop: "+=64"
+                });
+            }
+
+            console.log(current)
+
+
+            //col.animate({
+            //    marginTop: current > dimension / options.drumCount ? "+=64" : "-=64"
+            //})
+
+            /*
+             }).on('click', '.new-item', function (e) {
+                 var el = $(this);
+
+                 if (el.offset().left + el.outerWidth(true) > $(window).width()) {
+                     el.parents('.bx-viewport').next().find('.bx-next').click();
+                }
+             });
+             */
+
+
+
 
 
         }

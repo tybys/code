@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .sm-wrap {
     background: gray;
     -webkit-border-radius: 5px;
