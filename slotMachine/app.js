@@ -10,6 +10,46 @@
  */
 
 var slotMachineData = {
+	"AlfaBank": {
+		"img": "img/alfa.png",
+		"text": "Альфа-Банк"
+	},
+	"SberBank": {
+		"img": "img/sber.jpg",
+		"text": "Сбербанк"
+	},
+	"Tinkoff": {
+		"img": "img/tinkoff.png",
+		"text": "Тинькоф"
+	},
+	"Ocean": {
+		"img": "img/ocean.gif",
+		"text": "Океан Банк"
+	},
+	"MoscowBank": {
+		"img": "img/moscow.png",
+		"text": "Банк Москвы"
+	},
+	"VTB": {
+		"img": "img/vtb.png",
+		"text": "ВТБ 24"
+	},
+	"City": {
+		"img": "img/citybank.jpg",
+		"text": "Citibank"
+	},
+	"Raiffeisen": {
+		"img": "img/reifeisen.gif",
+		"text": "Raiffeisen"
+	},
+	"Sv": {
+		"img": "img/sv.jpg",
+		"text": "Связной Банк"
+	},
+	"PSB": {
+		"img": "img/psb.jpg",
+		"text": "ПРОМСВЯЗЬБАНК"
+	},
     "bank1": {
         "img": "img/bank62.png",
         "text": "bank1 text"
@@ -50,14 +90,14 @@ var slotMachineData = {
         "img": "img/moneycard4_.png",
         "text": "bank10 text"
     },
-    "bank11": {
-        "img": "img/bank62.png",
-        "text": "bank11 text"
-    },
-    "bank12": {
-        "img": "img/money506.png",
-        "text": "bank12 text"
-    },
+//    "bank11": {
+//        "img": "img/bank62.png",
+//        "text": "bank11 text"
+//    },
+//    "bank12": {
+//        "img": "img/money506.png",
+//        "text": "bank12 text"
+//    },
 }
 
 
@@ -118,6 +158,18 @@ $.fn.slotMachine = function(options) {
             first = cards.eq(0).addClass('first active');
             last = cards.eq(-1).addClass('last');
         });
+        
+        function test() {
+        	$.each(wrap, function (i, v) {
+        		console.log(v)
+        		//card.first().before(card.last())
+        	});
+        	debugger
+        	
+        	//$('.wrap .cards').first().before($('.wrap .cards').last())
+        	//console.log($('.wrap .card:first'))
+        	
+		}
 
         /**
          * refresh/sort
@@ -150,20 +202,25 @@ $.fn.slotMachine = function(options) {
             //var el = $('.card')
 
 
-            if (current < dimension / options.drumCount) {
-                $('.card').removeClass('active').next().addClass('active')
-                col.css({
-                    marginTop: "-=64"
-                });
-            }
+//            if (current < dimension / options.drumCount) {
+//                $('.card').removeClass('active').next().addClass('active')
+//                col.css({
+//                    marginTop: "-=64"
+//                });
+//                test();
+//            }
+//
+//            if (current > dimension / options.drumCount) {
+//                col.css({
+//                    marginTop: "+=64"
+//                });
+//            }
+            col.css({
+                marginTop: "-=64"
+            });
+            test();
 
-            if (current > dimension / options.drumCount) {
-                col.css({
-                    marginTop: "+=64"
-                });
-            }
-
-            console.log(current)
+            //console.log(current)
 
 
             //col.animate({
@@ -191,6 +248,8 @@ $.fn.slotMachine = function(options) {
 };
 
 $(function () {
+    $('#sm').example();
+
     $('#sm').slotMachine({
         drumCount: 2
     });

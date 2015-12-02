@@ -179,13 +179,13 @@ slotMachineData = {
 
 				//first.insertAfter(last)
 
-				t.animate({
+                t.animate({
 					top: "-=64"
 				}, 500, function() {
 					var firstDetach = first.detach();
-					firstDetach.insertAfter(last)
-					t.css('top', 0)
-				})
+					firstDetach.insertAfter(last);
+					t.css('top', 0);
+				});
 
 				//debugger
 
@@ -193,7 +193,7 @@ slotMachineData = {
 		},
 		event: function() {
 			var refresh = $('#refresh');
-			refresh.on('click', function (e) {
+			refresh.on('click', $(this).not(":animated"), function (e) {
 				e.preventDefault();
 
 				methods.animate()
