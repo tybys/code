@@ -1,0 +1,1378 @@
+<html lang="ru" xmlns:og="http://opengraphprotocol.org/schema/">
+<head prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/apps/video#">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript"
+			src="http://bam.nr-data.net/1/2949cd27a3?a=6975916&amp;pl=1450547364889&amp;v=627.122032b&amp;to=YwMHbUNTD0YHUk1dXVpJMEtYHQhbAlRBGkJcFg%3D%3D&amp;ap=48&amp;be=103&amp;fe=1455&amp;dc=354&amp;f=%5B%5D&amp;perf=%7B%22timing%22:%7B%22of%22:1450547364889,%22n%22:0,%22u%22:69,%22ue%22:71,%22dl%22:84,%22di%22:456,%22ds%22:456,%22de%22:473,%22dc%22:1558,%22l%22:1558,%22le%22:1615,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:3,%22rp%22:68,%22rpe%22:107%7D,%22navigation%22:%7B%7D%7D&amp;at=T0QEGwtJHEg%3D&amp;jsonp=NREUM.setToken"></script>
+	<script id="facebook-jssdk" src="//connect.facebook.net/ru_RU/all.js#xfbml=1"></script>
+	<script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script>
+	<script type="text/javascript">window.NREUM || (NREUM = {}), __nr_require = function (n, e, t) {
+		function r(t) {
+			if (!e[t]) {
+				var o = e[t] = {exports: {}};
+				n[t][0].call(o.exports, function (e) {
+					var o = n[t][1][e];
+					return r(o ? o : e)
+				}, o, o.exports)
+			}
+			return e[t].exports
+		}
+
+		if ("function" == typeof __nr_require)return __nr_require;
+		for (var o = 0; o < t.length; o++)r(t[o]);
+		return r
+	}({
+		QJf3ax: [function (n, e) {
+			function t(n) {
+				function e(e, t, a) {
+					n && n(e, t, a), a || (a = {});
+					for (var u = c(e), f = u.length, s = i(a, o, r), p = 0; f > p; p++)u[p].apply(s, t);
+					return s
+				}
+
+				function a(n, e) {
+					f[n] = c(n).concat(e)
+				}
+
+				function c(n) {
+					return f[n] || []
+				}
+
+				function u() {
+					return t(e)
+				}
+
+				var f = {};
+				return {on: a, emit: e, create: u, listeners: c, _events: f}
+			}
+
+			function r() {
+				return {}
+			}
+
+			var o = "nr@context", i = n("gos");
+			e.exports = t()
+		}, {gos: "7eSDFh"}], ee: [function (n, e) {
+			e.exports = n("QJf3ax")
+		}, {}], 3: [function (n, e) {
+			function t(n) {
+				return function () {
+					r(n, [(new Date).getTime()].concat(i(arguments)))
+				}
+			}
+
+			var r = n("handle"), o = n(1), i = n(2);
+			"undefined" == typeof window.newrelic && (newrelic = window.NREUM);
+			var a = ["setPageViewName", "addPageAction", "setCustomAttribute", "finished", "addToTrace", "inlineHit", "noticeError"];
+			o(a, function (n, e) {
+				window.NREUM[e] = t("api-" + e)
+			}), e.exports = window.NREUM
+		}, {1: 12, 2: 13, handle: "D5DuLP"}], "7eSDFh": [function (n, e) {
+			function t(n, e, t) {
+				if (r.call(n, e))return n[e];
+				var o = t();
+				if (Object.defineProperty && Object.keys)try {
+					return Object.defineProperty(n, e, {value: o, writable: !0, enumerable: !1}), o
+				} catch (i) {
+				}
+				return n[e] = o, o
+			}
+
+			var r = Object.prototype.hasOwnProperty;
+			e.exports = t
+		}, {}], gos: [function (n, e) {
+			e.exports = n("7eSDFh")
+		}, {}], handle: [function (n, e) {
+			e.exports = n("D5DuLP")
+		}, {}], D5DuLP: [function (n, e) {
+			function t(n, e, t) {
+				return r.listeners(n).length ? r.emit(n, e, t) : (o[n] || (o[n] = []), void o[n].push(e))
+			}
+
+			var r = n("ee").create(), o = {};
+			e.exports = t, t.ee = r, r.q = o
+		}, {ee: "QJf3ax"}], id: [function (n, e) {
+			e.exports = n("XL7HBI")
+		}, {}], XL7HBI: [function (n, e) {
+			function t(n) {
+				var e = typeof n;
+				return !n || "object" !== e && "function" !== e ? -1 : n === window ? 0 : i(n, o, function () {
+					return r++
+				})
+			}
+
+			var r = 1, o = "nr@id", i = n("gos");
+			e.exports = t
+		}, {gos: "7eSDFh"}], G9z0Bl: [function (n, e) {
+			function t() {
+				var n = h.info = NREUM.info;
+				if (n && n.licenseKey && n.applicationID && f && f.body) {
+					c(l, function (e, t) {
+						e in n || (n[e] = t)
+					}), h.proto = "https" === d.split(":")[0] || n.sslForHttp ? "https://" : "http://", a("mark", ["onload", i()]);
+					var e = f.createElement("script");
+					e.src = h.proto + n.agent, f.body.appendChild(e)
+				}
+			}
+
+			function r() {
+				"complete" === f.readyState && o()
+			}
+
+			function o() {
+				a("mark", ["domContent", i()])
+			}
+
+			function i() {
+				return (new Date).getTime()
+			}
+
+			var a = n("handle"), c = n(1), u = (n(2), window), f = u.document, s = "addEventListener", p = "attachEvent", d = ("" + location).split("?")[0], l = {
+				beacon: "bam.nr-data.net",
+				errorBeacon: "bam.nr-data.net",
+				agent: "js-agent.newrelic.com/nr-627.min.js"
+			}, h = e.exports = {offset: i(), origin: d, features: {}};
+			f[s] ? (f[s]("DOMContentLoaded", o, !1), u[s]("load", t, !1)) : (f[p]("onreadystatechange", r), u[p]("onload", t)), a("mark", ["firstbyte", i()])
+		}, {1: 12, 2: 3, handle: "D5DuLP"}], loader: [function (n, e) {
+			e.exports = n("G9z0Bl")
+		}, {}], 12: [function (n, e) {
+			function t(n, e) {
+				var t = [], o = "", i = 0;
+				for (o in n)r.call(n, o) && (t[i] = e(o, n[o]), i += 1);
+				return t
+			}
+
+			var r = Object.prototype.hasOwnProperty;
+			e.exports = t
+		}, {}], 13: [function (n, e) {
+			function t(n, e, t) {
+				e || (e = 0), "undefined" == typeof t && (t = n ? n.length : 0);
+				for (var r = -1, o = t - e || 0, i = Array(0 > o ? 0 : o); ++r < o;)i[r] = n[e + r];
+				return i
+			}
+
+			e.exports = t
+		}, {}]
+	}, {}, ["G9z0Bl"]);</script>
+	<meta name="keywords"
+		  content="молодёжные, мультфильмы, для детей, онлайн, смотреть, бесплатно, мультики, лучшие, новые, детские, полнометражные, советские">
+	<meta name="description"
+		  content="Мультфильмы обожают смотреть как дети, так и взрослые. Особенно если показывают хороший мультфильм бесплатно без регистрации, да еще и в отличном качестве. Этот жанр сегодня невероятно популярен - как, впрочем, и всегда. Добрые, забавные мультипликационные герои, живущие в нарисованном мире, уносят нас в волшебную сказку, где возможно все - подружиться с медведем, поучаствовать в авиашоу или стать королем Африки, найти сокровище, верных друзей и много-много счастья. Лучшие мультики в хорошем качестве, которые вы хотели бы посмотреть, собраны здесь, на этой страничке нашего сайта.    Особенно много у нас полнометражных мультфильмов, как самых новых, так и тех, что уже несколько лет не уходят из зрительских рейтингов. Если вы любите смотреть мультики онлайн, то вы попали в правильное место - здесь их очень много, причем самых разных жанров и стилей. Мы ежедневно пополняем свою подборку новыми премьерами.    И вы, и ваши дети - все найдут у нас мультики по вкусу, которые будут интересны не только самым маленьким зрителям, но и их дедушкам и бабушкам. Так что садитесь поудобнее, выбирайте, что будете смотреть сегодня - а мы пожелаем вам приятного просмотра!">
+	<meta name="apple-itunes-app" content="app-id=443418022">
+	<meta name="google-site-verification" content="cmlCm5waTpWmFg3I0xNG-CkFFoOPJuD_WJPq2tSG9II">
+	<meta name="yandex-verification" content="537db1f591e107d0">
+	<!--[if lt IE 9]>
+	<script src="http://molodejj.tv/src/js/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		nMinWindowWidth = 960;
+		nMaxWindowWidth = 1000;
+	</script>
+
+	<script type="text/javascript" src="http://molodejj.tv/src/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://molodejj.tv/src/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="http://molodejj.tv/src/js/jquery.ui.datepicker-ru.js"></script>
+	<script type="text/javascript" src="http://molodejj.tv/src/js/jquery.simplemodal.1.4.4.min.js"></script>
+	<script type="text/javascript" src="http://molodejj.tv/src/js/new_menu.js?v=41"></script>
+	<script type="text/javascript" src="http://molodejj.tv/src/js/main.js?v=7"></script>
+	<script type="text/javascript" src="http://molodejj.tv/src/js/ads.js"></script>
+	<script type="text/javascript" src="http://molodejj.tv/auth/scripts/jj.js"></script>
+
+	<script type="text/javascript" src="http://molodejj.tv/src/var/branding/47.js?v=1450032439"></script>
+
+	<script type="text/javascript" src="http://molodejj.tv/src/js/new_promobanner.js?v=3"></script>
+
+	<script type="text/javascript" src="http://molodejj.tv/src/js/subscription.js"></script>
+
+	<link rel="stylesheet" href="http://molodejj.tv/auth/css/css.css">
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/style.css?sport=5">
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/oh.css">
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/new_body.css?v=24">
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/new_menu.css?sport=11">
+
+	<link rel="stylesheet" href="http://molodejj.tv/auth/css/smoothness/jquery-ui-1.8.11.custom.css">
+
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/header_socnets.css">
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/tagscloud.css">
+
+	<link rel="shortcut icon" href="http://molodejj.tv/tpl/images/favicon.ico">
+	<!--[if lt IE 10]>
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/ie9.css"/>
+	<![endif]-->
+
+	<link rel="stylesheet" href="http://molodejj.tv/src/var/branding/47.css?v=1450032439">
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/kino.css">
+
+	<link rel="stylesheet" href="http://molodejj.tv/tpl/css/new_promobanner.css">
+	<style></style>
+	<title>Молодёжные мульфильмы и мультики для детей. Смотреть онлайн легально и бесплатно на Molodejj.tv!</title>
+
+	<script type="text/javascript">
+		var reformalOptions = {
+			project_id: 49920,
+			project_host: "molodejjtv.reformal.ru",
+			tab_orientation: "right",
+			tab_indent: "50%",
+			tab_bg_color: "#00ccff",
+			tab_border_color: "#FFFFFF",
+			tab_image_url: "http://tab.reformal.ru/T9GC0LfRi9Cy0Ysg0Lgg0L%252FRgNC10LTQu9C%252B0LbQtdC90LjRjw==/FFFFFF/4bfb34d91c8d7fb481972ca3c84aec38/left/0/tab.png",
+			tab_border_width: 2
+		};
+
+		(function () {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.async = true;
+			script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'media.reformal.ru/widgets/v3/reformal.js';
+			document.getElementsByTagName('head')[0].appendChild(script);
+		})();
+	</script>
+	<script type="text/javascript" async="" src="http://media.reformal.ru/widgets/v3/reformal.js"></script>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9515963-1']);
+		_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+//	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+		setTimeout(function () {
+			_gaq.push(["_trackEvent", "visit", "15 sec"]);
+		}, 15000);
+	</script>
+
+
+	<style type="text/css" media="screen">#reformal_tab {
+		display: block;
+		font-size: 0;
+		background-color: #00ccff !important;
+		line-height: 0;
+		cursor: pointer;
+		z-index: 100001;
+		right: 0;
+		margin-top: -112.5px;
+		position: fixed;
+		top: 50%;
+		border: 2px solid #FFFFFF;
+		padding: 10px 3px 10px 5px;
+		border-right: 0;
+		background: #00ccff url(http://media.reformal.ru/widgets/v3/gr.png) 100% 0 repeat-y;
+		-webkit-border-radius: 5px 0 0 5px;
+		-moz-border-radius: 5px 0 0 5px;
+		border-radius: 5px 0 0 5px;
+		-moz-box-shadow: -1px 0 2px #888;
+		-webkit-box-shadow: -1px 0 2px #888;
+		box-shadow: -1px 0 2px #888;
+	}
+
+	#reformal_tab:hover {
+		padding-right: 6px;
+	}
+
+	#reformal_tab img {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}</style>
+	<style type="text/css">.fb_hidden {
+		position: absolute;
+		top: -10000px;
+		z-index: 10001
+	}
+
+	.fb_reposition {
+		overflow-x: hidden;
+		position: relative
+	}
+
+	.fb_invisible {
+		display: none
+	}
+
+	.fb_reset {
+		background: none;
+		border: 0;
+		border-spacing: 0;
+		color: #000;
+		cursor: auto;
+		direction: ltr;
+		font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+		font-size: 11px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		letter-spacing: normal;
+		line-height: 1;
+		margin: 0;
+		overflow: visible;
+		padding: 0;
+		text-align: left;
+		text-decoration: none;
+		text-indent: 0;
+		text-shadow: none;
+		text-transform: none;
+		visibility: visible;
+		white-space: normal;
+		word-spacing: normal
+	}
+
+	.fb_reset > div {
+		overflow: hidden
+	}
+
+	.fb_link img {
+		border: none
+	}
+
+	.fb_dialog {
+		background: rgba(82, 82, 82, .7);
+		position: absolute;
+		top: -10000px;
+		z-index: 10001
+	}
+
+	.fb_reset .fb_dialog_legacy {
+		overflow: visible
+	}
+
+	.fb_dialog_advanced {
+		padding: 10px;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px
+	}
+
+	.fb_dialog_content {
+		background: #fff;
+		color: #333
+	}
+
+	.fb_dialog_close_icon {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+		_background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);
+		cursor: pointer;
+		display: block;
+		height: 15px;
+		position: absolute;
+		right: 18px;
+		top: 17px;
+		width: 15px
+	}
+
+	.fb_dialog_mobile .fb_dialog_close_icon {
+		top: 5px;
+		left: 5px;
+		right: auto
+	}
+
+	.fb_dialog_padding {
+		background-color: transparent;
+		position: absolute;
+		width: 1px;
+		z-index: -1
+	}
+
+	.fb_dialog_close_icon:hover {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;
+		_background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)
+	}
+
+	.fb_dialog_close_icon:active {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;
+		_background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)
+	}
+
+	.fb_dialog_loader {
+		background-color: #f6f7f8;
+		border: 1px solid #606060;
+		font-size: 24px;
+		padding: 20px
+	}
+
+	.fb_dialog_top_left, .fb_dialog_top_right, .fb_dialog_bottom_left, .fb_dialog_bottom_right {
+		height: 10px;
+		width: 10px;
+		overflow: hidden;
+		position: absolute
+	}
+
+	.fb_dialog_top_left {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
+		left: -10px;
+		top: -10px
+	}
+
+	.fb_dialog_top_right {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
+		right: -10px;
+		top: -10px
+	}
+
+	.fb_dialog_bottom_left {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
+		bottom: -10px;
+		left: -10px
+	}
+
+	.fb_dialog_bottom_right {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
+		right: -10px;
+		bottom: -10px
+	}
+
+	.fb_dialog_vert_left, .fb_dialog_vert_right, .fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+		position: absolute;
+		background: #525252;
+		filter: alpha(opacity=70);
+		opacity: .7
+	}
+
+	.fb_dialog_vert_left, .fb_dialog_vert_right {
+		width: 10px;
+		height: 100%
+	}
+
+	.fb_dialog_vert_left {
+		margin-left: -10px
+	}
+
+	.fb_dialog_vert_right {
+		right: 0;
+		margin-right: -10px
+	}
+
+	.fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+		width: 100%;
+		height: 10px
+	}
+
+	.fb_dialog_horiz_top {
+		margin-top: -10px
+	}
+
+	.fb_dialog_horiz_bottom {
+		bottom: 0;
+		margin-bottom: -10px
+	}
+
+	.fb_dialog_iframe {
+		line-height: 0
+	}
+
+	.fb_dialog_content .dialog_title {
+		background: #6d84b4;
+		border: 1px solid #3a5795;
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0
+	}
+
+	.fb_dialog_content .dialog_title > span {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+		float: left;
+		padding: 5px 0 7px 26px
+	}
+
+	body.fb_hidden {
+		-webkit-transform: none;
+		height: 100%;
+		margin: 0;
+		overflow: visible;
+		position: absolute;
+		top: -10000px;
+		left: 0;
+		width: 100%
+	}
+
+	.fb_dialog.fb_dialog_mobile.loading {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+		min-height: 100%;
+		min-width: 100%;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		z-index: 10001
+	}
+
+	.fb_dialog.fb_dialog_mobile.loading.centered {
+		width: auto;
+		height: auto;
+		min-height: initial;
+		min-width: initial;
+		background: none
+	}
+
+	.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+		width: 100%
+	}
+
+	.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+		background: none
+	}
+
+	.loading.centered #fb_dialog_loader_close {
+		color: #fff;
+		display: block;
+		padding-top: 20px;
+		clear: both;
+		font-size: 18px
+	}
+
+	#fb-root #fb_dialog_ipad_overlay {
+		background: rgba(0, 0, 0, .45);
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		min-height: 100%;
+		z-index: 10000
+	}
+
+	#fb-root #fb_dialog_ipad_overlay.hidden {
+		display: none
+	}
+
+	.fb_dialog.fb_dialog_mobile.loading iframe {
+		visibility: hidden
+	}
+
+	.fb_dialog_content .dialog_header {
+		-webkit-box-shadow: white 0 1px 1px -1px inset;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));
+		border-bottom: 1px solid;
+		border-color: #1d4088;
+		color: #fff;
+		font: 14px Helvetica, sans-serif;
+		font-weight: bold;
+		text-overflow: ellipsis;
+		text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+		vertical-align: middle;
+		white-space: nowrap
+	}
+
+	.fb_dialog_content .dialog_header table {
+		-webkit-font-smoothing: subpixel-antialiased;
+		height: 43px;
+		width: 100%
+	}
+
+	.fb_dialog_content .dialog_header td.header_left {
+		font-size: 12px;
+		padding-left: 5px;
+		vertical-align: middle;
+		width: 60px
+	}
+
+	.fb_dialog_content .dialog_header td.header_right {
+		font-size: 12px;
+		padding-right: 5px;
+		vertical-align: middle;
+		width: 60px
+	}
+
+	.fb_dialog_content .touchable_button {
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));
+		border: 1px solid #2f477a;
+		-webkit-background-clip: padding-box;
+		-webkit-border-radius: 3px;
+		-webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;
+		display: inline-block;
+		margin-top: 3px;
+		max-width: 85px;
+		line-height: 18px;
+		padding: 4px 12px;
+		position: relative
+	}
+
+	.fb_dialog_content .dialog_header .touchable_button input {
+		border: none;
+		background: none;
+		color: #fff;
+		font: 12px Helvetica, sans-serif;
+		font-weight: bold;
+		margin: 2px -12px;
+		padding: 2px 6px 3px 6px;
+		text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+	}
+
+	.fb_dialog_content .dialog_header .header_center {
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 18px;
+		text-align: center;
+		vertical-align: middle
+	}
+
+	.fb_dialog_content .dialog_content {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+		border: 1px solid #555;
+		border-bottom: 0;
+		border-top: 0;
+		height: 150px
+	}
+
+	.fb_dialog_content .dialog_footer {
+		background: #f6f7f8;
+		border: 1px solid #555;
+		border-top-color: #ccc;
+		height: 40px
+	}
+
+	#fb_dialog_loader_close {
+		float: left
+	}
+
+	.fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+		text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+	}
+
+	.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+		visibility: hidden
+	}
+
+	#fb_dialog_loader_spinner {
+		animation: rotateSpinner 1.2s linear infinite;
+		background-color: transparent;
+		background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		height: 24px;
+		width: 24px
+	}
+
+	@keyframes rotateSpinner {
+		0% {
+			transform: rotate(0deg)
+		}
+		100% {
+			transform: rotate(360deg)
+		}
+	}
+
+	.fb_iframe_widget {
+		display: inline-block;
+		position: relative
+	}
+
+	.fb_iframe_widget span {
+		display: inline-block;
+		position: relative;
+		text-align: justify
+	}
+
+	.fb_iframe_widget iframe {
+		position: absolute
+	}
+
+	.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
+		max-width: 100%
+	}
+
+	.fb_iframe_widget_fluid_desktop iframe {
+		min-width: 220px;
+		position: relative
+	}
+
+	.fb_iframe_widget_lift {
+		z-index: 1
+	}
+
+	.fb_hide_iframes iframe {
+		position: relative;
+		left: -10000px
+	}
+
+	.fb_iframe_widget_loader {
+		position: relative;
+		display: inline-block
+	}
+
+	.fb_iframe_widget_fluid {
+		display: inline
+	}
+
+	.fb_iframe_widget_fluid span {
+		width: 100%
+	}
+
+	.fb_iframe_widget_loader iframe {
+		min-height: 32px;
+		z-index: 2;
+		zoom: 1
+	}
+
+	.fb_iframe_widget_loader .FB_Loader {
+		background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;
+		height: 32px;
+		width: 32px;
+		margin-left: -16px;
+		position: absolute;
+		left: 50%;
+		z-index: 4
+	}</style>
+</head>
+<link rel="stylesheet" href="css/app.css">
+<body attr-brand="47">
+<a id="reformal_tab" href="http://molodejjtv.reformal.ru"
+						 onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();"
+						 onmouseout="Reformal.widgetAbortPreload();"><img
+		src="http://tab.reformal.ru/T9GC0LfRi9Cy0Ysg0Lgg0L%252FRgNC10LTQu9C%252B0LbQtdC90LjRjw==/FFFFFF/4bfb34d91c8d7fb481972ca3c84aec38/left/0/tab.png"
+		alt=""></a>
+
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+	var img = new Image();
+	img.src = 'http://www.tns-counter.ru/V13a***R>' + document.referrer.replace(/\*/g, '%2a') + '*molodejj_tv/ru/UTF-8/tmsec=molodejj_total/' + Math.round(Math.random() * 1000000000);
+</script>
+<noscript>
+	&lt;img src="http://www.tns-counter.ru/V13a****molodejj_tv/ru/UTF-8/tmsec=molodejj_total/" width="1" height="1"
+	alt=""&gt;
+</noscript>
+<!--/ tns-counter.ru -->
+
+<a name="top"></a>
+<a href="#top">
+	<div id="jump" style="display: none;"></div>
+</a>
+
+<div id="fb-root" class=" fb_reset">
+	<div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+		<div>
+			<iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true"
+					scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1"
+					id="fb_xdm_frame_http"
+					src="http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f392063a8c&amp;origin=http%3A%2F%2Fmolodejj.tv"
+					style="border: none;"></iframe>
+			<iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true"
+					scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1"
+					id="fb_xdm_frame_https"
+					src="https://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f392063a8c&amp;origin=http%3A%2F%2Fmolodejj.tv"
+					style="border: none;"></iframe>
+		</div>
+	</div>
+	<div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+		<div></div>
+	</div>
+</div>
+<script>(function (d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script type="text/javascript"></script>
+<noscript>&lt;a href="http://reformal.ru"&gt;&lt;img src="http://media.reformal.ru/reformal.png" alt="" /&gt;&lt;/a&gt;&lt;a
+	href="http://molodejjtv.reformal.ru"&gt;Oтзывы и предложения для molodejj.tv&lt;/a&gt;</noscript>
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript">
+	$(document).ready(function () {
+		document.write('<!DOCTYPE HTML>' +
+				'<html lang="ru"><head>' +
+				'<link rel="stylesheet" href="/tpl/css/style.css" />' +
+				'</head><body>' +
+				'<div class="update_browser">' +
+				'<div class="logo"></div>' +
+				'Внимание!!!<br>' +
+				'Вы используете устаревшую версию браузера, в которой наш сайт не работает корректно.<br>' +
+				'Для комфортного просмотра рекомендуем вам установить один из следующих браузеров совершенно бесплатно.<br>' +
+				'<a href="http://www.google.com/intl/ru/chrome/browser/" target="_blank"><img src="/tpl/images/btn_chrome.png"></a>' +
+				'<a href="http://www.mozilla.org/ru/firefox/new/" target="_blank"><img src="/tpl/images/btn_firefox.png"></a>' +
+				'<a href="http://www.opera.com/ru/computer" target="_blank"><img src="/tpl/images/btn_opera.png"></a>' +
+				'<a href="http://browser.yandex.ru/" target="_blank"><img src="/tpl/images/btn_yandex.png"></a>' +
+				'<a href="http://support.apple.com/kb/DL1531?viewlocale=ru_RU" target="_blank"><img src="/tpl/images/btn_safari.png"></a>' +
+				'<a href="http://www.microsoft.com/ru-ru/download/internet-explorer-9-details.aspx" target="_blank"><img src="/tpl/images/btn_ie.png"></a>' +
+				'</div></body></html>');
+	});
+</script>
+<![endif]-->
+<header class="side" style="background: transparent;">
+	<div id="brands_head"></div>
+	<div id="menu_place" class="gray_line">
+		<!--		<div class="menu_fixed"> -->
+		<nav>
+			<div class="topmenu_item">
+				<a href="/"><img src="http://molodejj.tv/tpl/images/menu/mainmenu_logo.png" alt=""></a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item">
+							<a href="/calendar?page=news">Новости</a>
+						</div>
+						<div class="menu_item">
+							<a href="/calendar">Календарь</a>
+						</div>
+						<div class="menu_item">
+							<a href="/people">Актёры</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<p>
+					<span class="shadow_outer">ТОП</span>
+					<span class="shadow_ie9 big">ТОП</span>
+				</p>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item top soon lable"><img src="http://molodejj.tv/tpl/images/menu/lable_premiere.png" alt="">
+						</div>
+						<div class="menu_item top">
+							<div class="hd"></div>
+							<a href="/serial/mamochki">Мамочки&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<div class="menu_text">ПН-ЧТ 22:00</div>
+							</a></div>
+						<div class="menu_item top soon lable"><img src="http://molodejj.tv/tpl/images/menu/lable_top.png" alt=""></div>
+						<div class="menu_item top">
+							<div class="hd"></div>
+							<a href="/serial/kak-ya-stal-russkim">Как я стал русским&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+						<div class="menu_item top">
+							<div class="hd"></div>
+							<a href="/serial/kuhnya">Кухня&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+						<div class="menu_item top">
+							<div class="hd"></div>
+							<a href="/serial/magikyan">Последний из Магикян&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+						<div class="menu_item top">
+							<div class="hd"></div>
+							<a href="/serial/korabl">Корабль&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+						<div class="menu_item top">
+							<div class="hd"></div>
+							<a href="/serial/anzhelika">Анжелика&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+						<div class="menu_item top"><a href="/serial/svetofor">Светофор&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+						<div class="menu_item top"><a href="/show/pelmeni">Уральские пельмени&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<a href="/serial">
+					<span class="shadow_outer">СЕРИАЛЫ</span>
+					<span class="shadow_ie9 big">СЕРИАЛЫ</span>
+				</a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/anzhelika">Анжелика</a></div>
+						<div class="menu_item"><a href="/serial/2otca2syna">Два отца и два сына</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/kak-ya-stal-russkim">Как я стал русским</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/korabl">Корабль</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/kuhnya">Кухня</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/mamochki">Мамочки</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/papa_na_vyrost">Папа на вырост</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/magikyan">Последний из Магикян</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/roditeli">Родители</a></div>
+						<div class="menu_item"><a href="/serial/svetofor">Светофор</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/syn_za_otca">Сын за отца</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/serial/eto_lyubov">Это любовь</a></div>
+						<div class="menu_item total">
+							<a href="/serial">Смотреть все 30</a>
+						</div>
+					</div>
+					<div class="separator" style="height: 370px;">
+					</div>
+					<div>
+						<a class="newest_info_link" href="/serial/mamochki/1-sezon/12-seriya">
+							<div class="newest_info">
+								<img src="http://img.molodejj.tv/video/15221/s_cover.jpg" alt="1 сезон • 12 серия">
+
+								<div class="newest_info_inner"></div>
+								<div class="newest_info_logo"></div>
+								<div class="newest_title">Мамочки
+									<div class="newest_video_title">1 сезон • 12 серия</div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<a href="/show">
+					<span class="shadow_outer">ШОУ</span>
+					<span class="shadow_ie9 big">ШОУ</span>
+				</a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item"><a href="/show/vk">Вечерний квартал</a></div>
+						<div class="menu_item"><a href="/show/videobitva">ВидеоБитва</a></div>
+						<div class="menu_item"><a href="/show/kvn">КВН</a></div>
+						<div class="menu_item"><a href="/show/xmen">Люди Хэ</a></div>
+						<div class="menu_item"><a href="/show/maslov">Миша Маслов</a></div>
+						<div class="menu_item"><a href="/show/myasorupka">МясорУПка</a></div>
+						<div class="menu_item"><a href="/show/newyear">Новый год</a></div>
+						<div class="menu_item"><a href="/show/porobleno">Пороблено в Україні</a></div>
+						<div class="menu_item"><a href="/show/recept">Рецепт на миллион</a></div>
+						<div class="menu_item"><a href="/show/sbtp">Слава богу, ты пришёл!</a></div>
+						<div class="menu_item"><a href="/show/ssvyazi">Случайные связи</a></div>
+						<div class="menu_item"><a href="/show/pelmeni">Уральские пельмени</a></div>
+						<div class="menu_item total">
+							<a href="/show">Смотреть все 29</a>
+						</div>
+					</div>
+					<div class="separator" style="height: 370px;">
+					</div>
+					<div>
+						<a class="newest_info_link"
+						   href="/show/rapkinoobzor/rapkinoobzor_series/RAP_kinoobzor_Rap_kinoobzor__zalozhnitsa_3">
+							<div class="newest_info">
+								<img src="http://img.molodejj.tv/pladform/14607/s_cover.jpg"
+									 alt="Rap Кинообзор - Заложница 3">
+
+								<div class="newest_info_inner"></div>
+								<div class="newest_info_logo"></div>
+								<div class="newest_title">RAP кинообзор
+									<div class="newest_video_title">Rap Кинообзор - Заложница 3</div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<a href="/films">
+					<span class="shadow_outer">ФИЛЬМЫ</span>
+					<span class="shadow_ie9 big">ФИЛЬМЫ</span>
+				</a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item"><a href="/films/animation">Анимация</a></div>
+						<div class="menu_item"><a href="/films/action">Боевики</a></div>
+						<div class="menu_item"><a href="/films/documental">Документальное</a></div>
+						<div class="menu_item"><a href="/films/drama">Драмы</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/films/comedy">Комедии</a></div>
+						<div class="menu_item"><a href="/films/trillers">Триллер</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/films/thriller">Ужасы</a></div>
+						<div class="menu_item"><a href="/films/fantastika">Фантастика</a></div>
+					</div>
+					<div class="separator" style="height: 370px;">
+					</div>
+					<div>
+						<a class="newest_info_link" href="/films/thriller/golosa">
+							<div class="newest_info">
+								<img src="http://img.molodejj.tv/video/15135/s_cover.jpg" alt="Голоса">
+
+								<div class="newest_info_inner"></div>
+								<div class="newest_info_logo"></div>
+								<div class="newest_title">Ужасы
+									<div class="newest_video_title">Голоса</div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<a href="/animation">
+					<span class="shadow_outer">АНИМАЦИЯ</span>
+					<span class="shadow_ie9 big">АНИМАЦИЯ</span>
+				</a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item"><a href="/animation/virusatack">Вирус атакует</a></div>
+						<div class="menu_item"><a href="/animation/kumi-kumi">Куми-Куми</a></div>
+						<div class="menu_item"><a href="/animation/om-nom-adventures">Приключения Aм Няма</a></div>
+						<div class="menu_item">
+							<div class="hd"></div>
+							<a href="/animation/dji">Смерть по имени Джи</a></div>
+					</div>
+					<div class="separator" style="height: 370px;">
+					</div>
+					<div>
+						<a class="newest_info_link" href="/animation/dji/dji_series/dji_parusa">
+							<div class="newest_info">
+								<img src="http://img.molodejj.tv/video/14729/s_cover.jpg" alt="Паруса Смерти">
+
+								<div class="newest_info_inner"></div>
+								<div class="newest_info_logo"></div>
+								<div class="newest_title">Смерть по имени Джи
+									<div class="newest_video_title">Паруса Смерти</div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<a href="/sport">
+					<span class="shadow_outer">СПОРТ</span>
+					<span class="shadow_ie9 big">СПОРТ</span>
+				</a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item"><a href="/sport/bitva_pod_moskvoi">Битва под Москвой</a></div>
+						<div class="menu_item"><a href="/sport/boets">Боец</a></div>
+						<div class="menu_item"><a href="/sport/sport">Спорт и путешествия</a></div>
+					</div>
+					<div class="separator" style="height: 370px;">
+					</div>
+					<div>
+						<a class="newest_info_link"
+						   href="/sport/boets/v_fokuse/v_fokuse__brosok_za_ruku_cherez_bedro_vypusk_31">
+							<div class="newest_info">
+								<img src="http://img.molodejj.tv/video/8316/s_cover.jpg"
+									 alt="В фокусе - Бросок за руку через бедро, выпуск 31">
+
+								<div class="newest_info_inner"></div>
+								<div class="newest_info_logo"></div>
+								<div class="newest_title">Боец
+									<div class="newest_video_title">В фокусе - Бросок за руку через бедро, выпуск 31
+									</div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="topmenu_item">
+				<a href="/extra">
+					<span class="shadow_outer">ЭКСТРА</span>
+					<span class="shadow_ie9 big">ЭКСТРА</span>
+				</a>
+
+				<div class="menu">
+					<div>
+						<div class="menu_item"><a href="/extra/art">Арт</a></div>
+						<div class="menu_item"><a href="/extra/gametrailers">Игровые трейлеры</a></div>
+						<div class="menu_item"><a href="/extra/kinotrailers">Кинотрейлеры</a></div>
+						<div class="menu_item"><a href="/extra/kinofan">Кинофан</a></div>
+						<div class="menu_item"><a href="/extra/videokonkurs">Конкурсы</a></div>
+						<div class="menu_item"><a href="/extra/exclusive">Эксклюзивное видео</a></div>
+						<div class="menu_item"><a href="/extra/fun">Юмор и развлечения</a></div>
+					</div>
+					<div class="separator" style="height: 370px;">
+					</div>
+					<div>
+						<a class="newest_info_link" href="/extra/kinotrailers/kinoafisha/supernyan2">
+							<div class="newest_info">
+								<img src="http://img.molodejj.tv/video/15185/s_cover.jpg" alt="Superнянь 2">
+
+								<div class="newest_info_inner"></div>
+								<div class="newest_info_logo"></div>
+								<div class="newest_title">Кинотрейлеры
+									<div class="newest_video_title">Superнянь 2</div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</nav>
+		<div id="header_user_logo" class="login">
+			<img src="http://molodejj.tv/tpl/images/menu/icon_user.png" alt="Фотография">
+		</div>
+		<div id="header_user" class="login">
+			<div id="header_user_login" class="header_user_text">
+				<span class="shadow_outer">Вход</span>
+				<span class="shadow_ie9">Вход</span>
+			</div>
+		</div>
+		<div id="search_btn"></div>
+		<div id="search">
+			<input type="text">
+
+			<div id="search_hint" class="select"></div>
+		</div>
+		<!--		</div> -->
+	</div>
+	<div id="promobanner_head">&nbsp;</div>
+</header>
+
+<!--<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?1"></script>-->
+
+<div id="vk_api_transport">
+	<script type="text/javascript" src="//userapi.com/js/api/openapi.js" async=""></script>
+</div>
+<script type="text/javascript">
+	setTimeout(function () {
+		var el = document.createElement("script");
+		el.type = "text/javascript";
+		el.src = "//userapi.com/js/api/openapi.js";
+		el.async = true;
+		document.getElementById("vk_api_transport").appendChild(el);
+	}, 0);
+	//VK.init({apiId: 1988326, onlyWidgets: true});
+	(function start() {
+		if (window.VK && window.VK.init) {
+			VK.init(
+					{
+						apiId: 2676549,
+						onlyWidgets: true
+					});
+		}
+		else
+			setTimeout(start, 500);
+	})();
+</script>
+<div class="project_header" hidden>
+	<div class="side">
+		<div class="project_info" style="width: 960px; visibility: visible;">
+			<div class="tab">
+				<img src="http://img.molodejj.tv/projects/categories/792x284_ANIM_iphone2_new.jpg" alt="АНИМАЦИЯ">
+			</div>
+			<h1 class="text">
+				АНИМАЦИЯ </h1>
+
+			<div class="synopsis">
+				<p><font face="Arial" size="2">Мультфильмы обожают смотреть как дети, так и взрослые. Особенно если
+					показывают хороший мультфильм бесплатно без регистрации, да еще и в отличном качестве. Этот жанр
+					сегодня невероятно популярен - как, впрочем, и всегда. Добрые, забавные мультипликационные герои,
+					живущие в нарисованном мире, уносят нас в волшебную сказку, где возможно все - подружиться с
+					медведем, поучаствовать в авиашоу или стать королем Африки, найти сокровище, верных друзей и
+					много-много счастья. Лучшие мультики в хорошем качестве, которые вы хотели бы посмотреть, собраны
+					здесь, на этой страничке нашего сайта. </font></p></div>
+			<div class="subscription">
+				<span data-project_type="1" data-project_id="9" class="subscription_on pointer item login"><span
+						class="icon"></span>ПОДПИСАТЬСЯ НА КАНАЛ</span>
+			</div>
+		</div>
+	</div>
+	<div class="project_header_body kino">
+		<div class="inner"></div>
+	</div>
+</div>
+<div class="side" style="height: 70px;">
+</div>
+<div class="side victorina" data-lines="1">
+	<div class="side_inner" style="width: 960px; visibility: visible;">
+		<h2>Кто ты на кухне?</h2>
+		<p class="first">
+			Предлагаем вам сыграть в викторину «Кто ты на Кухне» и определить, какому персонажу сериала вы соответствуете. А также выиграть призы, главный из которых — встреча со звездой сериала «Кухня» Дмитрием Нагиевым.
+			<br/><br/>
+			Вам будет предложено просмотреть фрагменты сериала «Кухня» и ответить на последующие вопросы.
+		</p>
+		<div class="pris-wrap">
+			<h3 class="prise">Главный приз:</h3>
+			<div><img width="147" height="147" src="images/pris1.png" alt="главный приз" /></div>
+			<p>Посещение съемок 3-го сезона "Два отца и два сына", селфи с Дмитрием Нагиевым и его автограф</p>
+		</div>
+
+		<div class="pris-wrap">
+			<h3 class="prise">Призы:</h3>
+			<div class="img-wrap">
+				<div>
+					<img width="147" height="147" src="images/pris2.png" alt="призы" />
+					<span>x 3</span>
+				</div>
+
+			</div>
+			<p>Три пары билетов на новый фильм "Страна чудес"</p>
+		</div>
+
+		<div class="pris-wrap">
+			<h3 class="prise">&nbsp;</h3>
+			<div class="img-wrap">
+				<div>
+					<img width="147" height="147" src="images/pris3.png" alt="главный приз" />
+					<span>x 20</span>
+				</div>
+			</div>
+			<p>20 подписок на просмотр сайта molodejj.tv без рекламы сроком на 1 месяц</p>
+		</div>
+
+		<a href="#" class="start btn projects-list_btn is-blue"><span>начать игру</span></a>
+
+		<p class="attention">
+			<strong>Внимание!</strong>
+			Чтобы получить шанс выиграть призы,
+			необходимо <a href="#">авторизоваться</a> на сайте.
+			Пройти тест вы можете и анонимно, но в этом случае ваши результаты не будут учтены во время розыгрыша.
+		</p>
+
+		<hr class="blue" />
+
+		<h3>Правила участия</h3>
+
+		<ul>
+			<li>1. Принимая участие в викторине, участник автоматически соглашается с настоящими правилами.</li>
+			<li>2. Сроки проведения викторины: 22 декабря 2015 года — 12 января 2016 года включительно.</li>
+			<li>3. Участнику предлагаются фрагменты сериала «Кухня» с последующими вопросами по просмотренному сюжету. Возможность повтороного просмотра фрагмента оценивается в штрафной балл.</li>
+			<li>4. Для того, чтобы претендовать на призы викторины, участник должен разместить результаты викторины в аккаунте своей социальной сети Facebook или Вконтакте.</li>
+			<li>5. Призёры будут определены из числа участников, набравших максимально возможное количество балов. Призёры будут определены жеребьёвкой с помощью генератора случайных чисел.</li>
+			<li>6. Главный приз — экскурсия на съёмочную площадку сериала «Два отца и два сына» с участием Дмитрия Нагиева, селфи с актёром и его автограф. Ориентировочное время визита — 15-30 января 2016 года.</li>
+			<li>7. Билеты на фильм «Страна чудес» будут вручены по результатам промежуточного подведения итогов 30 декабря в офисе компании Yellow, Black and White в Москве.</li>
+			<li>8. Организатор не обеспечивает победителю транспортные расходы до места выдачи призов.</li>
+		</ul>
+	</div>
+</div>
+
+<div class="side victorina step">
+	<div class="side_inner" style="width: 960px; visibility: visible;">
+		<div class="steps">
+			<ul>
+				<li class="done">&nbsp;</li>
+				<li class="done">&nbsp;</li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+			</ul>
+			<span class="current-step">3 / 7</span>
+		</div>
+
+		<p>Как называют в профессиональных кругах героя Сергея Бурунова?</p>
+		<form>
+			<div>
+				<label class="">
+					<input type="checkbox" name="" id="">
+					<span class="pseudo-label"></span>
+					Охотник за головами
+				</label>
+			</div>
+
+			<div>
+				<label class="">
+					<input type="checkbox" name="" id="">
+					<span class="pseudo-label"></span>
+					Охотник на гастарбайтеров
+				</label>
+			</div>
+
+			<div>
+				<label class="">
+					<input type="checkbox" name="" id="">
+					<span class="pseudo-label"></span>
+					Охотник на нелегалов
+				</label>
+			</div>
+		</form>
+
+		<div class="controls">
+			<a href="#" class="start btn projects-list_btn is-blue"><span>начать игру</span></a>
+			<a href="#" class="start btn projects-list_btn is-blue"><span>начать игру</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="side victorina result">
+	<div class="side_inner" style="width: 960px; visibility: visible;">
+		<h2>Ваш результат</h2>
+		<span class="current-step final">3 из 7</span>
+
+		<div class="avatar-wrap" style="background-image: url('images/avatar_big.jpg')"></div>
+
+		<h3>Вы &mdash; Шеф!</h3>
+		<p>
+			Блестяще! Вы заслужили право носить пушные усы,
+			потому как безупречно знаете не только кухню,
+			но и всё, что творится в ресторане.
+			Поздравляем, вы настоящий гуру.
+			А ещё алкоголик и игроман.
+		</p>
+
+		<div class="controls">
+			<a href="#" class="start btn projects-list_btn is-blue"><span>начать игру</span></a>
+		</div>
+	</div>
+</div>
+
+
+
+<div style="display: none;">
+	<!--LiveInternet counter-->
+	<script type="text/javascript">
+		document.write("<a href='http://www.liveinternet.ru/click' " +
+				"target=_blank><img src='//counter.yadro.ru/hit?t44.6;r" +
+				escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+				";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) +
+				";u" + escape(document.URL) + ";" + Math.random() + "' alt='' title='LiveInternet' " +
+				"border='0' width='31' height='31'><\/a>")
+	</script>
+	<a href="http://www.liveinternet.ru/click" target="_blank"><img
+			src="//counter.yadro.ru/hit?t44.6;rhttp%3A//molodejj.tv/films;s1920*1080*24;uhttp%3A//molodejj.tv/films/animation;0.019168217899277806"
+			alt="" title="LiveInternet" border="0" width="31" height="31"></a>
+	<!--/LiveInternet-->
+</div>
+
+<!-- Yandex.Metrika counter -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<div style="display:none;">
+	<script type="text/javascript">
+		try {
+			var yaCounter190632 = new Ya.Metrika({
+				id: 190632, webvisor: true, clickmap: true, trackLinks: true, accurateTrackBounce: true
+			});
+			window.yaCounter190632 = yaCounter190632;
+
+
+			var yaCounter30622022 = new Ya.Metrika({id: 30622022, enableAll: true});
+			window.yaCounter30622022 = yaCounter30622022;
+
+			$(document).ready(function () {
+				$('.brand1, .brand2, .brand3').click(function () {
+					window.yaCounter30622022.reachGoal('brand_click');
+
+				});
+			});
+
+
+			if (typeof adblock_not_detected == "undefined") {
+				yaCounter190632.reachGoal('adblock');
+			}
+		}
+		catch (e) {
+		}
+	</script>
+</div>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/190632" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+
+
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/30622022" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script type="text/javascript">window.NREUM || (NREUM = {});
+NREUM.info = {
+	"beacon": "bam.nr-data.net",
+	"licenseKey": "2949cd27a3",
+	"applicationID": "6975916",
+	"transactionName": "YwMHbUNTD0YHUk1dXVpJMEtYHQhbAlRBGkJcFg==",
+	"queueTime": 0,
+	"applicationTime": 48,
+	"atts": "T0QEGwtJHEg=",
+	"errorBeacon": "bam.nr-data.net",
+	"agent": "js-agent.newrelic.com\/nr-627.min.js"
+}</script>
+
+<script src="http://js-agent.newrelic.com/nr-627.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+.sm-wrap {
+    background: gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+
+}
+#sm {
+
+    border: 1px solid black;
+    background: #fff;
+    height: 64px;
+
+	margin-top: calc(64px * 3);
+}
+
+.wrap {
+    float: left;
+    width: 50%;
+    position: relative;
+	/*top: -64px;*/
+}
+.wrap-in {
+	/*position: absolute;*/
+	/*position: relative;*/
+	/*top: 0;*/
+	/*width: 100%;*/
+}
+
+.card {
+    /*padding: 7.5px;*/
+    display: block;
+    height: 64px;
+}
+.card img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.card p {
+    display: inline-block;
+	margin-left: 3%;
+	
+}
+
+/*refresh*/
+#refresh {
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #000;
+    color: white;
+    padding: 10px 0;
+}
