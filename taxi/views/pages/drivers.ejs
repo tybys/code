@@ -1,12 +1,16 @@
 <%include ../layout.ejs %>
 
-<form name="add_driver" actioin="/add_driver" method="post" enctype="">
+<a href="#">create driver</a>
+
+<%  console.log(1) %>
+
+<form name="add_driver" action="/drivers/add_driver" method="post">
 <label>
 		<span>name</span>
 		<input type="text" name="name"/>
 	</label>
 
-	<!--
+
 	<label>
 		<span>surname</span>
 		<input type="text" name="surname"/>
@@ -61,7 +65,7 @@
 		<span>Company ID</span>
 		<input type="text" name="company_id"/>
 	</label>
-		-->
+
 
 	<input type="submit" value="submit" />
 </form>

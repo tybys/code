@@ -26,7 +26,18 @@ app.get('/', function(req, res) {
 });
 
 app.get('/drivers', function(req, res) {
-	res.render('pages/drivers');
+	var bdRun = bd();
+	bdRun.query('SELECT * FROM driver', function (err, results, fields) {
+		if (err){
+			throw err;
+		} else {
+			//res.send('success');
+			//res.send(results);
+			res.render('pages/drivers');
+		}
+	});
+
+
 });
 
 app.get('transport', function(req, res) {
@@ -39,7 +50,7 @@ app.get('transport', function(req, res) {
 function bd() {
 	var connection = mysql.createConnection({
 		user: 'root',
-		password: 'password',
+		password: '',
 		host: 'localhost',
 		database: 'taxi'
 	});
@@ -47,31 +58,25 @@ function bd() {
 	return connection;
 }
 
-app.post('/simple', function (req, res, next) {
-	res.send('success');
-
-});
 
 app.post('/drivers/add_driver', function (req, res, next) {
-	res.send('success');
+	var bdRun = bd();
+	var backURL = req.header('Referer') || '/';
+
+	bdRun.query('INSERT INTO driver (name, surname, patronymic, birthdate, open_category, license, photo, phone_number, comment, status, company_id) values ' +
+			'("'+req.body.name+'", "'+req.body.surname+'", "'+req.body.patronymic+'", ' +
+			'"'+req.body.birthdate+'", "'+req.body.open_category+'", "'+req.body.license+'", ' +
+			'"'+req.body.photo+'", "'+req.body.phone_number+'", "'+req.body.comment+'", ' +
+			'"'+req.body.status+'", "'+req.body.company_id+'")', function (err, results, fields) {
+
+		if (err){
+			throw err;
+		} else {
+			//res.send('success');
+			res.redirect(backURL);
+		}
+	});
 
 });
 
-//app.post('/drivers_add', function (req, res) {
-//	var bdRun = bd();
-//
-//	bdRun.query('INSERT INTO driver (name, surname patronymic, birthdate, open_cateory, license, photo, phone_number, comment, status, company_id) values ' +
-//			'("'+req.body.name+'", "'+req.body.surname+'", "'+req.body.patronymic+'", ' +
-//			'"'+req.body.birthdate+'", "'+req.body.open_category+'", "'+req.body.license+'", ' +
-//			'"'+req.body.photo+'", "'+req.body.phone_number+'", "'+req.body.comment+'", ' +
-//			'"'+req.body.status+'", "'+req.body.company_id+'")', function (err, results, fields) {
-//
-//		if (err){
-//			throw err;
-//		} else {
-//			res.send('success');
-//		}
-//	});
-//});
-
-app.listen(8080);
+app.listen(80);
