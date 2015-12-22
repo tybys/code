@@ -33,7 +33,8 @@ app.get('/drivers', function(req, res) {
 		} else {
 			//res.send('success');
 			//res.send(results);
-			res.render('pages/drivers');
+			console.log(results[0].name)
+			res.render('pages/drivers', {data: results});
 		}
 	});
 
