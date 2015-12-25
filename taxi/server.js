@@ -37,9 +37,11 @@ app.get('/drivers', function(req, res) {
 			res.render('pages/drivers', {data: results});
 		}
 	});
-
-
 });
+
+app.get('/del/:id', function (req, res) {
+	var id =
+})
 
 app.get('transport', function(req, res) {
 	res.render('pages/transport');
