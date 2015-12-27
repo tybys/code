@@ -33,15 +33,27 @@ app.get('/drivers', function(req, res) {
 		} else {
 			//res.send('success');
 			//res.send(results);
-			console.log(results[0].name)
+			//console.log(results[0].name)
 			res.render('pages/drivers', {data: results});
 		}
 	});
 });
 
-app.get('/del/:id', function (req, res) {
-	var id =
-})
+app.get('/drivers/del/:id', function (req, res, err) {
+	var id = req.params.id;
+	var bdRun = bd();
+	var backURL = req.header('Referer') || '/';
+
+	console.log(req.params)
+
+	bdRun.query("DELETE FROM driver WHERE id = ? ", [id], function (err, rows) {
+		if (err) {
+			throw err;
+		} else {
+			res.redirect(backURL);
+		}
+	});
+});
 
 app.get('transport', function(req, res) {
 	res.render('pages/transport');

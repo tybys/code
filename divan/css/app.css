@@ -557,8 +557,10 @@ h2.coloring span:nth-of-type(6):before {
 .row .items .item {
   max-width: 378px;
   width: 100%;
-  border: 1px solid transparent;
+  position: relative;
   text-align: center;
+  min-height: 305px;
+  display: inline;
 }
 .row .items .item img {
   margin-bottom: 23px;
@@ -576,8 +578,14 @@ h2.coloring span:nth-of-type(6):before {
   font-size: 14px;
   color: #767676;
 }
-.row .items .item.active,
-.row .items .item:hover {
+.row .items .item .wrap {
+  position: absolute;
+  background: white;
+  z-index: 1;
+  border: 1px solid transparent;
+}
+.row .items .item.active .wrap,
+.row .items .item:hover .wrap {
   border: 1px solid #d9d9d9;
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -623,6 +631,7 @@ h2.coloring span:nth-of-type(6):before {
   background-position: left -123px;
 }
 .row .items .inner {
+  background: white;
   padding: 0 31px;
 }
 .row .items .inner .fav {

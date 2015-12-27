@@ -602,9 +602,11 @@ h2 {
 		.item {
 			max-width: 378px;
 			width: 100%;
+			position: relative;
 			//background: #f1f1f1;
-			border: 1px solid transparent;
 			text-align: center;
+			min-height: 305px;
+			display: inline;
 			img {
 				margin-bottom: 23px;
 				width: ~"calc(100% - 2px)";
@@ -624,13 +626,20 @@ h2 {
 
 				}
 			}
-
+			.wrap {
+				position: absolute;
+				background: white;
+				z-index: 1;
+				border: 1px solid transparent;
+			}
 			&.active,
 			&:hover {
-				border: 1px solid #d9d9d9;
-				-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
-				-moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
-				box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+				.wrap {
+					border: 1px solid #d9d9d9;
+					-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+					-moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+					box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+				}
 
 				table {
 					display: table;
@@ -664,11 +673,16 @@ h2 {
 						background-position: left -123px;
 					}
 				}
+				.inner {
+
+				}
 			}
 		}
 
 		.inner {
+			background: white;
 			padding: 0 31px;
+			//position: absolute;
 			.fav {
 				display: none;
 				margin-right: 0;
