@@ -3,6 +3,40 @@ body {
 	font-weight: 400;
 }
 
+h2 {
+	margin-top: 90px;
+	margin-bottom: 20px;
+	text-align: center;
+
+	& + p {
+		text-align: center;
+		font-size: 16px;
+		margin-bottom: 55px;
+	}
+}
+
+a:not(.custom) {
+	font-size: 16px;
+	color: #ae246c;
+	border-bottom: 1px solid #e2e2e2;
+	text-decoration: none;
+}
+
+.breadcrumb {
+	background: none;
+	padding-top: 36px;
+	padding-bottom: 0;
+
+	li {
+		font-size: 14px;
+		color: #8e8e8e;
+		a {
+			font-size: 14px;
+			color: #8e8e8e;
+		}
+	}
+}
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -135,20 +169,79 @@ h2 {
 }
 
 .row {
+	// do not forget this part, its just instead filter
+	.listing {
+		margin-bottom: 14px;
+		a {
+			margin: 0 25px 0 0;
+			font-size: 14px;
+			border-bottom-style: dotted;
+		}
+	}
 	.container {
 		//max-width: 1230px;
 		max-width: 1194px;
 		width: 100%;
-		background: #f1f1f1;
+		//background: #f1f1f1;
+	}
 
-		a:not(.custom) {
-			font-size: 16px;
-			color: #ae246c;
-			border-bottom: 1px solid #e2e2e2;
-			text-decoration: none;
+	&.help {
+		.col-xs-4 {
+			height: 280px;
+
+			position: relative;
+
+			p {
+				max-width: 305px;
+				margin: 0 auto;
+				display: block;
+			}
+		}
+		img {
+			margin-bottom: 48px;
+		}
+
+		a {
+		//	position: absolute;
+			margin-top: 20px;
+			bottom: 0;
+		}
+		.cart {
+
+		}
+		.phone {
+			font-size: 24px;
+			a {
+				color: black;
+			}
+			border-bottom: 0;
+		}
+		.support {
+
 		}
 	}
 
+	&.page-head {
+		h1 {
+			margin-bottom: 40px;
+		}
+		.filter {
+			margin-bottom: 70px;
+			font-size: 14px;
+			color: #767676;
+			a {
+				margin: 0 12.5px;
+				font-size: 14px;
+				border-bottom-style: dotted;
+				&.active {
+					color: black;
+					border-bottom-color: transparent;
+					background: url('../images/icons/pfilter.png') no-repeat center right;
+					padding-right: 23px;
+				}
+			}
+		}
+	}
 	&.head {
 		.container {
 			padding-top: 42px;
@@ -409,7 +502,7 @@ h2 {
 				@media all and (max-width: 1065px) {
 					margin-right: 35px;
 				}
-				margin-right: 99px;
+				margin-right: 90px;
 				position: relative;
 				max-width: 145px;
 				&:last-of-type {
@@ -883,17 +976,17 @@ h2 {
 
 	&.carousel {
 		overflow: hidden;
-		h2 {
-			margin-top: 90px;
-			margin-bottom: 20px;
-			text-align: center;
-
-			& + p {
-				text-align: center;
-				font-size: 16px;
-				margin-bottom: 55px;
-			}
-		}
+		//h2 {
+		//	margin-top: 90px;
+		//	margin-bottom: 20px;
+		//	text-align: center;
+		//
+		//	& + p {
+		//		text-align: center;
+		//		font-size: 16px;
+		//		margin-bottom: 55px;
+		//	}
+		//}
 
 		.bx-wrapper {
 			position: relative;

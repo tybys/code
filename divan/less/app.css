@@ -2,6 +2,35 @@ body {
   font-family: 'Ubuntu';
   font-weight: 400;
 }
+h2 {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h2 + p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 55px;
+}
+a:not(.custom) {
+  font-size: 16px;
+  color: #ae246c;
+  border-bottom: 1px solid #e2e2e2;
+  text-decoration: none;
+}
+.breadcrumb {
+  background: none;
+  padding-top: 36px;
+  padding-bottom: 0;
+}
+.breadcrumb li {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+.breadcrumb li a {
+  font-size: 14px;
+  color: #8e8e8e;
+}
 ul {
   padding: 0;
   margin: 0;
@@ -142,16 +171,59 @@ h2.coloring span:nth-of-type(6):before {
 	</div>
 	*/
 }
+.row .listing {
+  margin-bottom: 14px;
+}
+.row .listing a {
+  margin: 0 25px 0 0;
+  font-size: 14px;
+  border-bottom-style: dotted;
+}
 .row .container {
   max-width: 1194px;
   width: 100%;
-  background: #f1f1f1;
 }
-.row .container a:not(.custom) {
-  font-size: 16px;
-  color: #ae246c;
-  border-bottom: 1px solid #e2e2e2;
-  text-decoration: none;
+.row.help .col-xs-4 {
+  height: 280px;
+  position: relative;
+}
+.row.help .col-xs-4 p {
+  max-width: 305px;
+  margin: 0 auto;
+  display: block;
+}
+.row.help img {
+  margin-bottom: 48px;
+}
+.row.help a {
+  margin-top: 20px;
+  bottom: 0;
+}
+.row.help .phone {
+  font-size: 24px;
+  border-bottom: 0;
+}
+.row.help .phone a {
+  color: black;
+}
+.row.page-head h1 {
+  margin-bottom: 40px;
+}
+.row.page-head .filter {
+  margin-bottom: 70px;
+  font-size: 14px;
+  color: #767676;
+}
+.row.page-head .filter a {
+  margin: 0 12.5px;
+  font-size: 14px;
+  border-bottom-style: dotted;
+}
+.row.page-head .filter a.active {
+  color: black;
+  border-bottom-color: transparent;
+  background: url('../images/icons/pfilter.png') no-repeat center right;
+  padding-right: 23px;
 }
 .row.head .container {
   padding-top: 42px;
@@ -394,7 +466,7 @@ h2.coloring span:nth-of-type(6):before {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin-right: 99px;
+  margin-right: 90px;
   position: relative;
   max-width: 145px;
 }
@@ -799,16 +871,6 @@ h2.coloring span:nth-of-type(6):before {
 }
 .row.carousel {
   overflow: hidden;
-}
-.row.carousel h2 {
-  margin-top: 90px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.row.carousel h2 + p {
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 55px;
 }
 .row.carousel .bx-wrapper {
   position: relative;
