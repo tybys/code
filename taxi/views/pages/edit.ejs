@@ -1,0 +1,20 @@
+<form method="post" action="/drivers/edit/<%= data[0].id %>">
+<% for(var i=0; i<data.length;i++) { %>
+	<input type="text" name="name_upd" value="<%= data[i].name %>">
+	<%= data[i].surname %>
+	<%= data[i].patronymic %>
+	<%= data[i].birthdate %>
+	<%= data[i].open_category %>
+	<%= data[i].license %>
+	<%= data[i].photo %>
+	<%= data[i].id %>
+	<%= data[i].phone_number %>
+	<%= data[i].comment %>
+	<%= data[i].status %>
+	<%= data[i].bus_binding %>
+	<%= data[i].company_id %>
+	<a href="drivers/edit/<%= data[i].id %>">upd</a>
+	<a href="drivers/del/<%= data[i].id %>" data-id="<%= data[i].id %>">del</a>
+<% } %>
+	<input type="submit" value="ok">
+</form>

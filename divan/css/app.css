@@ -143,8 +143,9 @@ h2.coloring span:nth-of-type(6):before {
 	*/
 }
 .row .container {
-  max-width: 1230px;
+  max-width: 1194px;
   width: 100%;
+  background: #f1f1f1;
 }
 .row .container a:not(.custom) {
   font-size: 16px;
@@ -555,12 +556,12 @@ h2.coloring span:nth-of-type(6):before {
   line-height: 37px;
 }
 .row .items .item {
-  max-width: 378px;
-  width: 100%;
+  width: calc(33.33333333% - 20px);
   position: relative;
   text-align: center;
   min-height: 305px;
   display: inline;
+  margin-bottom: 62px;
 }
 .row .items .item img {
   margin-bottom: 23px;
@@ -581,11 +582,11 @@ h2.coloring span:nth-of-type(6):before {
 .row .items .item .wrap {
   position: absolute;
   background: white;
-  z-index: 1;
   border: 1px solid transparent;
 }
 .row .items .item.active .wrap,
 .row .items .item:hover .wrap {
+  z-index: 1;
   border: 1px solid #d9d9d9;
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -602,12 +603,6 @@ h2.coloring span:nth-of-type(6):before {
   text-decoration: none;
   border-bottom: none;
 }
-.row .items .item.active .fav,
-.row .items .item:hover .fav {
-  float: left;
-  margin-top: 5px;
-  background-position: right -164px;
-}
 .row .items .item.active .fav:hover,
 .row .items .item:hover .fav:hover {
   background-position: right -123px;
@@ -615,12 +610,6 @@ h2.coloring span:nth-of-type(6):before {
 .row .items .item.active .fav:active,
 .row .items .item:hover .fav:active {
   background-position: right -82px;
-}
-.row .items .item.active .cart,
-.row .items .item:hover .cart {
-  float: right;
-  margin-top: 8px;
-  background-position: left -164px;
 }
 .row .items .item.active .cart:hover,
 .row .items .item:hover .cart:hover {
@@ -635,11 +624,16 @@ h2.coloring span:nth-of-type(6):before {
   padding: 0 31px;
 }
 .row .items .inner .fav {
-  display: none;
+  float: left;
+  margin-top: 5px;
+  background-position: right -164px;
   margin-right: 0;
 }
 .row .items .inner .cart {
-  display: none;
+  float: right;
+  margin-top: 8px;
+  background-position: left -164px;
+  border: none;
 }
 .row .items .inner .old-price {
   font-size: 18px;
@@ -743,8 +737,26 @@ h2.coloring span:nth-of-type(6):before {
 .row.catalog ul {
   margin-bottom: 60px;
 }
+.row.offers .container {
+  padding: 0;
+}
+.row.offers .container .col-xs-4 {
+  padding: 0;
+  margin-right: 30px;
+}
+.row.offers .container .col-xs-4:nth-of-type(3n) {
+  margin-right: 0;
+}
+.row.offers a.btn {
+  margin-bottom: 102px;
+}
 .row.offers h2 {
+  text-align: center;
   margin-top: 90px;
+}
+.row.offers h2 + p {
+  font-size: 16px;
+  text-align: center;
 }
 .row.map {
   background: #f5f5f5;

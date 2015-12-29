@@ -136,8 +136,10 @@ h2 {
 
 .row {
 	.container {
-		max-width: 1230px;
+		//max-width: 1230px;
+		max-width: 1194px;
 		width: 100%;
+		background: #f1f1f1;
 
 		a:not(.custom) {
 			font-size: 16px;
@@ -600,13 +602,26 @@ h2 {
 			}
 		}
 		.item {
-			max-width: 378px;
-			width: 100%;
+			//max-width: 390px; //378
+
+			//@media all and (max-width: 1250px) {
+			//	max-width: 378px;
+			//}
+			//@media all and (max-width: 1210px) {
+			//	max-width: 368px;
+			//}
+			//
+			//@media all and (min-width: 1251px) {
+			//	max-width: 390px;
+			//}
+			//width: 100%;
+			width: ~"calc(33.33333333% - 20px)";
 			position: relative;
 			//background: #f1f1f1;
 			text-align: center;
 			min-height: 305px;
 			display: inline;
+			margin-bottom: 62px;
 			img {
 				margin-bottom: 23px;
 				width: ~"calc(100% - 2px)";
@@ -629,12 +644,13 @@ h2 {
 			.wrap {
 				position: absolute;
 				background: white;
-				z-index: 1;
+				//z-index: 1;
 				border: 1px solid transparent;
 			}
 			&.active,
 			&:hover {
 				.wrap {
+					z-index: 1;
 					border: 1px solid #d9d9d9;
 					-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 					-moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -652,9 +668,7 @@ h2 {
 					border-bottom: none;
 				}
 				.fav {
-					float: left;
-					margin-top: 5px;
-					background-position: right -164px;
+
 					&:hover {
 						background-position: right -123px;
 					}
@@ -663,9 +677,7 @@ h2 {
 					}
 				}
 				.cart {
-					float: right;
-					margin-top: 8px;
-					background-position: left -164px;
+
 					&:hover {
 						background-position: left -82px;
 					}
@@ -684,11 +696,18 @@ h2 {
 			padding: 0 31px;
 			//position: absolute;
 			.fav {
-				display: none;
+				float: left;
+				margin-top: 5px;
+				background-position: right -164px;
+				//display: none;
 				margin-right: 0;
 			}
 			.cart {
-				display: none;
+				//display: none;
+				float: right;
+				margin-top: 8px;
+				background-position: left -164px;
+				border: none;
 			}
 			.old-price {
 				font-size: 18px;
@@ -795,8 +814,26 @@ h2 {
 	}
 
 	&.offers {
+		.container {
+			padding: 0;
+			.col-xs-4 {
+				padding: 0;
+				margin-right: 30px;
+				&:nth-of-type(3n) {
+					margin-right: 0;
+				}
+			}
+		}
+		a.btn {
+			margin-bottom: 102px;
+		}
 		h2 {
+			text-align: center;
 			margin-top: 90px;
+			& + p {
+				font-size: 16px;
+				text-align: center;
+			}
 		}
 	}
 

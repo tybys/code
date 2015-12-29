@@ -39,12 +39,39 @@ app.get('/drivers', function(req, res) {
 	});
 });
 
-app.get('/drivers/del/:id', function (req, res, err) {
+app.get('/drivers/edit/:id', function (req, res, err) {
 	var id = req.params.id;
 	var bdRun = bd();
 	var backURL = req.header('Referer') || '/';
 
-	console.log(req.params)
+
+	//bdRun.query('UPDATE driver SET name="'+req.body.name_upd+'" WHERE id="'+id+'"'), function (err, results, fields) {
+	//	if (err) {
+	//		throw err;
+	//	} else {
+	//		res.redirect(backURL);
+	//
+	//	}
+	//}
+
+	bdRun.query('SELECT * FROM driver WHERE id = ?', [id], function (err, rows) {
+		if (err) throw err;
+		res.render('pages/edit', {data: rows});
+	});
+});
+
+app.post('/drivers/edit/:id', function (req, res, err) {
+	var id = params.id;
+	var bdRun = bd();
+	var backURL = req.header('Referer') || '/';
+
+	console.log(req.body.name_upd)
+});
+
+app.get('/drivers/del/:id', function (req, res, err) {
+	var id = req.params.id;
+	var bdRun = bd();
+	var backURL = req.header('Referer') || '/';
 
 	bdRun.query("DELETE FROM driver WHERE id = ? ", [id], function (err, rows) {
 		if (err) {
@@ -59,9 +86,6 @@ app.get('transport', function(req, res) {
 	res.render('pages/transport');
 });
 
-
-
-
 function bd() {
 	var connection = mysql.createConnection({
 		user: 'root',
@@ -72,7 +96,6 @@ function bd() {
 
 	return connection;
 }
-
 
 app.post('/drivers/add_driver', function (req, res, next) {
 	var bdRun = bd();
