@@ -44,16 +44,6 @@ app.get('/drivers/edit/:id', function (req, res, err) {
 	var bdRun = bd();
 	var backURL = req.header('Referer') || '/';
 
-
-	//bdRun.query('UPDATE driver SET name="'+req.body.name_upd+'" WHERE id="'+id+'"'), function (err, results, fields) {
-	//	if (err) {
-	//		throw err;
-	//	} else {
-	//		res.redirect(backURL);
-	//
-	//	}
-	//}
-
 	bdRun.query('SELECT * FROM driver WHERE id = ?', [id], function (err, rows) {
 		if (err) throw err;
 		res.render('pages/edit', {data: rows});
@@ -61,11 +51,19 @@ app.get('/drivers/edit/:id', function (req, res, err) {
 });
 
 app.post('/drivers/edit/:id', function (req, res, err) {
-	var id = params.id;
+	var id = req.params.id;
 	var bdRun = bd();
 	var backURL = req.header('Referer') || '/';
 
-	console.log(req.body.name_upd)
+	bdRun.query('UPDATE driver SET ? WHERE ?', [{Name: req.body.name_upd}, {Id: id}]), function (err, results, fields) {
+		if (err) throw err;
+		else {
+			//
+			// res.setHeader("Content-Type", "text/html");
+			//res.writeHead(200, { 'Content-Length': body.length, 'Content-Type': 'text/plain' });
+			res.sendStatus(302);
+		}
+	}
 });
 
 app.get('/drivers/del/:id', function (req, res, err) {

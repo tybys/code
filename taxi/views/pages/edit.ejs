@@ -1,4 +1,6 @@
-<form method="post" action="/drivers/edit/<%= data[0].id %>">
+<%include ../layout.ejs %>
+
+<form method="post" action="/drivers/edit/<%= data[0].id %>" name="edit_driver">
 <% for(var i=0; i<data.length;i++) { %>
 	<input type="text" name="name_upd" value="<%= data[i].name %>">
 	<%= data[i].surname %>
@@ -18,3 +20,5 @@
 <% } %>
 	<input type="submit" value="ok">
 </form>
+
+<%include ../partials/foot.ejs %>
