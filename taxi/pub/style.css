@@ -5,12 +5,15 @@ span {
 	display: block;
 }
 
-[name="birthdate_upd"] {  width: 5em;  }
-[name="open_category_upd"] {  width: 5em;  }
-[name="license_upd"] {  width: 5em;  }
+[name="driver_view"] [type="text"] {
+	/*width: 100%;*/
+}
 
-[name="id_upd"] {  width: 2em;  }
-[name="phone_number_upd"] {  width: 6em;  }
-[name="status_upd"] {  width: 5em;  }
-[name="bus_binding_upd"] {  width: 3em;  }
-[name="company_id_upd"] {  width: 3em;  }
+[name="edit_transport"]  input[type="text"],
+[name="edit_driver"]  input[type="text"]{
+	width: 100%;
+}
+[name="edit_transport"] td,
+[name="edit_driver"] td {
+	width: 10%;
+}
