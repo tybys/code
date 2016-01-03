@@ -1,7 +1,8 @@
 exports.list = function(req, res) {
 	req.getConnection(function (err, connection) {
 		//connection.query('SELECT * FROM driver', function (err, results, fields) {
-		connection.query('SELECT * FROM driver LEFT JOIN transport ON driver.d_id WHERE transport.driver_binding = driver.d_id', function (err, results, fields) {
+		//connection.query('SELECT * FROM driver LEFT JOIN transport ON driver.d_id WHERE transport.driver_binding = driver.d_id', function (err, results, fields) {
+		connection.query('SELECT * FROM driver LEFT JOIN transport ON transport.driver_binding = driver.d_id', function (err, results, fields) {
 			if (err) throw err;
 			else {
 				//console.log(results[1])
@@ -46,10 +47,19 @@ exports.save = function (req, res, err) {
 		company_id: input.company_id
 	};
 
+	var upload  = multer({storage: storage}).single('photo');
+	upload(req, res, function (err) {
+		if (err) throw err
+		else {
+			//res.end('f u')
+		}
+	});
+
 	req.getConnection(function(err, connection) {
 		connection.query("UPDATE driver SET ? WHERE d_id = ?", [data, id], function (err, results, fields) {
 			if (err) throw err;
 			else {
+				console.log(data)
 				res.redirect('/drivers')
 			}
 		});

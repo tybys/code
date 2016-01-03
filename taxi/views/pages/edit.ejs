@@ -1,7 +1,7 @@
 <%include ../layout.ejs %>
 
 <% if (data2 == 'driver') { %>
-<form method="post" action="/drivers/edit/<%= data[0].id %>" name="edit_driver">
+<form method="post" action="/drivers/edit/<%= data[0].id %>" name="edit_driver" enctype="multipart/form-data">
 	<table border="1" width="100%">
 		<tr>
 			<th>name</th>
@@ -27,7 +27,7 @@
 			<td><input type="text" name="birthdate" id="" value="<%= data[i].birthdate %>"></td>
 			<td><input type="text" name="open_category" id="" value="<%= data[i].open_category %>"></td>
 			<td><input type="text" name="license" id="" value="<%= data[i].license %>"></td>
-			<td><input type="text" name="photo" id="" value="<%= data[i].photo %>"></td>
+			<td><input type="file" name="photo" id=""></td>
 			<td><input type="text" name="id" id="" value="<%= data[i].d_id %>"></td>
 			<td><input type="text" name="phone_number" id="" value="<%= data[i].phone_number %>"></td>
 			<td><textarea name="comment" id="" cols="30" rows="1" value="<%= data[i].comment %>"></textarea></td>
