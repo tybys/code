@@ -3,6 +3,8 @@ var app = express();
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
 multer = require('multer');
+var multipart = require('connect-multiparty');
+var multipartMiddleware = multipart();
 //var routes = require('./routes');
 var driver = require('./routes/driver');
 var transport = require('./routes/transport');
@@ -13,12 +15,13 @@ storage = multer.diskStorage({
 	},
 	filename: function(req, file, callback) {
 		//callback(null, file.fieldname+ - +Date.now());
-		console.log(file)
 		callback(null, file.originalname);
 	}
 });
 
 
+app.use(multipart());
+//app.use(bodyParser({ keepExtensions: true, uploadDir: __dirname + '/public/photos' }));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/pub'));
@@ -33,7 +36,7 @@ app.set('view engine', 'ejs');
 app.locals.title;
 
 app.get('/', function(req, res) {
-	res.render('pages/index');
+	res.render('pages/index', {title: 'main'});
 });
 
 

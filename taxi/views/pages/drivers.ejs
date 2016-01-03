@@ -74,68 +74,18 @@
 </table>
 
 <form name="add_driver" action="/drivers/add_driver" method="post" enctype="multipart/form-data">
-<label>
-		<span>name</span>
-		<input type="text" name="name"/>
-	</label>
-
-
-	<label>
-		<span>surname</span>
-		<input type="text" name="surname"/>
-	</label>
-
-	<label>
-		<span>patronymic</span>
-		<input type="text" name="patronymic"/>
-	</label>
-
-	<label>
-		<span>birthdate</span>
-		<input type="text" name="birthdate"/>
-	</label>
-
-	<label>
-		<span>open category</span>
-		<input type="text" name="open_category"/>
-	</label>
-
-	<label>
-		<span>License</span>
-		<input type="text" name="license"/>
-	</label>
-
-	<label>
-		<span>Photo</span>
-		<input type="file" name="photo" />
-	</label>
-
-	<label>
-		<span>Phone</span>
-		<input type="text" name="phone_number"/>
-	</label>
-
-	<label>
-		<span>Comment</span>
-		<textarea name="comment"></textarea>
-	</label>
-
-	<label>
-		<span>Status</span>
-		<input type="text" name="status"/>
-	</label>
-
-	<label>
-		<span>Bus binding</span>
-		<input type="text" name="bus_binding"/>
-	</label>
-
-	<label>
-		<span>Company ID</span>
-		<input type="text" name="company_id"/>
-	</label>
-
-
+	<label><input type="text" name="name" placeholder="name"/></label>
+	<label><input type="text" name="surname" placeholder="surname"/></label>
+	<label><input type="text" name="patronymic" placeholder="patronymic"/></label>
+	<label><input type="text" name="birthdate" placeholder="birthdate"/></label>
+	<label><input type="text" name="open_category" placeholder="open category"/></label>
+	<label><input type="text" name="license" placeholder="license"/></label>
+	<label><input type="file" name="photo" placeholder="photo"/></label>
+	<label><input type="text" name="phone_number" placeholder="phone"/></label>
+	<label><textarea name="comment"></textarea></label>
+	<label><input type="text" name="status" placeholder="status"/></label>
+	<label><input type="text" name="bus_binding" placeholder="bus binding"/></label>
+	<label><input type="text" name="company_id" placeholder="company id"/></label>
 	<input type="submit" value="submit" />
 </form>
 

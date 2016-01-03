@@ -5,7 +5,6 @@ exports.list = function(req, res) {
 		connection.query('SELECT * FROM driver LEFT JOIN transport ON transport.driver_binding = driver.d_id', function (err, results, fields) {
 			if (err) throw err;
 			else {
-				//console.log(results[1])
 				res.render('pages/drivers', {data: results, title: 'list driver'});
 			}
 		});
@@ -59,7 +58,6 @@ exports.save = function (req, res, err) {
 		connection.query("UPDATE driver SET ? WHERE d_id = ?", [data, id], function (err, results, fields) {
 			if (err) throw err;
 			else {
-				console.log(data)
 				res.redirect('/drivers')
 			}
 		});
@@ -81,23 +79,41 @@ exports.delete = function (req, res, err) {
 }; // delete driver
 
 exports.add = function (req, res, next) {
+	var input = JSON.parse(JSON.stringify(req.body));
 	var backURL = req.header('Referer') || '/';
 	var upload  = multer({storage: storage}).single('photo');
-	upload(req, res, function (err) {
-		if (err) throw err
-		else {
-			//res.end('f u')
-		}
-	});
+	//upload(req, res, function (err) {
+	//	if (err) throw err
+	//	else {
+	//
+	//	}
+	//});
+	var data = {
+		name: input.name,
+		surname: input.surname,
+		patronymic: input.patronymic,
+		birthdate: input.birthdate,
+		open_category: input.open_category,
+		license: input.license,
+		photo: req.files.photo.originalFilename,
+		phone_number: input.phone_number,
+		comment: input.comment,
+		status: input.status,
+		bus_binding: input.bus_binding,
+		company_id: input.company_id
+	};
+	//upload();
+
+
+
 
 	req.getConnection(function (err, connection) {
-		connection.query('INSERT INTO driver (name, surname, patronymic, birthdate, open_category, license, photo, phone_number, comment, status, bus_binding, company_id) values ' +
-				'("'+req.body.name+'", "'+req.body.surname+'", "'+req.body.patronymic+'", ' +
-				'"'+req.body.birthdate+'", "'+req.body.open_category+'", "'+req.body.license+'", ' +
-				'"'+req.body.photo+'", "'+req.body.phone_number+'", "'+req.body.comment+'", ' +
-				'"'+req.body.status+'", "'+req.body.bus_binding+'", "'+req.body.company_id+'")', function (err, results, fields) {
+		connection.query('INSERT INTO driver (name, surname, patronymic, birthdate, open_category, license, photo, phone_number, comment, status, bus_binding, company_id) values ("'+req.body.name+'", "'+req.body.surname+'", "'+req.body.patronymic+'", "'+req.body.birthdate+'", "'+req.body.open_category+'", "'+req.body.license+'", "'+req.files.photo.originalFilename+'", "'+req.body.phone_number+'", "'+req.body.comment+'", "'+req.body.status+'", "'+req.body.bus_binding+'", "'+req.body.company_id+'")', function (err, results, fields) {
+		//connection.query('INSERT INTO driver values ("'+[data]+'") ', function (err, results, fields) {
+			console.log('fields '+err)
 			if (err) throw err;
 			else {
+				console.log(req)
 				res.redirect(backURL);
 			}
 		});
