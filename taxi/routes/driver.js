@@ -4,7 +4,7 @@ exports.list = function(req, res) {
 		connection.query('SELECT * FROM driver LEFT JOIN transport ON driver.d_id WHERE transport.driver_binding = driver.d_id', function (err, results, fields) {
 			if (err) throw err;
 			else {
-				console.log(results[1])
+				//console.log(results[1])
 				res.render('pages/drivers', {data: results, title: 'list driver'});
 			}
 		});
@@ -20,7 +20,7 @@ exports.edit = function (req, res, err) {
 		connection.query('SELECT * FROM driver WHERE d_id = ?', [id], function (err, rows) {
 			if (err) throw err;
 			else{
-				console.log(id, rows)
+				//console.log(id, rows)
 				res.render('pages/edit', {data: rows, data2: data2, title: 'edit driver'});
 			}
 		});
@@ -72,6 +72,13 @@ exports.delete = function (req, res, err) {
 
 exports.add = function (req, res, next) {
 	var backURL = req.header('Referer') || '/';
+	var upload  = multer({storage: storage}).single('photo');
+	upload(req, res, function (err) {
+		if (err) throw err
+		else {
+			//res.end('f u')
+		}
+	});
 
 	req.getConnection(function (err, connection) {
 		connection.query('INSERT INTO driver (name, surname, patronymic, birthdate, open_category, license, photo, phone_number, comment, status, bus_binding, company_id) values ' +

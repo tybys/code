@@ -45,7 +45,7 @@
 			<%= data[i].license %>
 		</td>
 		<td>
-			<%= data[i].photo %>
+			<img src="/<%= data[i].photo %>" />
 		</td>
 		<td>
 			<%= data[i].d_id %>
@@ -73,7 +73,7 @@
 	<% } %>
 </table>
 
-<form name="add_driver" action="/drivers/add_driver" method="post">
+<form name="add_driver" action="/drivers/add_driver" method="post" enctype="multipart/form-data">
 <label>
 		<span>name</span>
 		<input type="text" name="name"/>
@@ -107,7 +107,7 @@
 
 	<label>
 		<span>Photo</span>
-		<input type="text" name="photo" />
+		<input type="file" name="photo" />
 	</label>
 
 	<label>

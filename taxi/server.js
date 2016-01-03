@@ -2,14 +2,27 @@ var express = require('express');
 var app = express();
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
+multer = require('multer');
 //var routes = require('./routes');
 var driver = require('./routes/driver');
 var transport = require('./routes/transport');
 var connection  = require('express-myconnection');
+storage = multer.diskStorage({
+	destination: function (req, file, callback) {
+		callback(null, './uploads');
+	},
+	filename: function(req, file, callback) {
+		//callback(null, file.fieldname+ - +Date.now());
+		console.log(file)
+		callback(null, file.originalname);
+	}
+});
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/pub'));
+app.use(express.static(__dirname + '/uploads'));
 app.use(connection(mysql, {
 	user: 'root',
 	password: '',
