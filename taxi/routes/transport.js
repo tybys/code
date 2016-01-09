@@ -1,7 +1,8 @@
 exports.list = function (req, res, err) {
 	req.getConnection(function (err, connection) {
 		//connection.query('SELECT * FROM transport', function (err, results, fields) {
-		connection.query('SELECT * FROM transport LEFT JOIN driver ON transport.t_id WHERE driver.bus_binding = transport.t_id', function (err, results, fields) {
+						/*SELECT * FROM driver LEFT JOIN transport ON transport.driver_binding = driver.d_id*/
+		connection.query('SELECT * FROM transport LEFT JOIN driver ON transport.t_id = driver.bus_binding', function (err, results, fields) {
 			if (err) throw err;
 			else {
 				res.render('pages/transport', {data: results, title: 'list transport'});
@@ -25,7 +26,7 @@ exports.edit = function (req, res, err) {
 
 exports.save = function (req, res, err) {
 	var input = JSON.parse(JSON.stringify(req.body));
-	var id = req.params.id;
+
 	var backURL = req.header('Referer') || '/';
 	var data = {
 		type: input.type,
@@ -39,11 +40,13 @@ exports.save = function (req, res, err) {
 		driver_binding: input.driver_binding,
 		company_id: input.company_id
 	};
+	var id = req.body.id;
 
 	req.getConnection(function (err, connection) {
 		connection.query("UPDATE transport SET ? WHERE t_id = ?", [data, id], function (err, results, fields) {
 			if (err) throw err;
 			else {
+				console.log(data)
 				res.redirect('/transport')
 			}
 		});

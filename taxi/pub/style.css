@@ -1,3 +1,7 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 label {
 	display: block;
 }
@@ -16,4 +20,22 @@ span {
 [name="edit_transport"] td,
 [name="edit_driver"] td {
 	width: 10%;
+}
+
+[name="search"] {
+	margin-bottom: 25px;
+}
+[name="search"] label {
+	display: inline;
+	font-size: 12px;
+}
+
+[name="search"] label:first-of-type [type="radio"] {
+	margin-left: 0;
+}
+
+[name="search"] [type="radio"] {
+	vertical-align: middle;
+	margin: 0;
+	margin-left: 15px;
 }

@@ -1,29 +1,33 @@
-var express = require('express');
-var app = express();
-var mysql = require('mysql');
-var bodyParser = require('body-parser');
+var express = require('express')
+var	app = express()
+var fs = require('fs')
+var path = require('path')
+
+
+var mysql = require('mysql')
+var connection  = require('express-myconnection')
+
+var bodyParser = require('body-parser')
+
+var driver = require('./routes/driver')
+var transport = require('./routes/transport')
+
 multer = require('multer');
-var multipart = require('connect-multiparty');
-var multipartMiddleware = multipart();
-//var routes = require('./routes');
-var driver = require('./routes/driver');
-var transport = require('./routes/transport');
-var connection  = require('express-myconnection');
 storage = multer.diskStorage({
 	destination: function (req, file, callback) {
 		callback(null, './uploads');
 	},
-	filename: function(req, file, callback) {
-		//callback(null, file.fieldname+ - +Date.now());
-		callback(null, file.originalname);
+	filename: function (req, file, callback) {
+		callback(null, file.originalname)
 	}
 });
+upload = multer({
+	storage: storage
+});
 
-
-app.use(multipart());
-//app.use(bodyParser({ keepExtensions: true, uploadDir: __dirname + '/public/photos' }));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
 app.use(express.static(__dirname + '/pub'));
 app.use(express.static(__dirname + '/uploads'));
 app.use(connection(mysql, {
@@ -33,19 +37,40 @@ app.use(connection(mysql, {
 	database: 'taxi'
 }, 'request'));
 app.set('view engine', 'ejs');
-app.locals.title;
 
 app.get('/', function(req, res) {
 	res.render('pages/index', {title: 'main'});
 });
 
+// SEARCH
+app.get('/search', function (req, res) {
+	var search = req.query;
+	/**
+	 *
+	 * 	req.query
+	 * 	{name}
+	 *
+	 */
+
+	console.log(req.query.type)
+	var query_type = req.query.type;
+	var query_type_id = req.query.search_field;
+	var t = query_type == 'driver' ? 'driver WHERE d_id = '+query_type_id+'' : 'transport WHERE t_id = '+query_type_id+'';
+
+	req.getConnection(function (err, connection) {
+		connection.query('SELECT * FROM '+t+'', function (err, results, fields) {
+			if (err) throw err;
+			res.render('pages/search', {data: results, title: 'search'});
+		});
+	});
+});
 
 // DRIVER
 app.get('/drivers', driver.list);
 app.get('/drivers/edit/:id', driver.edit);
-app.post('/drivers/edit/:id', driver.save);
+app.post('/drivers/edit/:id', upload.single('photo'), driver.save);
 app.get('/drivers/del/:id', driver.delete);
-app.post('/drivers/add_driver', driver.add);
+app.post('/drivers/add_driver', upload.single('photo'),  driver.add);
 // END DRIVER
 
 // TRANSPORT
