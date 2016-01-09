@@ -1,0 +1,63 @@
+<%include ../layout.ejs %>
+
+<!--<a href="#">create driver</a>-->
+<table border="1" width="100%">
+	<tr>
+		<th>name</th>
+		<th>surname</th>
+		<th>patronymic</th>
+		<th>birthdate</th>
+		<th>open_category</th>
+		<th>license</th>
+		<th>photo</th>
+		<th>id</th>
+		<th>phone_number</th>
+		<th>comment</th>
+		<th>status</th>
+		<th>bus binding</th>
+		<th>company_id</th>
+		<th>update</th>
+		<th>delete</th>
+	</tr>
+	<% for(var i=0; i<data.length;i++) { %>
+	<tr class="">
+		<td><%= data[i].name %></td>
+		<td><%= data[i].surname %></td>
+		<td><%= data[i].patronymic %></td>
+		<td><%= data[i].birthdate %></td>
+		<td><%= data[i].open_category %></td>
+		<td><%= data[i].license %></td>
+		<td><img width="50" src="/<%= data[i].photo %>" /></td>
+		<td><%= data[i].d_id %></td>
+		<td><%= data[i].phone_number %></td>
+		<td><%= data[i].comment %></td>
+		<td><%= data[i].status %></td>
+		<td>
+			<a href="/transport/edit/<%= data[i].bus_binding %>">
+				<%= data[i].brand %>
+			</a>
+		</td>
+		<td><%= data[i].company_id %></td>
+		<td><a href="drivers/edit/<%= data[i].d_id %>">upd</a></td>
+		<td><a href="drivers/del/<%= data[i].d_id %>">del</a></td>
+	</tr>
+	<% } %>
+</table>
+
+<form name="add_driver" action="/drivers/add_driver" method="post" enctype="multipart/form-data">
+	<label><input type="text" name="name" placeholder="name"/></label>
+	<label><input type="text" name="surname" placeholder="surname"/></label>
+	<label><input type="text" name="patronymic" placeholder="patronymic"/></label>
+	<label><input type="text" name="birthdate" placeholder="birthdate"/></label>
+	<label><input type="text" name="open_category" placeholder="open category"/></label>
+	<label><input type="text" name="license" placeholder="license"/></label>
+	<label><input type="file" name="photo" placeholder="photo"/></label>
+	<label><input type="text" name="phone_number" placeholder="phone"/></label>
+	<label><textarea name="comment"></textarea></label>
+	<label><input type="text" name="status" placeholder="status"/></label>
+	<label><input type="text" name="bus_binding" placeholder="bus binding"/></label>
+	<label><input type="text" name="company_id" placeholder="company id"/></label>
+	<input type="submit" value="submit" />
+</form>
+
+<%include ../partials/foot.ejs %>

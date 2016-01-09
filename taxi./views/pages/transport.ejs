@@ -1,0 +1,57 @@
+<%include ../layout.ejs %>
+
+<table border="1" width="100%">
+	<tr>
+		<th>type</th>
+		<th>brand</th>
+		<th>model</th>
+		<th>equipment</th>
+		<th>seats</th>
+		<th>class</th>
+		<th>id</th>
+		<th>government_number</th>
+		<th>status</th>
+		<th>driver_binding</th>
+		<th>company_id</th>
+		<th></th>
+		<th></th>
+	</tr>
+<% for(var i=0; i<data.length;i++) { %>
+	<tr>
+		<td><%= data[i].type %></td>
+		<td><%= data[i].brand %></td>
+		<td><%= data[i].model %></td>
+		<td><%= data[i].equipment %></td>
+		<td><%= data[i].seats %></td>
+		<td><%= data[i].class %></td>
+		<td><%= data[i].t_id %></td>
+		<td><%= data[i].government_number %></td>
+		<td><%= data[i].status %></td>
+		<td>
+			<a href="/drivers/edit/<%= data[i].driver_binding %>">
+
+				<%= data[i].name +' ' + data[i].surname +' ' + data[i].patronymic %>
+			</a>
+		</td>
+		<td><%= data[i].company_id %></td>
+		<td><a href="transport/edit/<%= data[i].t_id %>">upd</a></td>
+		<td><a href="transport/del/<%= data[i].t_id %>">del</a></td>
+	</tr>
+<% } %>
+</table>
+
+<form name="add_transport" action="/transport/add_transport" method="post">
+	<label><input type="text" name="mtype" placeholder="type" /></label>
+	<label><input type="text" name="mbrand" placeholder="brand" /></label>
+	<label><input type="text" name="mmodel" placeholder="model" /></label>
+	<label><input type="text" name="mequipment" placeholder="equipment" /></label>
+	<label><input type="text" name="mseats" placeholder="seats" /></label>
+	<label><input type="text" name="mclass" placeholder="class" /></label>
+	<label><input type="text" name="mgovernment_number" placeholder="gov number" /></label>
+	<label><input type="text" name="mstatus" placeholder="status" /></label>
+	<label><input type="text" name="mdriver_binding" placeholder="driver bind" /></label>
+	<label><input type="text" name="mcompany_id" placeholder="company id" /></label>
+	<input type="submit" value="submit">
+</form>
+
+<%include ../partials/foot.ejs %>

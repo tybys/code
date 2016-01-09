@@ -1,0 +1,82 @@
+<%include ../layout.ejs %>
+
+<% if (data2 == 'driver') { %>
+<form method="post" action="/drivers/edit/<%= data[0].id %>" name="edit_driver" enctype="multipart/form-data">
+	<table border="1" width="100%">
+		<tr>
+			<th>name</th>
+			<th>surname</th>
+			<th>patronymic</th>
+			<th>birthdate</th>
+			<th>open_category</th>
+			<th>license</th>
+			<th>photo</th>
+			<th>id</th>
+			<th>phone_number</th>
+			<th>comment</th>
+			<th>status</th>
+			<th>bus_binding</th>
+			<th>company_id</th>
+			<th></th>
+		</tr>
+	<% for(var i=0; i<data.length;i++) { %>
+		<tr>
+			<td><input type="text" name="name" value="<%= data[i].name %>"></td>
+			<td><input type="text" name="surname" id="" value="<%= data[i].surname %>"></td>
+			<td><input type="text" name="patronymic" id="" value="<%= data[i].patronymic %>"></td>
+			<td><input type="text" name="birthdate" id="" value="<%= data[i].birthdate %>"></td>
+			<td><input type="text" name="open_category" id="" value="<%= data[i].open_category %>"></td>
+			<td><input type="text" name="license" id="" value="<%= data[i].license %>"></td>
+			<td><input type="file" name="photo" id=""></td>
+			<td><input type="text" name="id" id="" value="<%= data[i].d_id %>"></td>
+			<td><input type="text" name="phone_number" id="" value="<%= data[i].phone_number %>"></td>
+			<td><textarea name="comment" id="" cols="30" rows="1" value="<%= data[i].comment %>"></textarea></td>
+			<td><input type="text" name="status" id="" value="<%= data[i].status %>"></td>
+			<td><input type="text" name="bus_binding" id="" value="<%= data[i].bus_binding %>"></td>
+			<td><input type="text" name="company_id" id="" value="<%= data[i].company_id %>"></td>
+
+		</tr>
+	<% } %>
+		<td><input type="submit" value="ok"></td>
+	</table>
+</form>
+<% } %>
+
+<% if (data2 == 'transport') { %>
+<form method="post" action="/transport/edit/<%= data.id %>" name="edit_transport">
+	<table border="1" width="100%">
+		<tr>
+			<th>type</th>
+			<th>brand</th>
+			<th>model</th>
+			<th>equipment</th>
+			<th>seats</th>
+			<th>class</th>
+			<th>id</th>
+			<th>government_number</th>
+			<th>status</th>
+			<th>driver_binding</th>
+			<th>company_id</th>
+			<th></th>
+		</tr>
+	<% for(var i=0; i<data.length;i++) { %>
+		<tr>
+			<td><input type="text" name="type" value="<%= data[i].type %>"></td>
+			<td><input type="text" name="brand" id="" value="<%= data[i].brand %>"></td>
+			<td><input type="text" name="model" id="" value="<%= data[i].model %>"></td>
+			<td><input type="text" name="equipment" id="" value="<%= data[i].equipment %>"></td>
+			<td><input type="text" name="seats" id="" value="<%= data[i].seats %>"></td>
+			<td><input type="text" name="class" id="" value="<%= data[i].class %>"></td>
+			<td><input type="text" name="id" id="" value="<%= data[i].t_id %>"></td>
+			<td><input type="text" name="government_number" id="" value="<%= data[i].government_number %>"></td>
+			<td><input type="text" name="status" id="" value="<%= data[i].status %>"></td>
+			<td><input type="text" name="driver_binding" id="" value="<%= data[i].driver_binding %>"></td>
+			<td><input type="text" name="company_id" id="" value="<%= data[i].company_id %>"></td>
+		</tr>
+	<% } %>
+		<td><input type="submit" value="ok"></td>
+	</table>
+</form>
+<% } %>
+
+<%include ../partials/foot.ejs %>
