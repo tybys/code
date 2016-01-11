@@ -3,7 +3,30 @@
   line-height: 23px;
   padding: 5px 7.5px;
 }
-form .form-control {
+.r-wrap {
+  margin-bottom: 5px;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.r-wrap + p {
+  margin-top: 15px;
+}
+.r-wrap span {
+  display: inline-block;
+}
+.r-wrap span + div {
+  font-size: 1.5em !important;
+  display: inline-block;
+}
+.zvezdi {
+  margin-top: 45px;
+}
+form textarea {
+  resize: vertical;
+  margin-bottom: 10px;
+}
+form .form-control:not(textarea) {
   height: 41px;
 }
 form .btn {
@@ -20,6 +43,9 @@ form .btn {
 .list-inline a {
   font-size: 14px;
 }
+.rating-lg {
+  font-size: 2.91em !important;
+}
 .header .list-inline li {
   margin-top: 5px;
   font-size: 16px;
@@ -27,6 +53,12 @@ form .btn {
 .header .geo .chosen-container {
   float: right;
   margin-top: 5px;
+}
+.star-rating + a {
+  color: white;
+}
+.raiting-wrap a {
+  color: white;
 }
 .manufactory .well,
 .manufactory .media {
@@ -93,6 +125,9 @@ form .btn {
 .personal form {
   width: 80%;
 }
+.personal .col-md-9 .custom:last-of-type {
+  margin-top: 15px;
+}
 .chosen-container-single .chosen-single {
   height: 42px !important;
   line-height: 42px !important;
@@ -105,8 +140,8 @@ form .btn {
 }
 .retrieve {
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 100%;
+  top: 44px;
 }
 .payment .main {
   text-align: center;
@@ -149,7 +184,6 @@ table.troubles td {
   font-size: 12px;
 }
 .reviews h5 {
-  display: inline-block;
   margin-right: 10px;
 }
 .manufactory-item .media-body {

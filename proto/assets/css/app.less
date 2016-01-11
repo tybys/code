@@ -3,11 +3,36 @@
 	line-height: 23px;
 	padding: 5px 7.5px;
 }
+.r-wrap {
+  margin-bottom: 5px;
+  & + p {
+	margin-top: 15px;
+  }
+  span {
+	display: inline-block;
+	
+	& + div {
+	  font-size: 1.5em !important;
+	  display: inline-block;
+	}
+  }
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.zvezdi {
+  margin-top: 45px;
+}
 form {
-	.form-control {
+  textarea {
+	resize: vertical;
+	margin-bottom: 10px;
+  }
+	.form-control:not(textarea) {
 		height: 41px;
 	}
 	.btn {
+
 		margin-top: 0 !important;
 	}
 }
@@ -27,6 +52,9 @@ form {
 	font-size: 14px;
 }
 
+.rating-lg {
+  font-size: 2.91em !important;
+}
 .header {
 	.list-inline {
 		li {
@@ -34,6 +62,7 @@ form {
 			font-size: 16px;
 		}
 	}
+
 	.geo {
 		.chosen-container {
 			float: right;
@@ -42,6 +71,16 @@ form {
 	}
 }
 
+.star-rating {
+  & + a {
+	color: white;
+  }
+}
+.raiting-wrap {
+  a {
+	color: white;
+  }
+}
 //
 .manufactory {
 	.well,
@@ -61,6 +100,7 @@ form {
 			}
 		}
 	}
+
 	.raiting{
 		font-size:40px;
 		color: #fff;
@@ -120,6 +160,12 @@ form {
 	}
 }
 
+.personal .col-md-9 {
+  .custom:last-of-type {
+	margin-top:  15px;
+  }
+}
+
 .chosen-container-single .chosen-single {
 	height: 42px !important;
 	line-height: 42px !important;
@@ -132,8 +178,8 @@ form {
 }
 .retrieve {
 	position: absolute;
-	right: 0;
-	top: 0;
+	left: 100%;
+	top: 44px;
 }
 
 .payment {
@@ -190,7 +236,7 @@ table.troubles {
 }
 .reviews {
 	h5 {
-		display: inline-block;
+	//	display: inline-block;
 		margin-right: 10px;
 	}
 }
