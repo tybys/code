@@ -3,19 +3,35 @@
   <component name="LessManager">
     <option name="lessProfileMap">
       <map>
-        <entry key="0">
+        <entry key="1">
           <value>
             <LessProfile>
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="C:\Users\tybys\Documents\GitHub\proto\assets\css" />
+                    <option name="path" value="C:\Users\ktabasov.ROBOX\Documents\GitHub\proto\assets\css" />
                   </CssDirectory>
                 </list>
               </option>
-              <option name="id" value="0" />
-              <option name="lessDirPath" value="C:\Users\tybys\Documents\GitHub\proto\assets\css" />
-              <option name="name" value="fotomobis" />
+              <option name="id" value="1" />
+              <option name="lessDirPath" value="C:\Users\ktabasov.ROBOX\Documents\GitHub\proto\assets\css" />
+              <option name="name" value="foto" />
+            </LessProfile>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\ktabasov.ROBOX\Documents\GitHub\chat" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="2" />
+              <option name="lessDirPath" value="C:\Users\ktabasov.ROBOX\Documents\GitHub\chat" />
+              <option name="name" value="chat" />
             </LessProfile>
           </value>
         </entry>

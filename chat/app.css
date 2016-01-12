@@ -1,0 +1,133 @@
+* {
+  font-family: 'Roboto';
+}
+.chat {
+  width: 320px;
+  border-radius: 8px 8px 0 0;
+}
+.chat .head {
+  background: #6eb661;
+}
+.chat .actions {
+  background: #e2e2e1;
+}
+.chat .body {
+  background: white;
+}
+.chat .message-box {
+  background: white;
+}
+.head {
+  color: white;
+  position: relative;
+  height: 121px;
+  border-radius: 8px 8px 0 0;
+}
+.head .close {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+}
+.head .avatar {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 21px;
+  left: 39px;
+}
+.head .info {
+  position: absolute;
+  top: 37px;
+  left: 136px;
+}
+.head h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.head h2 + span {
+  font-weight: 100;
+  font-size: 13px;
+  display: inline-block;
+  line-height: 15px;
+}
+.actions {
+  height: 40px;
+}
+.actions .actions-panel {
+  width: 240px;
+  margin: 0 auto;
+  line-height: 40px;
+}
+.actions span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.controls {
+  display: none;
+}
+.message-box {
+  position: relative;
+  border-top: 1px solid #e2e2e1;
+}
+.message-box textarea {
+  width: calc(100% - 41px * 2);
+  border: none;
+  resize: none;
+  background: #f1f1f1;
+  padding: 0;
+}
+.sprite {
+  background: url('chat-sprite.png') no-repeat;
+}
+.close {
+  cursor: pointer;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: right bottom;
+}
+.send {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: -286px top;
+  position: absolute;
+  top: 15px;
+  right: 39px;
+}
+.voice {
+  cursor: pointer;
+  display: block;
+  width: 14px;
+  height: 17px;
+  background-position: -320px top;
+  margin-right: 11px;
+}
+.save {
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-position: -349px top;
+}
+.user {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3196db;
+  float: right;
+}
+.user:before {
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 17px;
+  background-image: url('chat-sprite.png');
+  background-position: -382px top;
+}
