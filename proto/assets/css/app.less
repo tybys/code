@@ -36,7 +36,43 @@ form {
 		margin-top: 0 !important;
 	}
 }
+.geo {
+	text-align: center;
+}
+.geo-geo {
+	padding-top: 12px;
+	position: relative;
+	display: inline-block;
+	&.active {
+		.regions {
+			position: absolute;
+			top: 56px;
+			left: -5px;
+			background: white;
+			display: block;
+			z-index: 5;
+			border: 1px solid;
+			padding: 10px 5px;
+			width: 200px;
+			text-align: left;
+			box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+			border-radius: 5px;
+			a {
+				display: block;
+			}
+			.serv {
+				a {
+					display: inline-block;
+					&:last-of-type {
+						float: right;
+					}
+				}
+				padding: 0 10px;
+			}
+		}
+	}
 
+}
 @media all and (min-width: 1200px) {
 	.container {
 		width: 1200px;
