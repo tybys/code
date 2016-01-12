@@ -1,0 +1,167 @@
+* {
+  font-family: 'Roboto';
+}
+
+@green: #6eb661;
+@lightGray: #e2e2e1;
+@blue: #3196db;
+
+.chat {
+  width: 320px;
+  border-radius: 8px 8px 0 0;
+
+  .head {
+    background: @green;
+  }
+  .actions {
+    background: @lightGray;
+  }
+  .body {
+    background: white;
+  }
+  .message-box {
+    background: white;
+  }
+}
+
+// the head
+.head {
+  color: white;
+  position: relative;
+  height: 121px;
+  border-radius: 8px 8px 0 0;
+  //padding: 21px 0 0 39px;
+  .close {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 21px;
+    left: 39px;
+    //margin: 21px 0 0 39px;
+  }
+  .info {
+    position: absolute;
+    top: 37px;
+    left: 136px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    & + span {
+      font-weight: 100;
+      font-size: 13px;
+      display: inline-block;
+      line-height: 15px;
+    }
+  }
+}
+
+// actions panel
+.actions {
+  height: 40px;
+  .actions-panel {
+    width: 240px;
+    margin: 0 auto;
+    line-height: 40px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+// controls
+.controls {
+  display: none;
+}
+
+// body
+.body {
+
+}
+
+//textarea::-webkit-input-placeholder { color: red; }
+// message-box
+.message-box {
+  position: relative;
+  border-top: 1px solid #e2e2e1;
+  textarea {
+    width: ~"calc(100% - 41px * 2)";
+    border: none;
+    resize: none;
+    background: #f1f1f1;
+    padding: 0;
+  }
+}
+
+.sprite {
+  background: url('chat-sprite.png') no-repeat;
+}
+// close
+.close {
+  cursor: pointer;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: right bottom;
+}
+// send
+.send {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: -286px top;
+
+  position: absolute;
+  top: 15px;
+  right: 39px;
+}
+
+// action panel
+// voice
+.voice {
+  cursor: pointer;
+  display: block;
+  width: 14px;
+  height: 17px;
+  background-position: -320px top;
+
+  margin-right: 11px;
+}
+
+// save
+.save {
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-position: -349px top;
+}
+
+// user
+.user {
+  font-size: 14px;
+  font-weight: 400;
+  color: @blue;
+  float: right;
+  &:before {
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 17px;
+    background-image: url('chat-sprite.png');
+    background-position: -382px top;
+  }
+}
