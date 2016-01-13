@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title></title>
+
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:700,300,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
+	<link href='css/app.css' rel='stylesheet' type='text/css'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row head">
+		<div class="container">
+			<div class="col-xs-4">
+				<div class="logotype">
+					<img src="images/logotype.png" alt="logotype" />
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="geo">
+					<span></span>
+					<a href="#">Москва</a>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<form role="search">
+					<input type="text" placeholder="Поиск" />
+					<input type="image" src="images/icons/search-ico.png" />
+				</form>
+			</div>
+			<div class="col-xs-3">
+				<div class="phones">
+					<a class="custom" href="tel:+74951330331">+7 495 133-0-331</a>
+					<span>Без выходных 9:00 - 22:00</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mega-menu">
+		<div class="container">
+			<div class="col-xs-12">
+				<div class="menu">
+					<a class="custom special-offer" href="#">Спецпредложения</a>
+					<ul>
+						<li class="drop">
+							<a class="custom" href="#">catalog</a>
+							<ul class="submenu">
+								<li>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+									<div class="col-xs-4">dick3</div>
+								</li>
+							</ul>
+						</li>
+						<li class="drop">
+							<a class="custom" href="#">Наш выставочный зал</a>
+							<ul class="submenu">
+								<li>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="drop">
+							<a class="custom" href="#">О компании</a>
+							<ul class="submenu">
+								<li>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+									<div class="col-xs-4">dick3</div>
+								</li>
+							</ul>
+						</li>
+						<li class="drop">
+							<a class="custom" href="#">Доставка и оплата</a>
+							<ul class="submenu">
+								<li>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="drop">
+							<a class="custom" href="#">Сотрудничество</a>
+							<ul class="submenu">
+								<li>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+									<div class="col-xs-4">
+										<h3>По виду мебели</h3>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+										<a href="#">Прямые диваны</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li><a class="custom" href="#">Контакты</a></li>
+					</ul>
+					<div class="personal-block">
+						<div class="fav sprite"></div>
+						<div class="cart sprite">
+							<span>9</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row page-head">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li class="active"><a href="#">Диваны</a></li>
+			</ol>
+			<h1>Избранные диваны</h1>
+		</div>
+	</div>
+
+	<div class="row banner">
+		<div class="container">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active" data-slide-number="0">
+						<img src="images/trash/slider1.jpg" alt="...">
+						<!--<div class="carousel-caption">-->
+						<!--...-->
+						<!--</div>-->
+					</div>
+					<div class="item" data-slide-number="1">
+						<img src="images/trash/slider1.jpg" alt="...">
+						<!--<div class="carousel-caption">-->
+						<!--...-->
+						<!--</div>-->
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+					<span class="control"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+					<span class="control"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<div class="col-md-12 hidden-sm hidden-xs" id="slider-thumbs">
+
+				<!-- thumb navigation carousel items -->
+				<ul class="list-inline">
+					<li><a id="carousel-selector-0" class="selected"><img src="http://placehold.it/112x52&text=one" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-1"><img src="http://placehold.it/112x52&text=two" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-2"><img src="http://placehold.it/112x52&text=three" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-3"><img src="http://placehold.it/112x52&text=four" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-4"><img src="http://placehold.it/112x52&text=five" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-5"><img src="http://placehold.it/112x52&text=six" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-6"><img src="http://placehold.it/112x52&text=seven" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-7"><img src="http://placehold.it/112x52&text=eight" class="img-responsive"></a></li>
+					<li><a id="carousel-selector-8"><img src="http://placehold.it/112x52&text=nein" class="img-responsive"></a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row item-details">
+		<div class="container">
+			<div class="col-xs-6">
+				<h4>Характеристики</h4>
+				<table>
+					<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+					<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+					<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+				</table>
+
+				<h4>Дополнительно</h4>
+				<form>
+					<label class="custom-control"><input type="checkbox" name="" id=""><span></span>Основание на блоке назависимых пружин "Pocket Spring" <i>+ 2500 руб</i></label>
+					<label class="custom-control"><input type="checkbox" name="" id=""><span></span>Изготовление в трех тканях <i>+ 2500 руб</i></label>
+				</form>
+
+				<h4>Описание</h4>
+				<p>Если перед вами стоит задача недорогокупить угловой диван, цена которого будет соотвествовать высокому качеству и элекантному дизайну, то модель мягкой мебели "Кебридж" - это именно то, что вы ищете. <a href="#">Подробнее</a></p>
+			</div>
+			<div class="col-xs-6">
+				<div class="item-panel">
+					<div class="top">
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<span class="fav sprite"></span>
+					</div>
+
+					<div class="prices">
+						<span class="price">13 990 р.</span>
+						<span class="old-price">14 990 р.</span>
+					</div>
+
+					<div class="controls">
+						<a href="#" class="to-cart">
+							<img src="images/icons/cart-btn.jpg" />
+							В корзину
+						</a>
+						<a href="#" class="fast-cart"><span>Купить в 1 клик</span></a>
+					</div>
+				</div>
+
+				<div class="chosen-cloth">
+					<h4>Выбранные ткани</h4>
+					<div>
+						<div class="wrap">
+							<span>Основная ткань</span>
+							<img src="images/trash/cloth.jpg" />
+							<div><a href="#">изменить</a></div>
+						</div>
+					</div>
+					<div>
+						<div class="wrap">
+							<span>Основная ткань</span>
+							<img src="images/trash/cloth.jpg" />
+							<div><a href="#">изменить</a></div>
+						</div>
+					</div>
+					<div>
+						<div class="wrap">
+							<span>Основная ткань</span>
+							<img src="images/trash/cloth.jpg" />
+							<div><a href="#">изменить</a></div>
+						</div>
+					</div>
+
+					<p>Вы можете подобрать из нашего ассортимента тканей любые коллекции и скобмнировать их на свой вкус, под свой интерьер.</p>
+					<a href="#" class="btn white-btn">Хочу диван в индивидуальном дизайне!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row offers">
+		<div class="container">
+			<h2 class="coloring">
+				<span>Мы</span>
+				<span>хотим</span>
+				<span>Вам</span>
+				<span>понравится</span>
+			</h2>
+			<p>диваны в готовом дизайне</p>
+
+			<div class="items offer">
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price green">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price green">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price green">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price green">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price green">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price green">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price blue">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price purple">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price orange">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="item col-xs-4">
+					<div class="wrap">
+						<img src="images/trash/offer1.jpg" />
+						<a class="" href="#">Димван Амстердам</a>
+						<div class="art">Артикул:&nbsp;<span>126098</span></div>
+						<div class="inner">
+							<span class="fav sprite"></span>
+							<span class="old-price">14 990 р.</span>
+							<span class="price lime">13 990 р.</span>
+							<a href="#" class="cart sprite"></a>
+							<table>
+								<tr><td><div><span><i>Габариты</i> <strong>2100х790х900мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Спальное место</i> <strong>1900х1450мм</strong></span></div></td></tr>
+								<tr><td><div><span><i>Механизм</i> <strong>еврокнижка</strong></span></div></td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="text-center"><a href="#" class="btn white-btn">показать все диваны в готовом дизайне</a></div>
+		</div>
+	</div>
+
+	<div class="row footer">
+		<div class="container">
+			<div class="col-xs-3">
+				<h3>Компания</h3>
+				<ul>
+					<li><a href="#">Специальные предложения</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Команда</a></li>
+					<li><a href="#">Блок</a></li>
+					<li><a href="#">Пресса о нас</a></li>
+					<li><a href="#">Контактная информация</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-3">
+				<h3>Как мы работаем</h3>
+				<ul>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Мебель в кредит</a></li>
+					<li><a href="#">Постоянным клиентам</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-3">
+				<h3>Партнерам</h3>
+				<ul>
+					<li><a href="#">Реклама на сайте</a></li>
+					<li><a href="#">Сотрудничество</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-3 cont">
+				<img src="images/logotypef.jpg" />
+				<a href="tel:+74951330331">+7 495 133-0-331</a>
+				<span>Без выходных 9:00 - 22:00</span>
+
+				<ul>
+					<li>
+						<a class="sprite-soc vk" href="#"></a>
+					</li>
+					<li>
+						<a class="sprite-soc fb" href="#"></a>
+					</li>
+					<li>
+						<a class="sprite-soc tw" href="#"></a>
+					</li>
+					<li>
+						<a class="sprite-soc yb" href="#"></a>
+					</li>
+					<li>
+						<a class="sprite-soc ins" href="#"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="clearfix"></div>
+			<p>
+				&copy; 2015. Все объекты, контент, фотографии и изображения являются собственностью ООО "РАМКОМФОРТ". Любое копирование преследуется по закону.
+			</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!--<script>-->
+<!--$(function (){-->
+<!--// Создание обработчика для события window.onLoad-->
+<!--YMaps.jQuery(function () {-->
+<!--// Создание экземпляра карты и его привязка к созданному контейнеру-->
+<!--var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);-->
+<!--console.log(map)-->
+
+<!--// Установка для карты ее центра и масштаба-->
+<!--map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 0);-->
+
+<!--// Добавление Переключателя типов карт-->
+<!--var typecontrol = new YMaps.TypeControl();-->
+<!--map.addControl(typecontrol);-->
+
+<!--// При щелчке на карту производится удаление Переключателя типов карт-->
+<!--});-->
+<!--});-->
+
+<!--</script>-->
+
+<!-- bxSlider Javascript file -->
+
+<script src="js/app.js"></script>
+<script>
+	$(function () {
+		// handles the carousel thumbnails
+		$('[id^=carousel-selector-]').click( function(){
+			var id_selector = $(this).attr("id");
+			var id = id_selector.substr(id_selector.length -1);
+			id = parseInt(id);
+			$('#carousel-example-generic').carousel(id);
+			$('[id^=carousel-selector-]').removeClass('selected');
+			$(this).addClass('selected');
+		});
+
+		// when the carousel slides, auto update
+		$('#carousel-example-generic').on('slid', function (e) {
+			var id = $('.item.active').data('slide-number');
+			id = parseInt(id);
+			$('[id^=carousel-selector-]').removeClass('selected');
+			$('[id=carousel-selector-'+id+']').addClass('selected');
+		});
+	});
+</script>
+</body>
+</html>
