@@ -1,0 +1,49 @@
+
+.dTypo .wrapBig {
+    left: 2px;
+    position: absolute;
+    top: 0;
+    display: table;
+}
+.dTypo, .dTypo span {
+    color: inherit;
+    /*    font-family: "Open Sans";
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;*/
+}
+.dTypo .big {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: auto;
+    font-size:15px;
+}
+.dTypo .small {
+    display: none;
+    font-size: 10px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+}
+.dTypo.typing .small {
+    /*display: block;*/
+    display: none;
+}
+.dTypo.typing .mask {
+     display: table-cell;
+    vertical-align: middle;
+}
+
+.dTypo.typing .big {
+    display:none;
+}
+.dTypo.pre_typing .big {
+    opacity: 0.6;
+}
+.textarea_box .dTypo textarea {padding-top:20px}
+
+label.error {display:none!important;}
+input.error {background-color: #f2e3e3 !important}
+
+.dTypo.typing .small {display:block; position:absolute; top:3px; left:17px; font-size:13px; color:#a4acb3; font-weight: normal;}
