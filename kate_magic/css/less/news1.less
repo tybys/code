@@ -75,10 +75,28 @@ body {
 
 // tb
 @media only screen and (min-width: 1px) and (max-width: 992px) {
+	.title_box_padd {
+		padding: 0 15px 25px !important;
+	}
+
+	.title_box .title_box_right {
+		right: 15px;
+		bottom: -65px;
+
+		form {
+			display: none;
+		}
+		.filter {
+			float: none;
+			width: 100%;
+		}
+	}
+
 	.row {
 		& > .left {
 			width: 100%;
 			padding-right: 0;
+			padding-left: 0;
 		}
 		& > .right {
 			display: none;
@@ -97,5 +115,29 @@ body {
 		form {
 			float: right;
 		}
+	}
+}
+
+// mb
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.sell_orange {
+		background-color: #ffffff !important;
+	}
+	.media-left {
+		display: block;
+	}
+	.media-body {
+		padding: 0 10px;
+		p {
+			font-size: 13px;
+		}
+	}
+	.media.big {
+		.media-body {
+			padding-bottom: 22px;
+		}
+	}
+	.date {
+		font-size: 12px;
 	}
 }
