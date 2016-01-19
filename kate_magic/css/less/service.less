@@ -1,0 +1,277 @@
+.row {
+	& > .left {
+		width: 445px;
+		padding-right: 0;
+
+		& + .right {
+			width: ~"calc(100% - 445px)";
+			padding-left: 64px;
+		}
+	}
+}
+
+.content_box .title_box {
+	margin-bottom: 3px;
+}
+
+.panel-group {
+	padding-top: 38px;
+	background: #ffaa2d;
+	.panel-default {
+		background: none;
+		border: none;
+
+		.panel-heading {
+			background: none;
+			border-top: none;
+			border-bottom-color: #f1852b;
+			border-radius: 0;
+			padding-left: 28px !important;
+			padding: 12.5px 15px;
+
+			.badge {
+				color: white;
+				border-radius: 0;
+				background-color: transparent;
+			}
+		}
+
+		.panel-title > a {
+			font-size: 18px;
+			color: #282828;
+			text-decoration: none;
+		}
+		.panel-collapse {
+			background: #292a2f;
+			color: white;
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				li {
+					position: relative;
+					padding: 12.5px 15px;
+					line-height: 23px;
+					&.active {
+
+						&:before {
+							content: '';
+							position: absolute;
+							width: ~"calc(100% + 30px)";
+							width: ~"-webkit-calc(100% + 30px)";
+							height: 38px;
+							background: #fd7e01;
+							top: 7px;
+							left: -15px;
+						}
+						&:after {
+							content: '';
+							position: absolute;
+							right: -33px;
+							top: 7px;
+							background: url('../img/carous-arr.png') no-repeat;
+							width: 18px;
+							height: 38px;
+						}
+					}
+					a {
+						font-size: 16px;
+						position: relative;
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+			.panel-body {
+				//position: relative;
+				border: none !important;
+			}
+
+		}
+	}
+
+
+
+
+	.cap {
+		background: #ffc672;
+		padding-left: 26px;
+		box-shadow: 1px 1px 12px rgba(0,0,0,0.14);
+		h2 {
+			text-transform: none;
+			font-size: 30px;
+			color: #282828;
+			margin: 0;
+			padding: 15px 0;
+		}
+	}
+}
+
+.right {
+	.inner {
+		padding-left: 19px;
+	}
+	h3 {
+		font-size: 30px;
+		color: #282828;
+		border-bottom: 2px solid;
+		padding-left: 6px;
+		i {
+			background: url('../img/orange-close.png') no-repeat;
+			display: inline-block;
+			width: 23px;
+			height: 23px;
+			margin-top: 10px;
+			margin-right: 33px;
+		}
+	}
+	span {
+		font-size: 22px;
+		color: black;
+		font-weight: 600;
+		display: inline-block;
+		margin: 20px 0;
+	}
+	img {
+		&.first {
+			width: 100%;
+		}
+		&:last-of-type {
+			margin-bottom: 28px;
+			vertical-align: top;
+		}
+		margin-bottom: 15px;
+		margin-right: 12px;
+	}
+	p {
+		font-size: 14px;
+		color: #535d67;
+		line-height: 16px;
+	}
+	a {
+		&.read-more {
+			display: inline-block;
+			text-decoration: none;
+			font-size: 16px;
+			border-bottom: 1px dashed;
+			margin-bottom: 36px;
+		}
+		&.btn-orange {
+			margin-left: 0;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+	.right h3 {
+		position: relative;
+		i {
+			position: absolute;
+			right: 0;
+			margin: 0;
+			top: 60px;
+		}
+	}
+}
+
+//tb
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+	.row {
+		& > .left {
+			width: 50%;
+			& + .right {
+				width: 50%;
+				display: block;
+				padding-left: 35px;
+				.inner {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	.right h3 {
+		font-size: 22px;
+		border: none;
+		padding-left: 0;
+		i {
+			//margin-top: -10px;
+			margin-top: 0;
+			margin-right: 0;
+		}
+	}
+	.right p {
+		font-size: 13px;
+	}
+	.content_box {
+		padding-bottom: 0;
+	}
+	span.price {
+		margin-top: 0;
+		font-size: 16px;
+	}
+	.cap {
+		h2 {
+			font-size: 22px !important;
+		}
+	}
+
+	.panel-group .panel-default .panel-collapse ul li.active:after {
+		display: none;
+	}
+
+	.panel-group .panel-default .panel-title a,
+	.panel-group .panel-default .panel-collapse ul li a {
+		font-size: 15px;
+	}
+	.badge {
+		font-size: 13px !important;
+	}
+	//.panel-title > a {
+	//	font-size: 15px;
+	//	.badge  {
+	//		font-size: 13px;
+	//	}
+	//}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.row {
+		& > .left {
+			width: 100%;
+			& + .right {
+				width: 100%;
+				padding-left: 15px;
+			}
+		}
+	}
+
+	.right {
+		h3 i {
+			display: none;
+		}
+		.price {
+			margin-top: 15px;
+		}
+		p, h3, span, a {
+			padding: 0 8px;
+		}
+		a.btn-orange {
+			width: ~"calc(100% - 20px)";
+			width: ~"-webkit-calc(100% - 20px)";
+			display: inline-block;
+			padding: 0 37px;
+			margin-left: 10px;
+		}
+		img {
+			&.first {
+				opacity: 0.5;
+				& ~ img {
+					width: 28.333333%;
+					margin: 0 4px 0 8px;
+				}
+			}
+		}
+	}
+}
