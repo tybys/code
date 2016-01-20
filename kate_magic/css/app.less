@@ -1,5 +1,6 @@
 @import "less/news1.less";
 @import "less/service.less";
+@import "less/job.less";
 
 .title_box_right {
 	a {
@@ -13,6 +14,10 @@
 			color: #000;
 		}
 	}
+}
+
+.one-col {
+	padding: 0 15px;
 }
 
 .left {
@@ -88,6 +93,20 @@ form {
 	text-decoration: none;
 	text-align: center;
 	line-height: 64px;
+
+	&.white {
+		font-size: 12px;
+		background: #ffffff;
+		border: 2px solid #ff8200;
+		color: #ff8200;
+		border-radius: 4px;
+		text-transform: uppercase;
+		line-height: 35px;
+		height: 35px;
+		padding: 0 25px;
+		width: auto;
+		display: inline-block;
+	}
 
 	&:hover {
 		background: #f28f28;

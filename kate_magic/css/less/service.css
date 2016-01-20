@@ -1,8 +1,8 @@
-.row > .left {
+.row.service > .left {
   width: 445px;
   padding-right: 0;
 }
-.row > .left + .right {
+.row.service > .left + .right {
   width: calc(100% - 445px);
   padding-left: 64px;
 }

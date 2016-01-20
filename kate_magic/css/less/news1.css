@@ -1,6 +1,3 @@
-body {
-  color: inherit;
-}
 .filter {
   line-height: 45px;
   margin-right: 34px;
@@ -77,12 +74,12 @@ body {
     float: none;
     width: 100%;
   }
-  .row > .left {
+  .row.news > .left {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
   }
-  .row > .right {
+  .row.news > .right {
     display: none;
   }
   .title_box_right {
