@@ -1,0 +1,202 @@
+.history {
+	//background: #e9edf0;
+	.photo {
+		width: 295px;
+		height: 295px;
+		background: #282828;
+		position: relative;
+		padding-top: 85px;
+		float: left;
+		margin-right: 55px;
+		margin-left: 110px;
+		margin-top: -20px;
+
+		.img-wrap {
+			width: 80px;
+			height: 80px;
+			display: block;
+			//position: absolute;
+			top: ~"calc(50% - 40px)";
+			top: ~"-webkit-calc(50% - 40px)";
+
+			left: ~"calc(50% - 40px)";
+			left: ~"-webkit-calc(50% - 40px)";
+
+			margin: 0 auto 15px auto;
+			border-radius: 100%;
+			background: white url('../img/photo.png') no-repeat center;
+		}
+		.img-wrap + span {
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: white;
+			text-align: center;
+			font-weight: 600;
+		}
+	}
+
+	.masters {
+		width: ~"calc(100% - 470px)";
+		width: ~"-webkit-calc(100% - 470px)";
+		margin: -20px 0 0 auto;
+		h5 {
+			font-size: 22px;
+			margin-top: 0;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			li {
+				padding-top: 0;
+				padding-bottom: 20px;
+				.name {
+					font-size: 14px;
+					font-weight: 600;
+					word-break: break-all;
+					margin: 0 47px 0 17px;
+					display: inline-block;
+				}
+			}
+		}
+		.btn-orange.white {
+			margin-top: 0;
+		}
+		.btn-orange:not(.white) {
+			margin-top: 0;
+			margin-left: 0;
+			margin-bottom: 45px;
+		}
+	}
+	.record {
+		background: #f1f1f1;
+		min-height: 130px;
+		position: relative;
+		background: url('../img/date-palka.jpg') repeat-y;
+		background-position: 45px 0;
+		&.background {
+
+			&:before {
+				content: '';
+				background: #fff;
+
+			}
+
+			.inner {
+				background: white url('../img/date-palka.jpg') repeat-y;
+				background-position: 45px 0;
+
+				position: relative;
+				top: 70px;
+
+				&:after {
+					content: '';
+					clear: both;
+					display: block;
+					width: 100%;
+					height: 1px;
+				}
+				&:before {
+					content: '';
+					width: 100%;
+					height: 1px;
+					background: #e9edf0;
+					position: relative;
+					top: 54px;
+					display: block;
+				}
+
+				.title {
+					position: relative;
+					top: -75px;
+				}
+				p.desk {
+					position: relative;
+					top: -63px;
+					font-size: 18px;
+					left: 18px;
+				}
+			}
+
+			& + .record {
+				margin-top: 70px;
+			}
+		}
+		& > .date {
+			width: 93px;
+			height: 93px;
+			//background: rgba(255, 255, 255, 0.5);
+			background: url('../img/date-back.jpg') no-repeat center;
+			border-radius: 100%;
+			float: left;
+			text-align: center;
+			z-index: 5;
+			position: relative;
+
+			&:after {
+				//content: '';
+				//width: 4px;
+				//height: 100%;
+				//background: #d4dbe1;
+				//
+				//position: absolute;
+				//top: 83px;
+				//left: ~"calc(50% - 4px)";
+				//left: ~"-webkit-calc(50% - 4px)";
+			}
+
+			p {
+				padding: 0;
+				span:first-of-type {
+					font-size: 24px;
+					color: #ff9800;
+					display: inline-block;
+					width: 100%;
+					margin-top: 25%;
+				}
+				span:last-of-type {
+					font-size: 14px;
+					text-transform: uppercase;
+					color: rgba(0, 0, 0, 0.5);
+
+				}
+			}
+		}
+
+		.title {
+			padding-top: 33px;
+			padding-left: 110px;
+		}
+		p {
+			font-size: 18px;
+			color: #282828;
+		}
+	}
+
+	.record-left {
+		float: left;
+		width: ~"calc(55% - 60px)";
+		padding: 0;
+		img {
+			width: 280px;
+		}
+	}
+	.record-right {
+		float: left;
+		width: ~"calc(45% - 60px)";
+		padding: 0 35px 0 85px;
+		.index_coments {
+			padding-top: 0;
+
+			p {
+				font-size: 14px;
+			}
+		}
+
+		.list {
+			li {
+				width: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,164 @@
+.history .photo {
+  width: 295px;
+  height: 295px;
+  background: #282828;
+  position: relative;
+  padding-top: 85px;
+  float: left;
+  margin-right: 55px;
+  margin-left: 110px;
+  margin-top: -20px;
+}
+.history .photo .img-wrap {
+  width: 80px;
+  height: 80px;
+  display: block;
+  top: calc(50% - 40px);
+  top: -webkit-calc(50% - 40px);
+  left: calc(50% - 40px);
+  left: -webkit-calc(50% - 40px);
+  margin: 0 auto 15px auto;
+  border-radius: 100%;
+  background: #ffffff url('../img/photo.png') no-repeat center;
+}
+.history .photo .img-wrap + span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+.history .masters {
+  width: calc(100% - 470px);
+  width: -webkit-calc(100% - 470px);
+  margin: -20px 0 0 auto;
+}
+.history .masters h5 {
+  font-size: 22px;
+  margin-top: 0;
+}
+.history .masters ul {
+  list-style: none;
+  margin: 0;
+}
+.history .masters ul li {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.history .masters ul li .name {
+  font-size: 14px;
+  font-weight: 600;
+  word-break: break-all;
+  margin: 0 47px 0 17px;
+  display: inline-block;
+}
+.history .masters .btn-orange.white {
+  margin-top: 0;
+}
+.history .masters .btn-orange:not(.white) {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 45px;
+}
+.history .record {
+  background: #f1f1f1;
+  min-height: 130px;
+  position: relative;
+  background: url('../img/date-palka.jpg') repeat-y;
+  background-position: 45px 0;
+}
+.history .record.background:before {
+  content: '';
+  background: #fff;
+}
+.history .record.background .inner {
+  background: #ffffff url('../img/date-palka.jpg') repeat-y;
+  background-position: 45px 0;
+  position: relative;
+  top: 70px;
+}
+.history .record.background .inner:after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+.history .record.background .inner:before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #e9edf0;
+  position: relative;
+  top: 54px;
+  display: block;
+}
+.history .record.background .inner .title {
+  position: relative;
+  top: -75px;
+}
+.history .record.background .inner p.desk {
+  position: relative;
+  top: -63px;
+  font-size: 18px;
+  left: 18px;
+}
+.history .record.background + .record {
+  margin-top: 70px;
+}
+.history .record > .date {
+  width: 93px;
+  height: 93px;
+  background: url('../img/date-back.jpg') no-repeat center;
+  border-radius: 100%;
+  float: left;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+}
+.history .record > .date p {
+  padding: 0;
+}
+.history .record > .date p span:first-of-type {
+  font-size: 24px;
+  color: #ff9800;
+  display: inline-block;
+  width: 100%;
+  margin-top: 25%;
+}
+.history .record > .date p span:last-of-type {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+.history .record .title {
+  padding-top: 33px;
+  padding-left: 110px;
+}
+.history .record p {
+  font-size: 18px;
+  color: #282828;
+}
+.history .record-left {
+  float: left;
+  width: calc(55% - 60px);
+  padding: 0;
+}
+.history .record-left img {
+  width: 280px;
+}
+.history .record-right {
+  float: left;
+  width: calc(45% - 60px);
+  padding: 0 35px 0 85px;
+}
+.history .record-right .index_coments {
+  padding-top: 0;
+}
+.history .record-right .index_coments p {
+  font-size: 14px;
+}
+.history .record-right .list li {
+  width: 50%;
+}
