@@ -1,0 +1,349 @@
+.stats .ch-header h2 {
+  color: #fd7e01;
+  font-size: 30px;
+  text-transform: none;
+  padding-left: 210px;
+}
+.stats .ch-wrap {
+  position: relative;
+  height: 304px;
+  margin-bottom: 9px;
+  box-shadow: 3px 0 12px rgba(100, 108, 115, 0.24);
+  background: white;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: top;
+}
+.stats .ch-wrap li.info-more {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.stats .ch-wrap li.info-more .medium {
+  font-size: 30px;
+  line-height: 32px;
+  display: block;
+  color: black;
+}
+.stats .ch-wrap li.info-more img {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.stats .ch-wrap li.info {
+  height: 217px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.stats .ch-wrap li.info .big {
+  margin-top: 50px;
+  color: #fd7e01;
+  font-size: 50px;
+  line-height: 52px;
+  display: block;
+  font-weight: 300;
+}
+.stats .ch-wrap li.info .medium {
+  color: #fd7e01;
+  font-size: 30px;
+  line-height: 32px;
+  display: block;
+  font-weight: 300;
+}
+.stats .ch-wrap.p-right {
+  margin-right: 9px;
+}
+.stats .ch-wrap.height {
+  height: 204px;
+}
+.stats .ch-wrap.auto {
+  height: auto;
+}
+.stats .ch-wrap .img-wrap {
+  position: absolute;
+  left: 60px;
+  top: -60px;
+  width: 107px;
+  height: 107px;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 3px 0 12px rgba(33, 42, 61, 0.17);
+  text-align: center;
+}
+.stats .ch-wrap .img-wrap img {
+  margin-top: calc(50% - 19.5px);
+  margin-top: -webkit-calc(50% - 19.5px);
+}
+.stats .ch-wrap.full {
+  width: 100%;
+}
+.stats .ch-wrap.full .ch {
+  display: inline-block;
+}
+.stats .ch-wrap.ch2 {
+  width: calc(100% - 644px);
+  width: -webkit-calc(100% - 644px);
+}
+.stats .ch-wrap #ch3 {
+  width: 33% !important;
+}
+.stats .ch-wrap #ch3 g.highcharts-series path {
+  fill: #6d7488;
+}
+.stats .ch-wrap #ch4 {
+  width: 33% !important;
+}
+.stats .ch-wrap #ch4 g.highcharts-series path {
+  fill: #fe8005;
+}
+.stats .ch-wrap #ch5 {
+  width: 33% !important;
+}
+.stats .ch-wrap #ch5 g.highcharts-series path {
+  fill: #36a9d0;
+}
+.stats .ch-wrap #ch6,
+.stats .ch-wrap #ch7,
+.stats .ch-wrap #ch8 {
+  width: 33% !important;
+}
+.stats .table {
+  padding: 0 59px;
+  height: auto;
+  margin-bottom: 25px;
+}
+.stats .table .btn-orange {
+  margin-bottom: 25px;
+}
+.stats table tr {
+  border-bottom: 1px solid #d4d4d5 !important;
+}
+.stats table tr:last-of-type {
+  border-bottom: none !important;
+}
+.stats table tr:hover {
+  border-color: #ffe6cc !important;
+}
+.stats table tr:hover td {
+  background: #ffe6cc;
+}
+.stats table th {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e1f24;
+  background: transparent;
+  text-align: center;
+}
+.stats table td {
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.stats table td:last-of-type {
+  font-weight: 600;
+}
+.stats table td:first-of-type {
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+.stats table td:first-of-type img {
+  border-radius: 100%;
+  margin-left: 20px;
+}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  #ch1 {
+    width: 550px !important;
+  }
+  #ch2 {
+    width: 370px !important;
+  }
+  .stats .ch-wrap.ch2 {
+    width: -webkit-calc(100% - 563px);
+    width: calc(100% - 563px);
+  }
+  .info-more {
+    float: right;
+    padding-right: 90px !important;
+    padding-top: 0 !important;
+    padding-bottom: 25px !important;
+  }
+}
+@media only screen and (min-width: 1px) and (max-width: 998px) {
+  .table {
+    padding: 0 !important;
+  }
+  .table td img {
+    float: left;
+  }
+  .table td {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .table .name {
+    margin-left: 95px;
+    display: block;
+  }
+  .info-more {
+    float: right;
+    padding-right: 53px !important;
+    padding-top: 0 !important;
+    padding-bottom: 25px !important;
+  }
+  #ch1 {
+    width: 100% !important;
+  }
+  .stats .ch-wrap.p-right {
+    width: 100%;
+  }
+  .stats .ch-wrap.ch2 {
+    width: 100% !important;
+  }
+  #ch2 {
+    width: 100% !important;
+  }
+  .stats .ch-wrap #ch3,
+  .stats .ch-wrap #ch4,
+  .stats .ch-wrap #ch5 {
+    width: 32% !important;
+    height: 157px !important;
+  }
+  .stats .ch-wrap #ch6,
+  .stats .ch-wrap #ch7,
+  .stats .ch-wrap #ch8 {
+    width: 32% !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .height {
+    height: auto !important;
+  }
+  .stats .ch-wrap #ch3,
+  .stats .ch-wrap #ch4,
+  .stats .ch-wrap #ch5 {
+    width: 100% !important;
+    display: block;
+    height: 237px !important;
+  }
+  .stats .ch-wrap #ch6,
+  .stats .ch-wrap #ch7,
+  .stats .ch-wrap #ch8 {
+    width: 100% !important;
+  }
+  .height + div {
+    height: auto !important;
+  }
+  .achievements_cont {
+    display: block;
+  }
+  .stats .ch-header h2 {
+    font-size: 25px;
+    padding-left: 110px;
+  }
+  .stats .ch-wrap .img-wrap {
+    width: 85px;
+    height: 85px;
+    left: 8px;
+  }
+  .info {
+    width: 65% !important;
+    height: auto !important;
+    margin: 0 26px 0 0;
+    float: right;
+  }
+  .achievements_cont ul {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .info-more {
+    float: left;
+    padding: 0 !important;
+    margin-left: 20px;
+    margin-bottom: 20px !important;
+  }
+  .big {
+    float: left;
+    margin: 0 !important;
+  }
+  .medium {
+    display: block !important;
+  }
+  .b-o {
+    text-align: center;
+  }
+  .master-copy {
+    padding-top: 65px;
+  }
+  .master-copy .master {
+    position: relative;
+  }
+  .master-copy .master .inner {
+    padding: 10px 25px;
+    min-height: 73px;
+  }
+  .master-copy .master:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .master-copy .master.sel {
+    background: #ffcfa3;
+  }
+  .master-copy .master.sel .child {
+    background: #ffe6cc;
+    padding: 10px 0;
+  }
+  .master-copy .master.sel .child span {
+    margin-left: 100px;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .master-copy .master.sel .child span:last-of-type {
+    margin-bottom: 0;
+  }
+  .master-copy .master.sel .child span strong {
+    float: right;
+    margin-right: 50%;
+  }
+  .master-copy .master img {
+    float: left;
+  }
+  .master-copy .master .name {
+    font-size: 16px;
+    width: 50%;
+    display: block;
+    margin-left: 75px;
+  }
+  .master-copy .master .pos {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 18px;
+    width: 3em;
+    text-align: right;
+  }
+  .masters-header {
+    position: relative;
+    top: -95px;
+  }
+  .auto {
+    padding-bottom: 150px;
+  }
+  .stats .table {
+    margin-top: -86px;
+  }
+  .stats .table .img-wrap {
+    top: -47px;
+  }
+  .pos {
+    font-weight: 600;
+  }
+  .stats .ch-wrap {
+    box-shadow: none;
+  }
+  .stats .ch-wrap:not(.auto) {
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>statistic</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<link href="css/slick.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/style750.css" rel="stylesheet"/>
+	<link href="css/style320.css" rel="stylesheet"/>
+	<link href="js/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+	<link href="css/jquery.nouislider.min.css" rel="stylesheet"/>
+	<link href="css/placeholder.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/jquery.migrate.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/jquery.timers.js"></script>
+	<script src="js/placeholder.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/solid-gauge.js"></script>
+</head>
+<body class="">
+
+<div id="main">
+	<div class="container">
+
+		<!--HEADER-->
+		<header id="header">
+			<div class="header_top">
+				<div class="header_top_box">
+					<div class="logo"><a href="#"><img alt="" src="img/logo.gif"></a></div>
+					<div class="head_city">
+						<address>г. Москва, ул. Борисовские
+							пруды, д. 16, корп. 4</address>
+						<a href="#" class="see_map">Схема проезда</a>
+						<a href="#" class="btn_change"></a>
+					</div>
+					<div class="head_data">
+						<span class="phone"><span>+7 (495)</span> 340 01 00</span>
+						<span class="time_work">Сегодня  с 9:00 – 23:00 <span class="open">открыто</span></span>
+					</div>
+					<div class="head_btn">
+						<a href="#" class="btn_apply">Подать заявку</a>
+						<a href="#" class="btn_call_back">Перезвоните мне</a>
+					</div>
+					<div class="head_right">
+						<a href="#" class="btn_lk">Личный кабинет</a>
+						<a href="#" class="btn_address"></a>
+						<a href="#" class="head_user"><img alt="" src="img/img_head_user.jpg"></a>
+						<a href="#" class="head_mess"><span>33</span></a>
+						<a href="#" class="btn_menu"></a>
+					</div>
+					<div class="head_right_mobile">
+						<a href="#" class="btn_address_mobile"></a>
+						<a href="#" class="btn_phone"></a>
+						<a href="#" class="btn_menu_mobile"></a>
+					</div>
+				</div>
+			</div>
+
+			<ul class="menu">
+				<li><a href="#" class="m1 active">СТУДИЯ KATEMAGIC</a>
+					<div class="menu_drop">
+						<ul>
+							<li><a href="#">О студии</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Мастера и награды</a></li>
+							<li><a href="#">Наши услуги</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#" class="btn_enroll">Записаться на прием</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#" class="m2">Обучение</a></li>
+				<li><a href="#" class="m3">Контакты</a></li>
+			</ul>
+
+
+		</header>
+
+
+
+		<!--CONTETN-->
+		<section class="content">
+			<div class="content_box">
+				<div class="title_box title_box_padd">
+					<span class="main_title">Статистика</span>
+					<ul class="breadcrumb">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">мастера</a></li>
+						<li><a href="#">александра криворучко</a></li>
+						<li><a href="#">расписание</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row stats">
+				<div class="one-col">
+					<div class="ch-wrap p-right">
+						<div id="ch1" style="width:631px; height:256px;"></div>
+
+						<script>
+							$(function () {
+								$('#ch1').highcharts({
+									chart: {
+										type: 'area'
+									},
+									xAxis: {
+										categories: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь','Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+										plotLines: [{
+											value: 0,
+											width: 1,
+											color: '#eaeaea'
+										}]
+									},
+									title: '',
+									yAxis: {
+										title: {
+											//text: 'Temperature (°C)'
+											text: ''
+										}
+//									},
+//									plotLines: [{
+//										value: 0,
+//										width: 1,
+//										color: '#eaeaea'
+//									}]
+									},
+									tooltip: {
+										valueSuffix: '°C'
+									},
+									legend: {
+										layout: 'vertical',
+										align: 'right',
+										verticalAlign: 'middle',
+										borderWidth: 0
+									},
+									series: [{
+										name: 'stable',
+										data: [3000.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 7999.6]
+									}, {
+										name: 'new',
+										data: [-2000.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 5000.5]
+									}]
+								});
+							});
+						</script>
+					</div>
+
+					<div class="ch-wrap ch2">
+						<div id="ch2" class="" style="width:457px; height:301px;">qwe</div>
+
+						<script>
+							$(document).ready(function () {
+
+								// Build the chart
+								$('#ch2').highcharts({
+									chart: {
+										plotBackgroundColor: null,
+										plotBorderWidth: null,
+										plotShadow: false,
+										type: 'pie'
+									},
+									title: {
+										text: ''
+									},
+									tooltip: {
+										pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+									},
+									plotOptions: {
+										pie: {
+											allowPointSelect: true,
+											cursor: 'pointer',
+											dataLabels: {
+												enabled: false
+											},
+											showInLegend: true
+										}
+									},
+									series: [{
+										name: 'Brands',
+										colorByPoint: true,
+										data: [{
+											name: 'Июль',
+											y: 44
+										}, {
+											name: 'Август',
+											y: 75,
+											sliced: true,
+											selected: true
+										}, {
+											name: 'Сентябрь',
+											y: 35
+										}, {
+											name: 'Октябрь',
+											y: 94
+										}]
+									}]
+								});
+							});
+						</script>
+					</div>
+
+					<div class="ch-wrap full height">
+						<div id="ch3" class="ch" style="width:289px; height:187px;"></div>
+						<div id="ch4" class="ch orange" style="width:289px; height:187px;"></div>
+						<div id="ch5" class="ch purple" style="width:289px; height:187px;"></div>
+
+						<script>
+							$(function () {
+								var gaugeOptions = {
+
+									chart: {
+										type: 'solidgauge'
+									},
+
+									title: null,
+
+									pane: {
+										center: ['50%', '85%'],
+										size: '140%',
+										startAngle: -90,
+										endAngle: 90,
+										background: {
+											backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+											innerRadius: '60%',
+											outerRadius: '100%',
+											shape: 'arc'
+										}
+									},
+
+									tooltip: {
+										enabled: false
+									},
+
+									// the value axis
+									yAxis: {
+										stops: [
+											[0.1, '#55BF3B'], // green
+											[0.5, '#DDDF0D'], // yellow
+											[0.9, '#DF5353'] // red
+										],
+										lineWidth: 0,
+										minorTickInterval: null,
+										tickPixelInterval: 400,
+										tickWidth: 0,
+										title: {
+											y: -70
+										},
+										labels: {
+											y: 16
+										}
+									},
+
+									plotOptions: {
+										solidgauge: {
+											dataLabels: {
+												y: 5,
+												borderWidth: 0,
+												useHTML: true
+											}
+										}
+									}
+								};
+
+								// The speed gauge
+								$('#ch3').highcharts(Highcharts.merge(gaugeOptions, {
+									yAxis: {
+										min: 0,
+										max: 200,
+										title: {
+											text: ''
+										}
+									},
+
+									credits: {
+										enabled: false
+									},
+
+									series: [{
+										name: 'Speed',
+										data: [80],
+										dataLabels: {
+											format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+											((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
+											'<span style="font-size:12px;color:silver">Отзывы</span></div>'
+										},
+										tooltip: {
+											valueSuffix: ' km/h'
+										}
+									}]
+
+								}));
+
+								$('#ch4').highcharts(Highcharts.merge(gaugeOptions, {
+									yAxis: {
+										min: 0,
+										max: 200,
+										title: {
+											text: ''
+										}
+									},
+
+									credits: {
+										enabled: false
+									},
+
+									series: [{
+										name: 'Speed',
+										data: [80],
+										dataLabels: {
+											format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+											((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
+											'<span style="font-size:12px;color:silver">Отзывы</span></div>'
+										},
+										tooltip: {
+											valueSuffix: ' km/h'
+										}
+									}]
+
+								}));
+
+								$('#ch5').highcharts(Highcharts.merge(gaugeOptions, {
+									yAxis: {
+										min: 0,
+										max: 200,
+										title: {
+											text: ''
+										}
+									},
+
+									credits: {
+										enabled: false
+									},
+
+									series: [{
+										name: 'Speed',
+										data: [80],
+										dataLabels: {
+											format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+											((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
+											'<span style="font-size:12px;color:silver">Отзывы</span></div>'
+										},
+										tooltip: {
+											valueSuffix: ' km/h'
+										}
+									}]
+
+								}));
+
+								// Bring life to the dials
+								setTimeout(function () {
+									// Speed
+									var chart = $('#container-speed').highcharts(),
+											point,
+											newVal,
+											inc;
+
+									if (chart) {
+										point = chart.series[0].points[0];
+										inc = Math.round((Math.random() - 0.5) * 100);
+										newVal = point.y + inc;
+
+										if (newVal < 0 || newVal > 200) {
+											newVal = point.y - inc;
+										}
+
+										point.update(newVal);
+									}
+
+									// RPM
+									chart = $('#container-rpm').highcharts();
+									if (chart) {
+										point = chart.series[0].points[0];
+										inc = Math.random() - 0.5;
+										newVal = point.y + inc;
+
+										if (newVal < 0 || newVal > 5) {
+											newVal = point.y - inc;
+										}
+
+										point.update(newVal);
+									}
+								}, 2000);
+							});
+						</script>
+					</div>
+
+					<div class="ch-wrap full">
+						<div id="ch6" class="ch" style="width:289px; height:297px;"></div>
+						<div id="ch7" class="ch" style="width:289px; height:297px;"></div>
+						<div id="ch8" class="ch" style="width:289px; height:297px;"></div>
+
+						<script>
+							$(function () {
+								$('#ch6').highcharts({
+									chart: {
+										plotBackgroundColor: null,
+										plotBorderWidth: 0,
+										plotShadow: false
+									},
+									title: {
+										text: '344<br>Клиента',
+										align: 'center',
+										verticalAlign: 'middle',
+										y: 00
+									},
+									tooltip: {
+										pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+									},
+									plotOptions: {
+										pie: {
+											dataLabels: {
+												enabled: true,
+												distance: -50,
+												style: {
+													fontWeight: 'bold',
+													color: 'white',
+													textShadow: '0px 1px 2px black'
+												}
+											},
+											startAngle: -180,
+											endAngle: 180,
+											center: ['50%', '50%']
+										}
+									},
+									series: [{
+										type: 'pie',
+										name: 'Browser share',
+										innerSize: '50%',
+										data: [
+											['',   25],
+											['',       35],
+											['', 15],
+											['',    10],
+											['',     15],
+											{
+												name: 'Proprietary or Undetectable',
+												y: 0.2,
+												dataLabels: {
+													enabled: false
+												}
+											}
+										]
+									}]
+								});
+							});
+						</script>
+
+						<script>
+							$(function () {
+								$('#ch7').highcharts({
+									chart: {
+										plotBackgroundColor: null,
+										plotBorderWidth: 0,
+										plotShadow: false
+									},
+									title: {
+										text: '122<br>Мужчины',
+										align: 'center',
+										verticalAlign: 'middle',
+										y: 00
+									},
+									tooltip: {
+										pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+									},
+									plotOptions: {
+										pie: {
+											dataLabels: {
+												enabled: true,
+												distance: -50,
+												style: {
+													fontWeight: 'bold',
+													color: 'white',
+													textShadow: '0px 1px 2px black'
+												}
+											},
+											startAngle: -180,
+											endAngle: 180,
+											center: ['50%', '50%']
+										}
+									},
+									series: [{
+										type: 'pie',
+										name: 'Browser share',
+										innerSize: '50%',
+										data: [
+											['',   25],
+											['',       35],
+											['', 15],
+											['',    10],
+											['',     15],
+											{
+												name: 'Proprietary or Undetectable',
+												y: 0.2,
+												dataLabels: {
+													enabled: false
+												}
+											}
+										]
+									}]
+								});
+							});
+						</script>
+
+						<script>
+							$(function () {
+								$('#ch8').highcharts({
+									chart: {
+										plotBackgroundColor: null,
+										plotBorderWidth: 0,
+										plotShadow: false
+									},
+									title: {
+										text: '2834<br>оказано<br>услуг',
+										align: 'center',
+										verticalAlign: 'middle',
+										y: 00
+									},
+									tooltip: {
+										pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+									},
+									plotOptions: {
+										pie: {
+											dataLabels: {
+												enabled: true,
+												distance: -50,
+												style: {
+													fontWeight: 'bold',
+													color: 'white',
+													textShadow: '0px 1px 2px black'
+												}
+											},
+											startAngle: -180,
+											endAngle: 180,
+											center: ['50%', '50%']
+										}
+									},
+									series: [{
+										type: 'pie',
+										name: 'Browser share',
+										innerSize: '50%',
+										data: [
+											['',   25],
+											['',       35],
+											['', 15],
+											['',    10],
+											['',     15],
+											{
+												name: 'Proprietary or Undetectable',
+												y: 0.2,
+												dataLabels: {
+													enabled: false
+												}
+											}
+										]
+									}]
+								});
+							});
+						</script>
+					</div>
+
+					<div class="ch-header">
+						<h2>Достижения</h2>
+					</div>
+					<div class="ch-wrap full auto">
+						<span class="img-wrap">
+							<img src="img/icon_about_1.png" width="39" />
+						</span>
+						<div class="achievements_cont">
+							<ul>
+								<li class="info">
+									<span class="big">23</span>
+									<span class="medium">место</span>
+									в рейтинге
+								</li>
+								<li>
+									<div class="achievements_info">
+									<span class="icon_box ">
+										<img alt="" src="img/icon_achievements_2.png">
+									</span>
+										<span class="name">Название легкого бейджа</span>
+									</div>
+								</li>
+								<li>
+									<div class="achievements_info">
+									<span class="icon_box ">
+										<img alt="" src="img/icon_achievements_3.png">
+									</span>
+										<span class="name">Название легкого бейджа</span>
+									</div>
+								</li>
+								<li>
+									<div class="achievements_info">
+									<span class="icon_box c_blue">
+										<img alt="" src="img/icon_achievements_4.png">
+									</span>
+										<span class="name">Название легкого бейджа</span>
+									</div>
+								</li>
+								<li>
+									<div class="achievements_info">
+									<span class="icon_box ">
+										<img alt="" src="img/icon_achievements_5.png">
+									</span>
+										<span class="name">Название легкого бейджа</span>
+									</div>
+								</li>
+								<li class="info-more">
+									<img src="img/more.png" />
+									<span class="medium">43</span>
+									еще
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="ch-header masters-header">
+						<h2>Место в общем рейтинге</h2>
+					</div>
+					<div class="ch-wrap full table">
+						<span class="img-wrap">
+							<img src="img/icon_about_5.png" width="61" />
+						</span>
+
+						<table border="0" width="100%" class="hidden-xs">
+							<tr>
+								<th></th>
+								<th>кпд</th>
+								<th>заказы</th>
+								<th>награды</th>
+								<th>отзывы</th>
+								<th>место</th>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/img_com_master_1.jpg" width="52" />
+									<span class="name">Александра Масалитина</span>
+								</td>
+								<td>87%</td>
+								<td>3 432</td>
+								<td>34</td>
+								<td>345</td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/img_com_master_1.jpg" width="52" />
+									<span class="name">Александра Масалитина</span>
+								</td>
+								<td>87%</td>
+								<td>3 432</td>
+								<td>34</td>
+								<td>345</td>
+								<td>21</td>
+							</tr>
+						</table>
+
+						<div class="master-copy hidden-lg hidden-md hidden-sm">
+							<div class="master">
+								<div class="inner">
+									<img src="img/img_com_master_1.jpg" width="52" />
+									<span class="name">Александра Масалитина</span>
+									<span class="pos">22</span>
+								</div>
+							</div>
+							<div class="master">
+								<div class="inner">
+									<img src="img/img_com_master_1.jpg" width="52" />
+									<span class="name">Александра Масалитина</span>
+									<span class="pos">22</span>
+								</div>
+							</div>
+							<div class="master sel">
+								<div class="inner">
+									<img src="img/img_com_master_1.jpg" width="52" />
+									<span class="name">Александра Масалитина</span>
+									<span class="pos">22</span>
+								</div>
+
+								<div class="child">
+									<span>
+										КПД
+										<strong>65%</strong>
+									</span>
+									<span>
+										Заказы
+										<strong>65%</strong>
+									</span>
+									<span>
+										Награды
+										<strong>65%</strong>
+									</span>
+									<span>
+										Отзывы
+										<strong>65%</strong>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="b-o">
+							<a href="#" class="btn-orange white small">показать весь список</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+	<div class="main_contact">
+		<div class="container">
+			<ul class="main_contact_nav">
+				<li><a href="#" class="active">г. Москва, ул. Борисовские пруды, д. 16, корп. 4</a></li>
+				<li><a href="#">г. Москва, ул. Воронцовская, д. 32, корп. 1</a></li>
+			</ul>
+		</div>
+
+		<div class="map" style=" background:url(img/img_map.jpg) no-repeat; background-size:cover;">
+
+			<div class="map_popup">
+				<span class="map_popup_icon"></span>
+				<ul>
+					<li class="mail">katemagic-studio@yandex.ru</li>
+					<li class="skype">katemagic-studio </li>
+				</ul>
+				<span class="phone">+7 (495) 340 01 00</span>
+				<a href="#" class="btn_save"></a>
+			</div>
+
+			<div class="map_popup map_popup_right">
+				<span class="map_popup_icon"></span>
+				<div class="popup_box">
+					<img alt="" src="img/img_kapcha.jpg">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<!--FOOTER-->
+		<footer id="footer">
+			<div  class="footer_top">
+				<div class="footer_left">
+					<div class="foot_logo"><a href="#"><img alt="" src="img/logo_foot.gif"></a></div>
+					<div class="head_data">
+						<span class="phone"><span>+7 (495)</span> 340 01 00</span>
+						<span class="time_work">Сегодня  с 9:00 – 23:00 <span class="open">открыто</span></span>
+					</div>
+				</div>
+				<div class="footer_right">
+					<div class="footer_top_box">
+						<span class="name">СТУДИЯ</span>
+						<ul>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Записаться</a></li>
+							<li><a href="#">Галерея</a></li>
+						</ul>
+					</div>
+					<div class="footer_top_box">
+						<span class="name">Обучение</span>
+						<ul>
+							<li><a href="#">Мастера</a></li>
+							<li><a href="#">Фото</a></li>
+							<li><a href="#">Календарь</a></li>
+							<li><a href="#">Работы мастеров</a></li>
+							<li><a href="#">Прейскурант</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div  class="footer_bot">
+				<div class="footer_left">
+					<div class="work_site">
+						<a href="#"><img alt="" src="img/img_site_work.gif"></a>
+						<p><span><a href="#">разработка сайта art-fresh</a> <em>2015 &copy; KateMagic.ru</em></span></p>
+					</div>
+				</div>
+				<div class="footer_right">
+					<div class="foot_soc">
+						<span class="name">Добавляйтесь в друзья:</span>
+						<ul>
+							<li><a href="#"><img alt="" src="img/icon_socail_1.png"></a></li>
+							<li><a href="#"><img alt="" src="img/icon_socail_2.png"></a></li>
+							<li><a href="#"><img alt="" src="img/icon_socail_3.png"></a></li>
+							<li><a href="#"><img alt="" src="img/icon_socail_4.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</div>
+</body>
+</html>
