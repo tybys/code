@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef8d35d-285b-4a38-9739-c480aa6a02d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/app.css" afterPath="$PROJECT_DIR$/kate_magic/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/app.less" afterPath="$PROJECT_DIR$/kate_magic/css/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/job.css" afterPath="$PROJECT_DIR$/kate_magic/css/less/job.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/job.less" afterPath="$PROJECT_DIR$/kate_magic/css/less/job.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/news1.css" afterPath="$PROJECT_DIR$/kate_magic/css/less/news1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/news1.less" afterPath="$PROJECT_DIR$/kate_magic/css/less/news1.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/job.html" afterPath="$PROJECT_DIR$/kate_magic/job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/service.css" afterPath="$PROJECT_DIR$/kate_magic/css/less/service.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/service.less" afterPath="$PROJECT_DIR$/kate_magic/css/less/service.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/service.html" afterPath="$PROJECT_DIR$/kate_magic/service.html" />
     </list>
     <ignored path="GitHub.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,28 +31,28 @@
       <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kate_magic/css/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.48">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            <state vertical-scroll-proportion="-16.0">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="job.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kate_magic/job.html">
+      <file leaf-file-name="service.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kate_magic/css/less/service.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.44">
-              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.67897725">
+              <caret line="389" column="27" selection-start-line="389" selection-start-column="27" selection-end-line="389" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="job.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kate_magic/css/less/job.less">
+      <file leaf-file-name="service.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kate_magic/service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5626374">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+            <state vertical-scroll-proportion="-30.08">
+              <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -78,8 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kate_magic/service.html" />
-        <option value="$PROJECT_DIR$/kate_magic/css/less/service.less" />
         <option value="$PROJECT_DIR$/kate_magic/history.html" />
         <option value="$PROJECT_DIR$/kate_magic/css/less/history.less" />
         <option value="$PROJECT_DIR$/kate_magic/css/jquery.jsscrollpane.css" />
@@ -103,9 +98,11 @@
         <option value="$PROJECT_DIR$/kate_magic/css/less/gallery.less" />
         <option value="$PROJECT_DIR$/kate_magic/news1.html" />
         <option value="$PROJECT_DIR$/kate_magic/css/less/news1.less" />
-        <option value="$PROJECT_DIR$/kate_magic/css/app.less" />
         <option value="$PROJECT_DIR$/kate_magic/job.html" />
         <option value="$PROJECT_DIR$/kate_magic/css/less/job.less" />
+        <option value="$PROJECT_DIR$/kate_magic/css/app.less" />
+        <option value="$PROJECT_DIR$/kate_magic/service.html" />
+        <option value="$PROJECT_DIR$/kate_magic/css/less/service.less" />
       </list>
     </option>
   </component>
@@ -187,6 +184,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GitHub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GitHub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kate_magic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -228,14 +243,14 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/tybys/Documents/GitHub/kate_magic/css/less/news1.less" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\img" />
-      <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\css" />
-      <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\img" />
       <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\img\trash" />
+      <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\img" />
+      <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\css" />
       <recent name="C:\Users\tybys\Documents\GitHub\kate_magic\js" />
     </key>
   </component>
@@ -308,7 +323,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -425,22 +440,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/img/carous-arr.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/img/orange-close.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/css/less/service.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/css/less/history.less">
@@ -448,13 +450,6 @@
         <state vertical-scroll-proportion="0.4848485">
           <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.08">
-          <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -650,8 +645,8 @@
         <state vertical-scroll-proportion="-14.64">
           <caret line="231" column="20" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="20" />
           <folding>
-            <element signature="e#4443#4694#2" expanded="true" />
-            <element signature="e#4809#5018#2" expanded="true" />
+            <element signature="e#4443#4694#2" expanded="false" />
+            <element signature="e#4809#5018#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -680,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/css/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.48">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/job.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.44">
@@ -700,6 +687,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5626374">
           <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/img/carous-arr.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/css/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.08">
+          <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/css/less/service.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67897725">
+          <caret line="389" column="27" selection-start-line="389" selection-start-column="27" selection-end-line="389" selection-end-column="27" />
           <folding />
         </state>
       </provider>

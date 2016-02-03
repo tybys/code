@@ -14,6 +14,106 @@
 	margin-bottom: 3px;
 }
 
+.service-wrap {
+	padding-top: 38px;
+	background: #ffaa2d;
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+
+		li ul {
+			background: #292a2f;
+			a {
+				color: white;
+			}
+		}
+
+		li {
+			display: block;
+			padding: 16px 0;
+
+			background: none;
+			border-top: none;
+			border-bottom: 1px solid #f1852b;
+			border-radius: 0;
+			padding-left: 28px !important;
+			padding: 12.5px 15px;
+
+			&:last-of-type {
+				border: none;
+			}
+			.badge {
+				color: white;
+				border-radius: 0;
+				background-color: transparent;
+				float: right;
+				margin-top: 3px;
+			}
+			a {
+				font-size: 16px;
+				color: #282828;
+				text-decoration: none;
+			}
+			&.has-child {
+				padding: 0 !important;
+				& > a {
+					padding-left: 28px;
+					line-height: 47px;
+				}
+				li {
+					border: none;
+					position: relative;
+					&.active {
+						background: #fd7e01;
+						padding-top: 0;
+						padding-bottom: 0;
+						line-height: 38px;
+						&:before {
+							//content: '';
+							//position: absolute;
+							//width: calc(100% + 30px);
+							//width: -webkit-calc(100% + 30px);
+							//height: 38px;
+							//background: #fd7e01;
+							//top: 7px;
+							//left: -15px;
+						}
+						&:after {
+							content: '';
+							position: absolute;
+							right: -18px;
+							top: 0px;
+							background: url('../../img/carous-arr.png') no-repeat;
+							width: 18px;
+							height: 38px;
+						}
+					}
+				}
+				ul li a {
+					padding-left: 59px;
+					display: inline-block;
+				}
+				border: none;
+			}
+			&.cap {
+				background: #ffc672;
+				padding-left: 26px;
+				box-shadow: 1px 1px 12px rgba(0,0,0,0.14);
+				a {
+					text-transform: none;
+					font-size: 30px;
+					color: #282828;
+					font-weight: 300;
+					text-decoration: none;
+					margin: 0;
+					padding: 15px 0;
+				}
+			}
+		}
+	}
+}
+
 .panel-group {
 	padding-top: 38px;
 	background: #ffaa2d;
@@ -117,7 +217,7 @@
 		border-bottom: 2px solid;
 		padding-left: 6px;
 		i {
-			background: url('../img/orange-close.png') no-repeat;
+			background: url('../../img/orange-close.png') no-repeat;
 			display: inline-block;
 			width: 23px;
 			height: 23px;
@@ -177,6 +277,42 @@
 
 //tb
 @media only screen and (min-width: 1px) and (max-width: 992px) {
+	li.active:after {
+		display: none;
+	}
+	.row.service {
+		padding-top: 24px;
+
+		& > .left {
+			width: 345px;
+		}
+
+		& > .left + .right {
+			width: ~"calc(100% - 345px)";
+			width: ~"-webkit-calc(100% - 345px)";
+		}
+
+		& > .left + .right {
+			padding-left: 35px;
+		}
+	}
+	.service-wrap {
+		padding-top: 0;
+		ul li.has-child {
+			ul li a {
+				padding-left: 0;
+			}
+		}
+	}
+	.right h3 {
+		padding-top: 15px;
+	}
+	.title_box_right {
+		top: 25px !important;
+		left: auto;
+		right: 0;
+	}
+
 	.row {
 		& > .left {
 			width: 50%;
@@ -237,12 +373,21 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+
 	.row {
 		& > .left {
-			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			padding-left: 0;
 			& + .right {
-				width: 100%;
-				padding-left: 15px;
+				width: 100% !important;
+				padding-left: 0;
+				position: absolute;
+				top: 0;
+				left: 100%;
 			}
 		}
 	}
