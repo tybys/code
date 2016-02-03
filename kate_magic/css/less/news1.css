@@ -25,6 +25,9 @@
 .media {
   margin-top: 33px;
 }
+.media.big .inner {
+  padding-top: 23px;
+}
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .media.big img {
     width: 300px;
@@ -47,9 +50,6 @@
   font-size: 14px;
   color: #282828;
   line-height: 16px;
-}
-.media .inner {
-  padding-top: 23px;
 }
 .media .media-left {
   padding-right: 27px;
