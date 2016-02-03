@@ -3,8 +3,20 @@
 	margin-right: 34px;
 	a {
 		line-height: 100%;
+
+		font-size: 18px;
+		color: #ff8200;
+		text-decoration: none;
+		padding: 0 5px 5px;
+		font-weight: 300;
+		display: inline-block;
+		&.active {
+			border-bottom: 3px solid #fd7e01;
+			color: #000;
+		}
 	}
 }
+
 .filter,
 .filter + form {
 	float: left;
@@ -61,7 +73,7 @@
 //
 @media all and (min-width: 992px) and (max-width: 1200px) {
 	.title_box_right {
-		top: 12px;
+		top: 12px !important;
 	}
 	.filter {
 		display: block !important;
@@ -71,8 +83,9 @@
 
 // tb
 @media only screen and (min-width: 1px) and (max-width: 992px) {
-	.title_box_padd {
+	.content_box .title_box_padd {
 		padding: 0 15px 25px !important;
+		margin-bottom: 93px;
 	}
 
 	.title_box .title_box_right {
@@ -103,12 +116,14 @@
 		right: 0;
 		.filter a {display: none}
 		.sell_orange {
-			display: block;
+			display: inline-block !important;
 			margin: 0;
 			line-height: 36px;
 			margin-top: 3px;
+			top: 44px;
 		}
 		form {
+			display: block !important;
 			float: right;
 		}
 	}
@@ -116,6 +131,23 @@
 
 // mb
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+	.media.big {
+		float: none;
+	}
+	.btn-orange.show-more {
+		margin: 45px 0 45px;
+	}
+	.content_box .title_box_padd {
+		margin-bottom: 80px;
+	}
+	.title_box_right {
+		form {
+			display: none !important;
+		}
+		.sell_orange {
+			top: 3px;
+		}
+	}
 	.sell_orange {
 		background-color: #ffffff !important;
 	}
