@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ef8d35d-285b-4a38-9739-c480aa6a02d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/service.css" afterPath="$PROJECT_DIR$/kate_magic/css/less/service.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/css/less/service.less" afterPath="$PROJECT_DIR$/kate_magic/css/less/service.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kate_magic/service.html" afterPath="$PROJECT_DIR$/kate_magic/service.html" />
     </list>
     <ignored path="GitHub.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,28 +27,28 @@
       <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kate_magic/css/app.less">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.84">
+              <caret line="132" column="64" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kate_magic/request.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.0">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kate_magic/css/less/service.less">
+      <file leaf-file-name="request.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kate_magic/css/less/request.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74715906">
-              <caret line="401" column="33" selection-start-line="401" selection-start-column="33" selection-end-line="401" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kate_magic/service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.12">
-              <caret line="298" column="43" selection-start-line="298" selection-start-column="43" selection-end-line="298" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.65909094">
+              <caret line="187" column="25" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -62,9 +59,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -102,6 +99,8 @@
         <option value="$PROJECT_DIR$/kate_magic/css/app.less" />
         <option value="$PROJECT_DIR$/kate_magic/service.html" />
         <option value="$PROJECT_DIR$/kate_magic/css/less/service.less" />
+        <option value="$PROJECT_DIR$/kate_magic/request.html" />
+        <option value="$PROJECT_DIR$/kate_magic/css/less/request.less" />
       </list>
     </option>
   </component>
@@ -183,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,18 +350,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kate_magic/masters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/statistic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -477,6 +464,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,6 +472,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -491,6 +480,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -498,13 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.36">
           <caret line="174" column="85" selection-start-line="0" selection-start-column="0" selection-end-line="826" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032670453">
-          <caret line="154" column="72" selection-start-line="154" selection-start-column="72" selection-end-line="154" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -530,6 +513,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.07857143">
           <caret line="244" column="32" selection-start-line="244" selection-start-column="24" selection-end-line="244" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -555,24 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/feedback.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.314815">
           <caret line="124" column="22" selection-start-line="110" selection-start-column="16" selection-end-line="124" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/review.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.68">
-          <caret line="132" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -601,6 +573,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35939643">
           <caret line="1586" column="36" selection-start-line="1586" selection-start-column="34" selection-end-line="1586" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -608,17 +583,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7462277">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/masters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="291" column="28" selection-start-line="291" selection-start-column="28" selection-end-line="291" selection-end-column="108" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -627,14 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70454544">
           <caret line="607" column="34" selection-start-line="607" selection-start-column="34" selection-end-line="607" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.6">
-          <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="349" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -674,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/job.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.44">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/css/less/job.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5626374">
@@ -695,14 +645,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kate_magic/css/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/service.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.12">
@@ -713,8 +655,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kate_magic/css/less/service.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74715906">
+        <state vertical-scroll-proportion="-21.04">
           <caret line="401" column="33" selection-start-line="401" selection-start-column="33" selection-end-line="401" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03409091">
+          <caret line="154" column="72" selection-start-line="154" selection-start-column="72" selection-end-line="154" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.12">
+          <caret line="354" column="40" selection-start-line="354" selection-start-column="40" selection-end-line="354" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/job.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.64">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/masters.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.64">
+          <caret line="291" column="28" selection-start-line="291" selection-start-column="28" selection-end-line="291" selection-end-column="108" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09090909">
+          <caret line="135" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17558299">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/js/placeholder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22285715">
+          <caret line="110" column="43" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1666665">
+          <caret line="154" column="28" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/css/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.84">
+          <caret line="132" column="64" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/request.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kate_magic/css/less/request.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65909094">
+          <caret line="187" column="25" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
           <folding />
         </state>
       </provider>
