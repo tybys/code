@@ -1,0 +1,386 @@
+.seminars {
+
+	.one-col {
+		padding-bottom: 55px;
+	}
+
+	.slick-next,
+	.slick-prev {
+		//background: url('../img/btn_car_next.png') no-repeat;
+		text-indent: -5000px;
+		width: 60px;
+		height: 60px;
+		background: white;
+		border-radius: 5px 0 0 5px;
+		border: none;
+
+		position: absolute;
+
+		overflow: hidden;
+		color: white;
+
+		&:before {
+			content: '';
+			background: url('../../img/btn_car_next.png') no-repeat;
+			width: 19px;
+			height: 35px;
+			display: block;
+			margin: 12px auto 0 auto;
+			background-position: 0 100%;
+			background-size: 100%;
+		}
+	}
+	.slick-next {
+		right: 0;
+		top: 50%;
+	}
+	.slick-prev {
+		left: 0;
+		top: 50%;
+		z-index: 5;
+		border-radius: 0 5px 5px 0;
+		&:before {
+			content: '';
+			background: url('../../img/btn_car_ptev.png') no-repeat;
+			background-position: 0 100%;
+			background-size: 100%;
+		}
+	}
+
+	.seminar-slides {
+		//margin-bottom: 11px;
+		margin-top: 21px;
+		.slick-slide {
+			position: relative;
+		}
+	}
+	h3 {
+		font-size: 30px;
+		color: #282828;
+		font-weight: 600;
+
+		& + p {
+			font-size: 16px;
+			line-height: 20px;
+			a {text-decoration: none}
+		}
+	}
+
+	h4 {
+		font-weight: 600;
+		font-size: 22px;
+		color:#282828;
+		margin-bottom: 18px;
+		&.some-bigger {
+			font-size: 30px;
+		}
+	}
+	.inner {
+		padding: 0 21px;
+	}
+	.photos {
+		h4 {
+
+		}
+		img {
+			//margin-bottom: 13px;
+			//margin-right: 13px;
+
+			margin-bottom: 9px;
+			margin-right: 5px;
+
+			&:nth-of-type(3n) {
+				//margin-right: 0;
+			}
+		}
+	}
+
+	table {
+		margin-top: 0;
+		text-align: left;
+		th, td {
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 400;
+			padding: 8px 25px;
+			border-color: #d1d5d8;
+			&:first-of-type {
+				padding-left: 0;
+			}
+			&:last-of-type {
+				padding-right: 0;
+			}
+		}
+
+		th {
+			background: transparent;
+			color: #ff5607;
+			border-bottom: 1px solid #d1d5d8;
+		}
+	}
+
+	.plan-date {
+		dl {
+			margin-top: 15px;
+			margin-bottom: 55px;
+			dt {
+				float: left;
+				background: #292a2f;
+				color: white;
+				font-size: 17.2px;
+				text-transform: uppercase;
+				font-weight: 300;
+				padding: 4px 5px 4px 13px;
+
+				& + dd {
+					display: inline-block;
+					height: 32px;
+					line-height: 32px;
+					color: white;
+					padding: 0 15px;
+					background: #ff5607;
+				}
+			}
+		}
+	}
+	div {
+		.col-md-6 {
+			padding: 0;
+			ul {
+				margin-left: 32px;
+				margin-bottom: 80px;
+			}
+			iframe {
+				margin-bottom: 17px;
+
+				& + h4 {
+					margin-bottom: 25px;
+				}
+			}
+			&:first-of-type {
+				padding-right: 35px;
+				& + .col-md-6 {
+					padding-left: 15px;
+				}
+			}
+			&:last-of-type {
+
+			}
+		}
+	}
+
+	.subscribe {
+		background: white;
+		border-top: 2px solid #ff9800;
+		padding-bottom: 18px;
+		margin: 70px 0 60px 0;
+		.list_btn_coments {
+			float: right;
+			margin: 39px 36px 0 0;
+			padding-top: 0;
+		}
+
+		& + h4,
+		& + h4 + p {
+			padding: 0 27px;
+		}
+	}
+
+	.btn-orange {
+		width: auto;
+		display: inline-block;
+		margin: 18px 0 0 20px;
+		padding: 0 48px;
+	}
+}
+.media_library {
+	padding-bottom: 100px !important;
+	.index_title {
+		padding-top: 65px;
+	}
+	h2 {
+		color: white;
+	}
+	.library_one .name a {
+		color: white;
+	}
+	background: #1e1f24;
+	margin: 0 -10000px;
+	padding: 0 10000px;
+}
+
+
+.jobs {
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 35px;
+		font-weight: 600;
+	}
+
+	.one_jobs {
+		border-top: none;
+		padding: 24.5px 0 24.5px;
+		img {
+			margin: 0 20px 0 0;
+		}
+		ul.list_btn_coments {
+			margin-top: 5px;
+			margin-left: -20px;
+			li {
+				padding: 0 0 0 20px;
+			}
+			a {
+				color: white;
+			}
+		}
+	}
+	.one_jobs_box {
+		h3 {
+			font-size: 18px;
+			text-transform: none;
+			font-weight: 300;
+		}
+		p {
+			font-weight: 300;
+			font-size: 14px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1px) {
+	.list_btn_coments li {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 1px) {
+	.content_box {
+		padding-bottom: 0;
+	}
+	h3 {
+		padding-top: 45px;
+	}
+
+	.seminars .plan-date dl {
+		margin-top: 5px;
+		margin-bottom: 25px;
+	}
+	.seminars div .col-md-6 ul {
+		margin-bottom: 40px;
+	}
+
+	.seminars table {
+		margin-bottom: 60px;
+	}
+	.seminars div .col-md-6:first-of-type + .col-md-6 {
+		padding-left: 0;
+	}
+
+	.seminars .inner {
+		padding: 0;
+	}
+	.seminars .photos img {
+		margin-bottom: 10px;
+		margin-right: 7px;
+		width: ~"calc(100% - 488px)";
+		width: ~"-webkit-calc(100% - 488px)";
+		&:nth-of-type(3n) {
+			margin-right: 0;
+		}
+	}
+
+	.seminars .subscribe + h4, .seminars .subscribe + h4 + p {
+		padding: 0;
+	}
+
+	.seminars .subscribe {
+		margin: 60px 0 35px 0;
+	}
+
+	.one_jobs a.btn_jobs {
+		display: none;
+	}
+	a.btn_coment {
+		padding-left: 33px;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.media_library .index_title {
+		padding-top: 27px;
+	}
+	.media_library {
+		.index_title {
+			text-align: center;
+		}
+		h2 {
+			float: none;
+		}
+
+		.list_library li {
+			padding-top: 60px;
+		}
+		.library_one {
+			padding: 0 27px;
+		}
+	}
+
+	.seminars {
+		.inner {
+			padding: 0 16px;
+			div .col-md-6:first-of-type {
+				padding-right: 0;
+			}
+		}
+		.photos img {
+			width: 48% !important;
+			margin: 0 0 8px 8px;
+			float: left;
+		}
+		.btn-orange {
+			width: 262px;
+			display: block;
+			margin: 16px auto;
+		}
+		.list_btn_coments {
+			display: block;
+		}
+		.subscribe + h4, .subscribe + h4 + p {
+			padding: 0 15px;
+		}
+		.seminar-slides .slick-slide {
+			//width: 100% !important;
+		}
+		.media_library ul.list_library li {
+		//	width: 100% !important;
+		}
+		.plan-date dl dt {
+			float: none;
+			display: block;
+			background: transparent;
+			padding: 0;
+			span {
+				background: #292a2f;
+				line-height: 32px;
+				display: inline-block;
+				padding-left: 13px;
+				padding-right: 5px;
+			}
+			& + dd {
+				background: transparent;
+				display: block;
+
+				padding: 0;
+
+				span {
+					line-height: 32px;
+					display: inline-block;
+					background: #ff5607;
+					padding-left: 13px;
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+}
