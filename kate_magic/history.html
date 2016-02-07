@@ -17,6 +17,7 @@
 	<link href="js/fancybox/jquery.fancybox.css" rel="stylesheet"/>
 	<link href="css/jquery.nouislider.min.css" rel="stylesheet"/>
 	<link href="css/placeholder.css" rel="stylesheet"/>
+	<link href="css/star-rating.min.css" rel="stylesheet"/>
 
 	<link rel="stylesheet" type="text/css" href="css/app.css" />
 	<link rel="stylesheet" type="text/css" href="css/less/history.css" />
@@ -38,6 +39,8 @@
 	<script src="js/helpers.js"></script>
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/isotope.js"></script>
+	<script src="js/star-rating.js"></script>
+	<script src="js/star-rating_locale_ru.js"></script>
 	<script src="js/scripts.js"></script>
 </head>
 <body class="">
@@ -129,7 +132,7 @@
 							<p><span>22</span> <span>окт</span></p>
 						</div>
 
-						<h4 class="title">Комплекс услуг:  4 услуги / 3 мастера</h4>
+						<h2 class="title">Комплекс услуг:  4 услуги / 3 мастера</h2>
 
 						<div class="record-left">
 							<img src="img/img_coments_slider_1.jpg" />
@@ -140,12 +143,25 @@
 							<div class="index_coments">
 								<span class="name">Мастера:</span>
 								<ul class="list">
-									<li><img alt="" src="img/img_com_master_1.jpg"></li>
-									<li><img alt="" src="img/img_com_master_2.jpg"></li>
-									<li><img alt="" src="img/img_com_master_3.jpg"></li>
+									<li>
+										<img alt="" src="img/img_com_master_1.jpg">
+										<span class="mname">Мастер фамильцев</span>
+										<input id="fmaster" type="number" class="rating" data-size="lg" data-rtl="true">
+									</li>
+									<li>
+										<img alt="" src="img/img_com_master_2.jpg">
+										<span class="mname">Мастер фамильцев</span>
+										<input id="smaster" type="number" class="rating" data-size="lg" data-rtl="true">
+									</li>
+									<li>
+										<img alt="" src="img/img_com_master_3.jpg">
+										<span class="mname">Мастер фамильцев</span>
+										<input id="tmaster" type="number" class="rating" data-size="lg" data-rtl="true">
+									</li>
 								</ul>
 								<span class="autor subj">Отзыв</span>
 								<p>Здравствуйте! Огромное спасибо Вере за мастерство и профессионализм. К сожалению, в последнее время я никак не могу попасть в нужное мне время к замечательному мастеру. Может, это связано с открытием второй студии? Не знаю. Но, к большому моему огорчению, мне придется искать другое место. Очень, очень жаль</p>
+								<a href="#" class="btn-orange csmall">читать полностью</a>
 								<ul class="list_btn_coments">
 									<li><a href="#" class="btn_share">Поделиться</a></li>
 								</ul>
@@ -153,7 +169,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<div class="record background" style="height: 460px;">
+					<div class="record background">
 						<div class="date">
 							<p><span>22</span> <span>окт</span></p>
 						</div>
@@ -165,34 +181,38 @@
 								<span class="by-price">Цена для вас: 28 888 руб.</span>
 							</p>
 
-							<div class="photo">
-								<span class="img-wrap"></span>
-								<span>Предложить фотографии для отзыва</span>
+							<div class="photo-wrap">
+								<div class="photo">
+									<span class="img-wrap"></span>
+									<span>Предложить фотографии для отзыва</span>
+								</div>
 							</div>
 							<div class="masters">
 								<h5>Оценить работу мастеров</h5>
 								<ul>
-									<li>
+									<li class="has-rating">
+										<img alt="" src="img/img_com_master_1.jpg">
+										<span class="name">Иван иванов</span>
+										<input id="" type="number" class="rating" data-size="lg" data-rtl="true">
+										<input id="" type="number" class="rating" data-size="lg" data-rtl="true">
+										<input id="" type="number" class="rating" data-size="lg" data-rtl="true">
+										<a href="#" class="btn-orange white">Оценить</a>
+									</li>
+									<li class="has-noRating">
 										<img alt="" src="img/img_com_master_1.jpg">
 										<span class="name">Иван иванов</span>
 										<a href="#" class="btn-orange white">Оценить</a>
 									</li>
-									<li>
-										<img alt="" src="img/img_com_master_1.jpg">
-										<span class="name">Иван иванов</span>
-										<a href="#" class="btn-orange white">Оценить</a>
-									</li>
-									<li>
+									<li class="has-noRating">
 										<img alt="" src="img/img_com_master_1.jpg">
 										<span class="name">Иван иванов</span>
 										<a href="#" class="btn-orange white">Оценить</a>
 									</li>
 								</ul>
 
-								<a href="#" class="btn-orange medium">Написать отзыв</a>
+								<div class="review-wrap"><a href="#" class="btn-orange medium">Написать отзыв</a></div>
 							</div>
 						</div>
-						<!--<a href="#" class="btn-orange white">Оменить запись</a>-->
 					</div>
 					<div class="record">
 						<div class="date">
@@ -298,5 +318,14 @@
 	</div>
 
 </div>
+<script>
+	$(function () {
+		$(".rating").rating({
+			showCaption: false,
+			showClear: false,
+			language: 'ru'
+		});
+	});
+</script>
 </body>
 </html>
