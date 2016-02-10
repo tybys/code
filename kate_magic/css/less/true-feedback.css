@@ -1,0 +1,128 @@
+.fresh-comments .cap {
+  border-bottom: 2px solid #ff9800;
+  margin-bottom: 39px;
+}
+.fresh-comments .cap h3 {
+  color: #1e1f24;
+  font-size: 22px;
+  margin-left: 22px;
+  padding-bottom: 13px;
+}
+.fresh-comments .btn-orange.orange {
+  background: #ff9800;
+  float: left;
+  width: auto;
+  display: inline-block;
+  font-size: 18px;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 41px;
+  margin-top: 0;
+  vertical-align: top;
+  margin-left: 79px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.fresh-comments .btn-orange.gray {
+  background: #a9aaac;
+  float: left;
+  width: auto;
+  display: inline-block;
+  font-size: 18px;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 41px;
+  margin-top: 0;
+  vertical-align: top;
+  margin-left: 107px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.fresh-comments .btn-orange.gray + span {
+  display: inline-block;
+  margin-left: 44px;
+  margin-top: 11px;
+}
+.fresh-comments .btn-orange.gray + span a {
+  color: #ff9800;
+  display: block;
+}
+.fresh-comments .controls:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fresh-comments .controls.text {
+  padding-left: 26px;
+}
+.fresh-comments .controls .text-wrap {
+  position: relative;
+  margin-bottom: 11px;
+  margin-left: 79px;
+}
+.fresh-comments .controls .text-wrap:before {
+  content: '';
+  background: url('../../img/xvoct2.png') no-repeat;
+  width: 17px;
+  height: 15px;
+  position: absolute;
+  top: calc(50% - 7.5px);
+  top: -webkit-calc(50% - 7.5px);
+  left: -16px;
+}
+.fresh-comments .controls textarea {
+  min-height: 122px;
+}
+.fresh-comments .lenta .item {
+  padding-left: 26px;
+  display: inline-block;
+  margin-bottom: 31px;
+}
+.fresh-comments .lenta .item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fresh-comments .lenta .item img {
+  float: left;
+}
+.fresh-comments .lenta .item .message {
+  margin-left: 82px;
+  border: 1px solid #e8e8ef;
+  padding: 14px 20px;
+  position: relative;
+}
+.fresh-comments .lenta .item .message:before {
+  content: '';
+  background: url('../../img/xvoct.png') no-repeat;
+  width: 17px;
+  height: 15px;
+  position: absolute;
+  top: calc(50% - 7.5px);
+  top: -webkit-calc(50% - 7.5px);
+  left: -16px;
+}
+.fresh-comments .lenta .item .message .name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  display: block;
+  margin-bottom: 5px;
+}
+.fresh-comments .lenta .item .message p {
+  font-size: 13px;
+  color: #5b5c63;
+  line-height: 14px;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.fresh-comments .lenta .item .message .date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
