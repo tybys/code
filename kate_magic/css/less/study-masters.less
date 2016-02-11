@@ -183,6 +183,16 @@
 		position: relative;
 		top: 125px; // only for desktop
 		float: left; // only for desktop
+
+		&.nfl {
+			float: none;
+			top: 0;
+			margin-top: 91px;
+
+			h3 {
+				color: white;
+			}
+		}
 		.decor {
 			width: 107px;
 			height: 107px;
@@ -289,6 +299,13 @@
 		padding: 0 10000px;
 		margin: 107px -10000px 0 -10000px;
 
+		&.short {
+			padding: 0;
+			margin: 107px 0 0 0;
+			.inner {
+				border: none;
+			}
+		}
 		.inner {
 			position: relative;
 			border: 2px solid #e9edf0;
@@ -384,6 +401,15 @@
 			font-size: 22px;
 			color: #d2d7db;
 			font-weight: 300;
+
+			&.custom {
+				.left {
+					margin-right: 12.5px;
+				}
+				.right {
+					margin-left: 12.5px;
+				}
+			}
 			.left {
 				background: url('../../img/btn_sl_com_prev_hover.png') no-repeat;
 				width: 19px;
@@ -414,7 +440,13 @@
 			& > div {
 				background: white;
 			}
-
+			.last-order {
+				.date {
+					font-size: 12px;
+					color: rgba(0, 0, 0, 0.5);
+					display: block;
+				}
+			}
 			.subs {
 				h5 {
 					font-size: 25px;
