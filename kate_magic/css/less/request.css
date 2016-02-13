@@ -141,19 +141,23 @@ form button {
   .content_box .title_box {
     padding: 0 170px 12px 35px;
   }
-  .one-col {
-    padding: 0 15px 0 22px;
-  }
   .one-col .clearfix {
     margin: 0;
   }
-  .one-col form > div {
-    padding-right: 9px !important;
+  .one-col h2,
+  .one-col p,
+  .one-col h3 {
+    padding-left: 9px;
+    padding-right: 9px;
   }
-  .one-col form > div button {
+  .one-col .form-custom-wrap > form > div {
+    padding-right: 9px !important;
+    padding-left: 9px !important;
+  }
+  .one-col .form-custom-wrap > form > div button {
     width: 50%;
   }
-  .one-col form > div .price {
+  .one-col .form-custom-wrap > form > div .price {
     width: 50%;
     float: left;
   }
@@ -166,17 +170,22 @@ form button {
   }
   .one-col .widget img {
     float: none;
-    width: 98%;
-    padding-right: 9px;
+    width: 100%;
   }
   .one-col .widget h3,
   .one-col .widget p {
     margin-left: 0;
+  }
+  .one-col .widget a {
+    margin-left: 9px;
   }
   .one-col .widget .close {
     display: none;
   }
   .one-col .adv {
     background: #eef1f3;
+  }
+  .one-col .adv ul {
+    padding-left: 6px;
   }
 }
