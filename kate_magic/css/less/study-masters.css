@@ -15,6 +15,12 @@ body.st-u #main {
   z-index: 10;
   height: 311px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel {
+    height: 100%;
+    min-height: 400px;
+  }
+}
 .study-masters .master-panel a {
   text-decoration: none;
 }
@@ -40,8 +46,15 @@ body.st-u #main {
   height: 220px;
   box-shadow: 2px 0 16px rgba(44, 48, 53, 0.18);
   margin-top: 45px;
-  margin-left: 45px;
+  margin-left: 16px;
   float: left;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel img {
+    width: 200px;
+    height: 200px;
+    margin-top: 63px;
+  }
 }
 .study-masters .master-panel .about {
   max-width: 200px;
@@ -50,6 +63,12 @@ body.st-u #main {
   margin-left: 50px;
   padding: 0;
   position: relative;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel .about {
+    margin-top: 48px;
+    max-width: 100%;
+  }
 }
 .study-masters .master-panel .about.empty {
   margin-top: 80px;
@@ -114,6 +133,11 @@ body.st-u #main {
   display: block;
   margin-bottom: 28px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel .about .name {
+    margin-bottom: 13px;
+  }
+}
 .study-masters .master-panel .about .title {
   font-size: 16px;
   line-height: 17px;
@@ -124,6 +148,17 @@ body.st-u #main {
   width: 50%;
   float: right;
   margin-top: 80px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel .master-menu {
+    width: auto;
+    position: absolute;
+    top: 48px;
+    right: 0;
+  }
+  .study-masters .master-panel .master-menu .col-sm-6 {
+    width: 240px;
+  }
 }
 .study-masters .master-panel .master-menu .all-reviews,
 .study-masters .master-panel .master-menu .work-album,
@@ -298,6 +333,12 @@ body.st-u #main {
   margin: 0 -10000px;
   background: #292a2f;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .crs-wrap {
+    padding: 0;
+    margin: 0;
+  }
+}
 .study-masters .crs-wrap h3 {
   color: #fd7e01;
   font-size: 30px;
@@ -317,6 +358,11 @@ body.st-u #main {
 .study-masters .achs {
   margin-top: 60px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achs {
+    margin-bottom: 45px;
+  }
+}
 .study-masters .achs img {
   margin-right: 40px;
 }
@@ -324,6 +370,12 @@ body.st-u #main {
   position: relative;
   top: 125px;
   float: left;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block {
+    top: -20px;
+    z-index: 100;
+  }
 }
 .study-masters .float-block.nfl {
   float: none;
@@ -344,6 +396,11 @@ body.st-u #main {
   top: -30px;
   text-align: center;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .decor {
+    left: 16px;
+  }
+}
 .study-masters .float-block .decor img {
   margin-top: 27px;
 }
@@ -358,15 +415,33 @@ body.st-u #main {
   padding-bottom: 0;
   line-height: 21px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block h3 {
+    padding-left: 170px;
+  }
+}
 .study-masters .float-block .inner {
   padding: 22px 22px 22px 216px;
   background: #fd7e01;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
 }
 .study-masters .float-block .inner .cap {
   margin-bottom: 8px;
   font-size: 22px;
   font-weight: 600;
   color: white;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .cap {
+    padding-left: 170px;
+    text-align: left;
+  }
 }
 .study-masters .float-block .inner .col-md-6 {
   color: white;
@@ -382,6 +457,11 @@ body.st-u #main {
   bottom: 9px;
   left: -42px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6:not(.lefty):before {
+    left: -14px;
+  }
+}
 .study-masters .float-block .inner .col-md-6 span {
   color: white;
 }
@@ -390,6 +470,12 @@ body.st-u #main {
   font-size: 45px;
   font-weight: 600;
   line-height: 52px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6 .procent {
+    font-size: 30px;
+    margin-left: 25px;
+  }
 }
 .study-masters .float-block .inner .col-md-6 .procent:after {
   content: '';
@@ -402,11 +488,28 @@ body.st-u #main {
   left: 14px;
   top: -5px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6 .procent:after {
+    left: 8px;
+    top: -10px;
+  }
+}
 .study-masters .float-block .inner .col-md-6 .wrap {
   font-weight: 600;
   font-size: 22px;
   text-transform: uppercase;
   padding-left: 95px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6 .wrap {
+    line-height: 20px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6 .wrap {
+    padding-left: 64px;
+  }
 }
 .study-masters .float-block .inner .col-md-6 .wrap .title {
   font-size: 15px;
@@ -414,14 +517,31 @@ body.st-u #main {
   display: block;
   text-transform: none;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6 .wrap .title {
+    text-align: left;
+    padding-left: 22px;
+  }
+}
 .study-masters .float-block .inner .col-md-6 .wrap .price {
   text-transform: none;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .float-block .inner .col-md-6 .wrap .price {
+    font-size: 20px;
+  }
 }
 .study-masters .achievement {
   position: relative;
   background: white;
   padding: 0 10000px;
   margin: 107px -10000px 0 -10000px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement {
+    padding: 0;
+    margin: 0;
+  }
 }
 .study-masters .achievement.short {
   padding: 0;
@@ -440,13 +560,33 @@ body.st-u #main {
   left: 210px;
   top: -108px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement .title-wrap {
+    left: 170px;
+    top: -58px;
+  }
+}
 .study-masters .achievement .title-wrap h2 {
   color: #fff;
   font-size: 30px;
   text-transform: none;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement .title-wrap h2 {
+    color: #fd7e01;
+  }
+}
 .study-masters .achievement .achievements_cont {
   display: inline-block;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement .achievements_cont {
+    display: block;
+    margin-left: 24%;
+  }
+  .study-masters .achievement .achievements_cont li:last-of-type {
+    text-align: center;
+  }
 }
 .study-masters .achievement .achievements_cont ul li {
   padding-top: 47px;
@@ -458,6 +598,11 @@ body.st-u #main {
   vertical-align: top;
   text-transform: uppercase;
   margin-top: 42px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement .info-more {
+    margin-top: 0;
+  }
 }
 .study-masters .achievement .info-more img {
   margin-top: 35px;
@@ -477,6 +622,12 @@ body.st-u #main {
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement .inf {
+    margin-left: 27px;
+    margin-top: 88px;
+  }
 }
 .study-masters .achievement .inf .big {
   color: #fd7e01;
@@ -503,12 +654,28 @@ body.st-u #main {
   box-shadow: 3px 0 12px rgba(33, 42, 61, 0.17);
   text-align: center;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achievement .img-wrap {
+    left: 16px;
+  }
+}
 .study-masters .achievement .img-wrap img {
   margin-top: calc(30.5%);
   margin-top: -webkit-calc(30.5%);
 }
 .study-masters .separated {
   margin-top: 105px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .separated {
+    margin-top: 0;
+  }
+  .study-masters .separated .col-md-6 {
+    padding: 0 2px;
+  }
+  .study-masters .separated .col-md-6:first-of-type {
+    border-bottom: 3px solid #e9edf0;
+  }
 }
 .study-masters .separated .col-md-6 {
   position: relative;
@@ -608,6 +775,11 @@ body.st-u #main {
   color: white;
   margin-top: 39px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .separated .col-md-6 .subs h5 {
+    color: #ff8200;
+  }
+}
 .study-masters .separated .col-md-6 .subs p {
   font-size: 16px;
   color: #494b4f;
@@ -632,6 +804,11 @@ body.st-u #main {
 .study-masters .separated .inner {
   position: relative;
   padding: 92px 63px 36px 63px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .separated .inner {
+    padding-bottom: 127px;
+  }
 }
 .study-masters .separated .inner p {
   font-size: 13px;
@@ -667,6 +844,11 @@ body.st-u #main {
   box-shadow: 3px 0 12px rgba(33, 42, 61, 0.17);
   text-align: center;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .separated .img-wrap {
+    left: 16px;
+  }
+}
 .study-masters .separated .img-wrap img {
   margin-top: calc(30.5%);
   margin-top: -webkit-calc(30.5%);
@@ -675,6 +857,15 @@ body.st-u #main {
   position: absolute;
   left: 210px;
   top: -108px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .separated .title-wrap {
+    left: 170px;
+    top: -58px;
+  }
+  .study-masters .separated .title-wrap h2 {
+    color: #fd7e01 !important;
+  }
 }
 .study-masters .separated .title-wrap h2 {
   color: #fff;
@@ -815,6 +1006,12 @@ body.st-u #main {
   margin: 0 -10000px;
   background: white;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .stats-summary .inner {
+    padding: 0;
+    margin: 0;
+  }
+}
 .study-masters .stats-summary .inner .but-inner {
   text-align: center;
 }
@@ -836,6 +1033,12 @@ body.st-u #main {
   box-shadow: none;
   position: relative;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .progress {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 .study-masters .progress:before {
   content: '';
@@ -862,6 +1065,12 @@ body.st-u #main {
   padding: 12.5px 20px;
   position: relative;
   border-radius: 5px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .info {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 }
 .study-masters .info .close {
   position: absolute;
@@ -893,6 +1102,13 @@ body.st-u #main {
   padding: 0 10000px;
   margin: 38px -10000px 0 -10000px;
   position: relative;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .achs-crs-wrap {
+    padding: 0;
+    margin: 0;
+    top: 19px;
+  }
 }
 .study-masters .achs-crs-wrap button {
   background: transparent;
@@ -932,6 +1148,11 @@ body.st-u #main {
 }
 .content_box .title_box {
   margin-bottom: 17px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .content_box .title_box {
+    margin-bottom: 35px;
+  }
 }
 .slick-next,
 .slick-prev {
@@ -1068,8 +1289,19 @@ body.st-u #main {
   margin-top: 2px;
   padding: 0 21px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .articles {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 .articles .cap {
   margin-bottom: 42px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .articles .cap {
+    text-indent: 5px;
+  }
 }
 .articles h4 {
   font-size: 35px;
@@ -1082,6 +1314,11 @@ body.st-u #main {
 }
 .articles .col-md-4 {
   margin-bottom: 90px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .articles .col-md-4 {
+    margin-bottom: 0;
+  }
 }
 .articles h6 {
   font-size: 20px;
@@ -1103,4 +1340,21 @@ body.st-u #main {
   padding: 0 10000px;
   margin: 0 -10000px;
   background: white;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .articles .inner {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .content_box {
+    padding-bottom: 0;
+  }
+  .content_box .title_box {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-top: 5px;
+  }
 }
