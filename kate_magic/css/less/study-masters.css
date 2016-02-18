@@ -552,7 +552,7 @@ body.st-u #main {
 }
 .study-masters .achievement .inner {
   position: relative;
-  border: 2px solid #e9edf0;
+  box-shadow: inset 0 -2px 0px #e9edf0;
   padding-bottom: 56px;
 }
 .study-masters .achievement .title-wrap {
@@ -671,7 +671,7 @@ body.st-u #main {
     margin-top: 0;
   }
   .study-masters .separated .col-md-6 {
-    padding: 0 2px;
+    padding: 0 0;
   }
   .study-masters .separated .col-md-6:first-of-type {
     border-bottom: 3px solid #e9edf0;
@@ -731,6 +731,11 @@ body.st-u #main {
 .study-masters .separated .col-md-6 .last-order .inner {
   padding-left: 38px;
   padding-right: 22px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .separated .col-md-6 .last-order .inner {
+    padding-left: 172px;
+  }
 }
 .study-masters .separated .col-md-6 .last-order h5 {
   margin-top: 15px;
@@ -808,6 +813,7 @@ body.st-u #main {
 @media only screen and (min-width: 1px) and (max-width: 992px) {
   .study-masters .separated .inner {
     padding-bottom: 127px;
+    padding-left: 172px;
   }
 }
 .study-masters .separated .inner p {
@@ -876,6 +882,16 @@ body.st-u #main {
   padding: 0 10000px;
   margin: 0 -10000px;
   background: rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .form-custom-wrap {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  .study-masters .form-custom-wrap .inner {
+    padding-bottom: 0 !important;
+  }
 }
 .study-masters .form-custom-wrap .inner {
   padding-bottom: 142px;
@@ -971,6 +987,11 @@ body.st-u #main {
   margin-top: 45px;
   margin-bottom: 70px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .widget {
+    display: none;
+  }
+}
 .study-masters .widget img {
   float: left;
 }
@@ -1000,6 +1021,13 @@ body.st-u #main {
   text-align: center;
   font-size: 44px;
   color: #56575c;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .stats-summary h3 {
+    color: white;
+    padding-bottom: 0;
+    line-height: 31px;
+  }
 }
 .study-masters .stats-summary .inner {
   padding: 0 10000px;
