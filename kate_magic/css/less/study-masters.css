@@ -27,6 +27,49 @@ body.st-u #main {
 .study-masters .master-panel.user {
   height: 497px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel.user {
+    height: 100%;
+    min-height: 570px;
+  }
+  .study-masters .master-panel.user .backg {
+    background-position: top center;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .study-masters .master-panel.user .master-menu {
+    top: 95px;
+  }
+  .study-masters .master-panel.user .panel-menu {
+    white-space: nowrap;
+    bottom: 62px;
+    border-bottom: 2px solid white;
+  }
+  .study-masters .master-panel.user .panel-menu div {
+    width: 29%;
+  }
+  .study-masters .master-panel.user .panel-menu > div:first-of-type {
+    width: auto;
+  }
+  .study-masters .master-panel.user .panel-menu > div:first-of-type img {
+    width: 62px;
+    height: 62px;
+  }
+  .study-masters .master-panel.user .panel-menu > div:first-of-type h5 {
+    margin-top: 20px;
+  }
+  .study-masters .master-panel.user .panel-menu > div:first-of-type h5,
+  .study-masters .master-panel.user .panel-menu > div:first-of-type a {
+    margin-left: 112px;
+  }
+  .study-masters .master-panel.user .panel-menu img {
+    margin-top: 25px;
+  }
+  .study-masters .master-panel.user .panel-menu .name {
+    margin-top: 32px;
+    white-space: normal;
+  }
+}
 .study-masters .master-panel.user .backg {
   background-repeat: no-repeat;
   filter: blur(0);
@@ -76,11 +119,23 @@ body.st-u #main {
   position: relative;
   width: 220px;
 }
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel .about.empty {
+    margin-top: 85px;
+    margin-left: 0px;
+  }
+}
 .study-masters .master-panel .about.empty + .about {
   position: absolute;
   margin: 0;
   top: 100px;
   left: 325px;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel .about.empty + .about {
+    top: 45px;
+    left: 256px;
+  }
 }
 .study-masters .master-panel .about.empty + .about a {
   color: white;
@@ -99,6 +154,12 @@ body.st-u #main {
   width: 248px;
   height: 248px;
   float: left;
+}
+@media only screen and (min-width: 1px) and (max-width: 992px) {
+  .study-masters .master-panel .about.empty:after {
+    width: 208px;
+    height: 208px;
+  }
 }
 .study-masters .master-panel .about.empty .name {
   position: absolute;

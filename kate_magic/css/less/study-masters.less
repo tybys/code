@@ -24,8 +24,49 @@ body.st-u {
 			text-decoration: none;
 		}
 		&.user {
-			height: 497px;
 
+			@media @tablet {
+				height: 100%;
+				min-height: 570px;
+				.backg {
+					background-position: top center;
+					-webkit-background-size: cover !important;
+					background-size: cover !important;
+				}
+				.master-menu {
+					top: 95px;
+				}
+
+				.panel-menu {
+					white-space: nowrap;
+					bottom: 62px;
+					border-bottom: 2px solid white;
+					div {
+						width: 29%;
+					}
+					& > div:first-of-type {
+						width: auto;
+						img {
+							width: 62px;
+							height: 62px;
+						}
+						h5 {
+							margin-top: 20px;
+						}
+						h5, a {
+							margin-left: 112px;
+						}
+					}
+					img {
+						margin-top: 25px;
+					}
+					.name {
+						margin-top: 32px;
+						white-space: normal;
+					}
+				}
+			}
+			height: 497px;
 			.backg {
 				background-repeat: no-repeat;
 				filter: blur(0);
@@ -75,11 +116,20 @@ body.st-u {
 				margin-left: 43px;
 				position: relative;
 				width: 220px;
+
+				@media @tablet {
+					margin-top: 85px;
+					margin-left: 0px;
+				}
 				& + .about {
 					position: absolute;
 					margin: 0;
 					top: 100px;
 					left: 325px;
+					@media @tablet {
+						top: 45px;
+						left: 256px;
+					}
 
 					a {
 						color: white;
@@ -103,6 +153,10 @@ body.st-u {
 					//margin-top: 45px;
 					//margin-left: 45px;
 					float: left;
+					@media @tablet {
+						width: 208px;
+						height: 208px;
+					}
 				}
 				&:before {
 					//content: '';
