@@ -372,6 +372,65 @@ body.st-u #main {
   display: inline-block;
   width: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .master-panel {
+    min-height: 0;
+  }
+  .study-masters .master-panel img {
+    float: none;
+    margin: 46px auto 0 auto;
+    display: block;
+  }
+  .study-masters .master-panel .about {
+    text-align: center;
+    display: block;
+    margin: 22px 0 0 0;
+  }
+  .study-masters .master-panel .about .name {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .study-masters .master-panel .about .title {
+    font-size: 14px;
+  }
+  .study-masters .master-panel .master-menu {
+    width: 100%;
+    display: block;
+    float: none;
+    margin-top: 50px;
+    position: static;
+    text-align: center;
+    margin-bottom: calc(113px - 36px);
+    margin-bottom: -webkit-calc(113px - 36px);
+  }
+  .study-masters .master-panel .master-menu .list:before,
+  .study-masters .master-panel .master-menu .all-reviews:before,
+  .study-masters .master-panel .master-menu .stats:before,
+  .study-masters .master-panel .master-menu .work-album:before {
+    float: none !important;
+    clear: none !important;
+    margin: 0 auto;
+  }
+  .study-masters .master-panel .master-menu a {
+    margin-bottom: 56px !important;
+  }
+  .study-masters .master-panel .master-menu a .magic {
+    display: none !important;
+  }
+  .study-masters .master-panel .master-menu a i {
+    display: block !important;
+    width: 100% !important;
+  }
+  .study-masters .master-panel .master-menu > div {
+    width: 50% !important;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .study-masters .master-panel .master-menu > div:nth-of-type(1) a:nth-of-type(1),
+  .study-masters .master-panel .master-menu > div:nth-of-type(1) a:nth-of-type(2) {
+    white-space: nowrap;
+  }
+}
 .study-masters .backg {
   position: absolute;
   top: 0;
@@ -388,6 +447,11 @@ body.st-u #main {
 }
 .study-masters .mega-carousel {
   margin-top: 229px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .mega-carousel .slick-arrow {
+    display: none !important;
+  }
 }
 .study-masters .crs-wrap {
   padding: 191px 10000px 0 10000px;
@@ -411,6 +475,18 @@ body.st-u #main {
   font-size: 14px;
   line-height: 16px;
   color: white;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .crs {
+    text-align: center;
+  }
+  .study-masters .crs .btn_jobs {
+    float: none !important;
+    margin-top: 60px !important;
+  }
+  .study-masters .crs .slick-dots {
+    bottom: -22px;
+  }
 }
 .study-masters .crs .btn_jobs {
   float: right;
@@ -460,6 +536,15 @@ body.st-u #main {
 @media only screen and (min-width: 1px) and (max-width: 992px) {
   .study-masters .float-block .decor {
     left: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .float-block .decor {
+    width: 84px;
+    height: 84px;
+  }
+  .study-masters .float-block .decor img {
+    margin-top: 20px !important;
   }
 }
 .study-masters .float-block .decor img {
@@ -592,6 +677,54 @@ body.st-u #main {
     font-size: 20px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .float-block {
+    width: 100%;
+  }
+  .study-masters .float-block h3 {
+    color: white;
+    font-size: 22px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .study-masters .float-block .inner {
+    padding-top: 7px;
+  }
+  .study-masters .float-block .inner .cap {
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+  }
+  .study-masters .float-block .inner .cap .price {
+    display: block;
+  }
+  .study-masters .float-block .inner .col-md-6:not(.lefty):before {
+    bottom: 49px;
+    left: -12px;
+  }
+  .study-masters .float-block .inner .col-md-6 .procent {
+    font-size: 45px;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .study-masters .float-block .inner .col-md-6 .procent:after {
+    display: none;
+  }
+  .study-masters .float-block .inner .col-md-6 .wrap {
+    padding: 0;
+    font-size: 16px;
+  }
+  .study-masters .float-block .inner .col-md-6 .wrap .title {
+    display: none;
+  }
+  .study-masters .float-block .inner .col-md-6 .wrap .price {
+    display: block;
+  }
+  .study-masters .float-block .inner .info {
+    display: none;
+  }
+}
 .study-masters .achievement {
   position: relative;
   background: white;
@@ -720,9 +853,53 @@ body.st-u #main {
     left: 16px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .achievement .img-wrap {
+    width: 84px;
+    height: 84px;
+    top: -42px;
+  }
+  .study-masters .achievement .img-wrap img {
+    margin-top: 9px;
+  }
+}
 .study-masters .achievement .img-wrap img {
   margin-top: calc(30.5%);
   margin-top: -webkit-calc(30.5%);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .achievement .title-wrap {
+    top: -43px;
+    left: 0;
+    right: 0;
+  }
+  .study-masters .achievement .title-wrap h2 {
+    font-size: 22px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .study-masters .achievement .inf {
+    float: none;
+    font-size: 14px;
+    width: 175px;
+    margin: 0 auto 56px auto;
+    padding-top: 20px;
+  }
+  .study-masters .achievement .inf .big {
+    font-size: 55px;
+    font-weight: 600;
+    float: left;
+  }
+  .study-masters .achievement .inf .medium {
+    font-size: 30px;
+  }
+  .study-masters .achievement .achievements_cont {
+    margin: 0 auto;
+    width: 270px;
+  }
+  .study-masters .achievement .achievements_cont ul li {
+    padding-top: 20px;
+  }
 }
 .study-masters .separated {
   margin-top: 105px;
@@ -917,8 +1094,8 @@ body.st-u #main {
   }
 }
 .study-masters .separated .img-wrap img {
-  margin-top: calc(30.5%);
-  margin-top: -webkit-calc(30.5%);
+  margin-top: calc(50% - 19.5px);
+  margin-top: -webkit-calc(50% - 19.5px);
 }
 .study-masters .separated .title-wrap {
   position: absolute;
@@ -938,6 +1115,51 @@ body.st-u #main {
   color: #fff;
   font-size: 30px;
   text-transform: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .separated .subs h5 {
+    margin-top: 8px !important;
+  }
+  .study-masters .separated .subs a {
+    margin-bottom: 11px;
+  }
+  .study-masters .separated .inner {
+    padding-left: 29px;
+    padding-top: 65px;
+  }
+  .study-masters .separated .inner p {
+    padding-bottom: 25px;
+  }
+  .study-masters .separated .controls {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 6px;
+  }
+  .study-masters .separated .controls .left,
+  .study-masters .separated .controls .right {
+    display: none;
+  }
+  .study-masters .separated .title-wrap {
+    top: -43px;
+    left: 0;
+    right: 0;
+  }
+  .study-masters .separated .title-wrap h2 {
+    font-size: 22px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .study-masters .separated .img-wrap {
+    width: 84px;
+    height: 84px;
+    top: -42px;
+  }
+  .study-masters .separated .img-wrap img {
+    margin-top: calc(50% - 19.5px);
+    margin-top: -webkit-calc(50% - 19.5px);
+  }
 }
 .study-masters .form-custom-wrap {
   padding: 0 10000px;
@@ -1203,6 +1425,13 @@ body.st-u #main {
   background: transparent;
   height: 50px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .achs-crs-wrap button {
+    width: 9px;
+    height: 9px;
+    background: black;
+  }
+}
 .study-masters .achs-crs-wrap:before {
   content: '';
   position: absolute;
@@ -1234,6 +1463,14 @@ body.st-u #main {
 }
 .study-masters .achs-crs-wrap .slick-list {
   padding-bottom: 60px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .achs-crs-wrap {
+    padding-bottom: 130px;
+  }
+  .study-masters .achs-crs-wrap .slick-dots {
+    bottom: 33px;
+  }
 }
 .content_box .title_box {
   margin-bottom: 17px;
@@ -1436,6 +1673,12 @@ body.st-u #main {
     margin: 0;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .articles .inner {
+    padding: 0 10000px;
+    margin: 0 -10000px;
+  }
+}
 @media only screen and (min-width: 1px) and (max-width: 992px) {
   .content_box {
     padding-bottom: 0;
@@ -1445,5 +1688,10 @@ body.st-u #main {
     padding-right: 14px;
     padding-bottom: 12px;
     padding-top: 5px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .content_box .title_box {
+    margin-bottom: 8px;
   }
 }
