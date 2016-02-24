@@ -205,6 +205,32 @@ body.st-u #main {
   color: white;
   display: block;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .master-panel .about.empty {
+    text-align: center;
+    margin: 0 auto;
+    width: 190px;
+    height: 190px;
+  }
+  .study-masters .master-panel .about.empty .name {
+    left: 0;
+    top: 68px;
+  }
+  .study-masters .master-panel .about.empty .title {
+    right: 0;
+    left: 0;
+    top: 178px;
+  }
+  .study-masters .master-panel .about.empty:after {
+    top: 56px;
+    width: 165px;
+    height: 165px;
+  }
+  .study-masters .master-panel .about.empty + .about {
+    margin-top: 78px;
+    position: static;
+  }
+}
 .study-masters .master-panel .master-menu {
   width: 50%;
   float: right;
@@ -373,6 +399,61 @@ body.st-u #main {
   width: 50%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .master-panel .panel-menu {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    border-bottom: none !important;
+    padding-bottom: 35px;
+  }
+  .study-masters .master-panel .panel-menu .close {
+    right: 26px !important;
+    top: calc(50% - 12px) !important;
+    top: -webkit-calc(50% - 12px) !important;
+  }
+  .study-masters .master-panel .panel-menu .img-wrap {
+    display: inline-block;
+    position: static !important;
+  }
+  .study-masters .master-panel .panel-menu > div {
+    width: 100% !important;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+  .study-masters .master-panel .panel-menu > div img {
+    padding: 0 !important;
+    margin: 0 0 0 21px !important;
+  }
+  .study-masters .master-panel .panel-menu > div:first-of-type h5 {
+    font-size: 22px;
+    line-height: 18px;
+  }
+  .study-masters .master-panel .panel-menu > div:first-of-type .white {
+    margin-bottom: 20px;
+  }
+  .study-masters .master-panel .panel-menu > div:nth-of-type(2) .name,
+  .study-masters .master-panel .panel-menu > div:nth-of-type(3) .name {
+    margin-top: 32px;
+    white-space: normal;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .study-masters .master-panel .panel-menu > div:nth-of-type(2) img,
+  .study-masters .master-panel .panel-menu > div:nth-of-type(3) img {
+    margin: 20px 0 15px 21px !important;
+  }
+  .study-masters .master-panel .panel-menu > div:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .study-masters .master-panel .panel-menu .about.empty .name {
+    left: 0;
+    top: 68px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .study-masters .master-panel {
     min-height: 0;
   }
@@ -402,6 +483,11 @@ body.st-u #main {
     text-align: center;
     margin-bottom: calc(113px - 36px);
     margin-bottom: -webkit-calc(113px - 36px);
+  }
+  .study-masters .master-panel .master-menu:after {
+    content: '';
+    display: block;
+    clear: both;
   }
   .study-masters .master-panel .master-menu .list:before,
   .study-masters .master-panel .master-menu .all-reviews:before,
@@ -680,6 +766,7 @@ body.st-u #main {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .study-masters .float-block {
     width: 100%;
+    margin-top: -21px !important;
   }
   .study-masters .float-block h3 {
     color: white;
@@ -1013,6 +1100,29 @@ body.st-u #main {
   height: 1px;
   background: #e5e5e5;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .separated .col-md-6 .last-order .inner {
+    padding-left: 29px;
+    padding-top: 65px;
+  }
+  .study-masters .separated .col-md-6 .last-order h5 {
+    text-indent: 0;
+  }
+  .study-masters .separated .col-md-6 .last-order .white {
+    display: none;
+  }
+  .study-masters .separated .col-md-6 .last-order span.soc {
+    display: block;
+  }
+  .study-masters .separated .col-md-6 .last-order span.soc ~ img {
+    float: none;
+  }
+  .study-masters .separated .col-md-6 .last-order span.soc ~ img + a {
+    position: relative;
+    top: 14px;
+    margin-top: 0;
+  }
+}
 .study-masters .separated .col-md-6 .subs h5 {
   font-size: 25px;
   color: white;
@@ -1117,6 +1227,13 @@ body.st-u #main {
   text-transform: none;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .separated .name-wrap .date {
+    line-height: 52px;
+  }
+  .study-masters .separated .name-wrap .name {
+    line-height: 20px;
+    display: none;
+  }
   .study-masters .separated .subs h5 {
     margin-top: 8px !important;
   }
@@ -1126,6 +1243,7 @@ body.st-u #main {
   .study-masters .separated .inner {
     padding-left: 29px;
     padding-top: 65px;
+    padding-bottom: 65px;
   }
   .study-masters .separated .inner p {
     padding-bottom: 25px;
@@ -1262,6 +1380,36 @@ body.st-u #main {
   height: 100%;
   opacity: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .form-custom-wrap h2 {
+    padding-top: 0;
+    font-size: 25px;
+    color: #282828;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .study-masters .form-custom-wrap p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    color: #282828;
+  }
+  .study-masters .form-custom-wrap form .price {
+    color: #282828;
+    width: 50%;
+    float: left;
+  }
+  .study-masters .form-custom-wrap form .price span {
+    color: #282828;
+  }
+  .study-masters .form-custom-wrap form .price + button {
+    width: 50%;
+  }
+  .study-masters .form-custom-wrap form > div {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 .study-masters .widget {
   position: relative;
   background: #eef1f3;
@@ -1335,6 +1483,11 @@ body.st-u #main {
   height: 46px;
   line-height: 46px;
   padding: 0 41px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .study-masters .stats-summary h3 {
+    color: #56575c;
+  }
 }
 .study-masters .progress {
   margin-top: 13px;
@@ -1693,5 +1846,43 @@ body.st-u #main {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .content_box .title_box {
     margin-bottom: 8px;
+  }
+  body.st-u #main {
+    background: white;
+  }
+  .nxt-ach {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nxt-ach:before {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .nxt-ach .nxt {
+    font-weight: 300;
+  }
+  .nxt-ach .nxt + span {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+  .nxt-ach span {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .st-u .float-block .inner .info {
+    text-align: left;
+    margin-top: 15px;
+    display: block;
+  }
+  .st-u .float-block .inner .info:before {
+    height: 100%;
   }
 }
