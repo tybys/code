@@ -284,7 +284,7 @@
   display: block;
   height: 60px;
   width: 60px;
-  background: url(../img/btn_sl_com_next.png) no-repeat 50% 50%;
+  background: url(../../img/btn_sl_com_next.png) no-repeat 50% 50%;
   border: none;
   text-indent: -9999px;
   overflow: hidden;
@@ -298,13 +298,13 @@
   border-radius: 3px 0 0 3px;
 }
 .masters-list .masters-carousel .slick-next:hover {
-  background-image: url(../img/btn_sl_com_next_hover.png);
+  background-image: url(../../img/btn_sl_com_next_hover.png);
 }
 .masters-list .masters-carousel .slick-prev {
   display: block;
   height: 60px;
   width: 60px;
-  background: url(../img/btn_sl_com_prev.png) no-repeat 50% 50%;
+  background: url(../../img/btn_sl_com_prev.png) no-repeat 50% 50%;
   border: none;
   text-indent: -9999px;
   overflow: hidden;
@@ -318,7 +318,7 @@
   border-radius: 0 3px 3px 0;
 }
 .masters-list .masters-carousel .slick-prev:hover {
-  background-image: url(../img/btn_sl_com_prev_hover.png);
+  background-image: url(../../img/btn_sl_com_prev_hover.png);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .masters-list .hasDatepicker {
@@ -343,8 +343,14 @@
   .masters-list .masters .master .info h3 {
     font-size: 22px;
   }
+  .masters-list .filter-custom {
+    width: 100%;
+  }
   .masters-list .filter-custom span {
     display: none;
+  }
+  .masters-list .filter-custom a {
+    padding: 0 10px;
   }
   .masters-list .slick-dots {
     width: 100%;
