@@ -494,9 +494,14 @@
   .gallery .big-gallery .slick-slide .text-block.sel .chat .jspVerticalBar {
     width: 3px;
   }
+  .gallery .library_one .name {
+    bottom: 50px;
+  }
   .gallery .library_one .name a {
     font-size: 14px;
     line-height: 14px;
+    display: block;
+    width: 90%;
   }
   .gallery .library_one {
     padding-right: 5px;
