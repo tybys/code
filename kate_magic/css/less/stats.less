@@ -1,5 +1,51 @@
 .stats {
 	//
+    .achievements_cont {
+        ul {
+            display: inline-block;
+        }
+    }
+	.info-more {
+		text-align: center;
+		font-size: 14px;
+		display: inline-block;
+		vertical-align: top;
+		text-transform: uppercase;
+		margin-top: 42px;
+		img {
+			margin-top: 35px;
+			margin-bottom: 25px;
+		}
+		.medium {
+			font-size: 30px;
+			line-height: 32px;
+			display: block;
+			color: black;
+		}
+	}
+	.inf {
+		float: left;
+		margin-left: 70px;
+		margin-top: 95px;
+		margin-right: 16px;
+		text-align: center;
+		font-size: 14px;
+		text-transform: uppercase;
+		.big {
+			color: #fd7e01;
+			font-size: 50px;
+			line-height: 52px;
+			display: block;
+			font-weight: 300;
+		}
+		.medium {
+			color: #fd7e01;
+			font-size: 30px;
+			line-height: 32px;
+			display: block;
+			font-weight: 300;
+		}
+	}
 	.ch-header {
 		h2 {
 			color: #fd7e01;
@@ -9,22 +55,6 @@
 		}
 	}
 	.ch-wrap {
-
-		li.info-more {
-			text-align: center;
-			font-size: 14px;
-			text-transform: uppercase;
-			.medium {
-				font-size: 30px;
-				line-height: 32px;
-				display: block;
-				color: black;
-			}
-			img {
-				margin-top: 35px;
-				margin-bottom: 25px;
-			}
-		}
 		li.info {
 			height: 217px;
 			text-align: center;
@@ -175,6 +205,23 @@
 	}
 }
 
+@media all and (max-width: 992px) and (min-width: 1px) {
+	.stats {
+		.achievements_cont {
+			display: block;
+			margin-left: 24%;
+		}
+		.inf {
+			margin-left: 27px;
+			margin-top: 88px;
+		}
+		.info-more {
+			margin-top: 0;
+			margin-bottom: 5%;
+			margin-left: 8%;
+		}
+	}
+}
 @media all and (min-width: 992px) and (max-width: 1200px) {
 	#ch1 {
 		width: 550px !important;
@@ -188,13 +235,6 @@
 	}
 	.stats .ch-wrap #ch3, .stats .ch-wrap #ch4, .stats .ch-wrap #ch5 {
 
-	}
-
-	.info-more {
-		float: right;
-		padding-right: 90px !important;
-		padding-top: 0 !important;
-		padding-bottom: 25px !important;
 	}
 }
 
@@ -213,12 +253,7 @@
 			display: block;
 		}
 	}
-	.info-more {
-		float: right;
-		padding-right: 53px !important;
-		padding-top: 0 !important;
-		padding-bottom: 25px !important;
-	}
+
 	#ch1 {
 		width: 100% !important;
 	}
@@ -244,6 +279,30 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+	.inf {
+		float: none !important;
+		font-size: 14px !important;
+		width: 175px;
+		margin: 0 auto 2px auto !important;
+		padding-top: 20px;
+		.big {
+			font-size: 55px !important;
+			font-weight: 600 !important;
+			float: left;
+		}
+	}
+	.achievements_cont {
+		margin: 0 auto !important;
+		width: 270px !important;
+		ul {
+			width: auto !important;
+			padding: 0;
+			margin: 0 -8px !important;
+		}
+	}
+	.info-more {
+		margin-left: 15% !important;
+	}
 	.height {
 		height: auto !important;
 	}
@@ -264,6 +323,7 @@
 	}
 
 	.achievements_cont {
+        
 		display: block;
 	}
 	.stats .ch-header h2 {
@@ -284,7 +344,7 @@
 	.achievements_cont ul {
 		width: 95%;
 		margin: 0 auto;
-		text-align: center;
+
 	}
 	.info-more {
 		float: left;
@@ -386,4 +446,18 @@
 		}
 		box-shadow: none;
 	}
+}
+
+@media all and (max-width: 1199px) {
+    .info-more {
+        margin-left: 29%;
+        margin-bottom: 5%;
+    }
+}
+@media all and (min-width: 1200px) {
+    .info-more {
+        //margin-left: 22%;
+        display: inline-block !important;
+        margin-bottom: 5%;
+    }
 }
