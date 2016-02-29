@@ -56,6 +56,9 @@
     width: -webkit-calc(100% - 30px);
   }
 }
+.grid {
+    position: relative;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .title_box_right .sell_orange {
     background-color: transparent !important;
@@ -64,6 +67,14 @@
   .title_box .title_box_right {
     bottom: -105px;
   }
+
+    .reviews .review {
+        float: left;
+        margin-bottom: 15px;
+        max-width: 100%;
+        position: relative;
+    }
+
 }
 .title_box_right {
   top: 44px;

@@ -162,11 +162,16 @@ form {
 		.clearfix {
 			margin: 0;
 		}
-		padding: 0 15px 0 22px;
+		//padding: 0 15px 0 22px;
+		h2, p, h3 {
+			padding-left: 9px;
+			padding-right: 9px;
+		}
 
-		form > div {
+		.form-custom-wrap > form > div {
+			//padding-right: 9px !important;
 			padding-right: 9px !important;
-
+			padding-left: 9px !important;
 			button {
 				width: 50%;
 			}
@@ -185,11 +190,16 @@ form {
 			margin-bottom: 0;
 			img {
 				float: none;
-				width: 98%;
-				padding-right: 9px;
+				width: 100%;
+				//width: ~"calc(100% + 9px)";
+				////padding-right: 9px;
+				//margin-left: -9px;
 			}
 			h3, p {
 				margin-left: 0;
+			}
+			a {
+				margin-left: 9px;
 			}
 			.close {
 				display: none;
@@ -197,6 +207,9 @@ form {
 		}
 		.adv {
 			background: #eef1f3;
+			ul {
+				padding-left: 6px;
+			}
 		}
 	}
 }

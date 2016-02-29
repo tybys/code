@@ -1,0 +1,55 @@
+/*
+Error: Invalid CSS after "Nк��Ий��": expected selector, was "������..."
+        on line 1 of OpenSansLight.eot
+
+1: Nк��Ий���������,����LPя�р[ �@(�������Я� ����┤мдS�������������������O�p�e�n� �S�a�n�s� �L�i�g�h�t����R�e�g�u�l�a�r����V�e�r�s�i�o�n� �1�.�1�0����O�p�e�n� �S�a�n�s� �L�i�g�h�t������������ FFTM_hЯ��йl���GDEFt���Ь╪��� GPOS#д#█��ЭМ��▐GSUBЦЩП��Ь°���ФOS/2а╘╜@��и���`cmapъФс¤��$��▐cvt ый��Ї���кfpgm~a╢��
+2: ��┤gasp��#��Ь╚���glyf╧НвЛ��0��}(headНъш��,���6hheaт��d���$hmtxЧШПc����locatчЦ��а��РmaxpїU��И��� nameвя▄��УX��jpostЫф╙o��Х─��prep▐Ов]��╕��:����ЪSдм┤_<ї������╨f├l����╨f├l■┤■┘s�������������Н¤и��9■┤■╣┘���������������G���G�A��?����/�\��5�г���a,��Ъ3��Ъ3��╤�fьр�я@� [���(����1ASC��� "■�ДНX �Я����?╢��� �═�┴��������ь�д╙�Е+�7С�дu�q┤�{Й�Е-�R-�=h�hС�o╕�DУ�\ч�в║�С�sС�╟С�qС�^С�+С�ПС�ГС�mС�yС�oч�вч�LС�oС�oС�o^�9�q═���╧°�Бж�╧j�╧�╧╔�Б┴�╧�╧· Hж�╧�╧ч�╧┼�╧�Бо�╧�Б┴�╧\�o1�
+3: ┴�╛Ю��#�3N��9��Ь�RН�о║�Н�3С�XJ №ЮЙ=�b├�╢═�w├�wd�wf�/�-╕�╢╧�и╧ Ю▀�╢╧�╢�╢╕�╢░�w├�╢├�w�╢║�Tо�╕�км��╔�№�7м��░�R╙�=T№╙�HС�o��ь�жС�╙С�NС�С�+T№!�БЮPи�dо�Nu�RС�oУ�\и�d� ·m�ЛС�o░�5░�)ЮЙ┼�╢=�qч�вд�+░�Lу�Fu�Hь�;ь�ь�)^�J═��═��═��═��═��═��u ■°�Бj�╧j�╧j�╧j�╧ ┴�┐ р�║�/┼�╧�Б�Б�Б�Б�БС�w�Б┴�╛┴�╛┴�╛┴�╛9��о�╧к�╢=�b=�b=�b=�b=�b=�b├�b═�wd�wd�wd�wd�w╧ ▐╧�k╧ ╞╧ ыЦ�u╕�╢░�w░�w░�w░�w░�wС�o░�w╕�к╕�к╕�к╕�км��├�╢м��╧�╢/�БЦ�wЮ+ЮsЮj�╧j�╧С�
+4: �╧°�Б\�o�╧�· HR��У�╧Ц�
+5: У�╧┼�╧┤�
+6: ╢�╧═��├�╧�╧�╧9�j�╧=��y�R┼�╧┼�╧У�╧s��ч�╧┴�╧�Б╢�╧о�╧°�Б1�
+
+Backtrace:
+OpenSansLight.eot:1
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:21:in `parse_selector'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/bin/scss:13:in `<top (required)>'
+C:/Ruby21-x64/bin/scss:23:in `load'
+C:/Ruby21-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"Nк��Ий��\": expected selector, was \"������...\"\A         on line 1 of OpenSansLight.eot\A \A 1: Nк��Ий���������,����LPя�р[ �@(�������Я� ����┤мдS�������������������O�p�e�n� �S�a�n�s� �L�i�g�h�t����R�e�g�u�l�a�r����V�e�r�s�i�o�n� �1�.�1�0����O�p�e�n� �S�a�n�s� �L�i�g�h�t������������ FFTM_hЯ��йl���GDEFt���Ь╪��� GPOS#д#█��ЭМ��▐GSUBЦЩП��Ь°���ФOS/2а╘╜@��и���`cmapъФс¤��$��▐cvt ый��Ї���кfpgm~a╢��\A 2: ��┤gasp��#��Ь╚���glyf╧НвЛ��0��}(headНъш��,���6hheaт��d���$hmtxЧШПc����locatчЦ��а��РmaxpїU��И��� nameвя▄��УX��jpostЫф╙o��Х─��prep▐Ов]��╕��:����ЪSдм┤_<ї������╨f├l����╨f├l■┤■┘s�������������Н¤и��9■┤■╣┘���������������G���G�A��?����/�\��5�г���a,��Ъ3��Ъ3��╤�fьр�я@� [���(����1ASC��� \"■�ДНX �Я����?╢��� �═�┴��������ь�д╙�Е+�7С�дu�q┤�{Й�Е-�R-�=h�hС�o╕�DУ�\ч�в║�С�sС�╟С�qС�^С�+С�ПС�ГС�mС�yС�oч�вч�LС�oС�oС�o^�9�q═���╧°�Бж�╧j�╧�╧╔�Б┴�╧�╧· Hж�╧�╧ч�╧┼�╧�Бо�╧�Б┴�╧\�o1�\A 3: ┴�╛Ю��#�3N��9��Ь�RН�о║�Н�3С�XJ №ЮЙ=�b├�╢═�w├�wd�wf�/�-╕�╢╧�и╧ Ю▀�╢╧�╢�╢╕�╢░�w├�╢├�w�╢║�Tо�╕�км��╔�№�7м��░�R╙�=T№╙�HС�o��ь�жС�╙С�NС�С�+T№!�БЮPи�dо�Nu�RС�oУ�\и�d� ·m�ЛС�o░�5░�)ЮЙ┼�╢=�qч�вд�+░�Lу�Fu�Hь�;ь�ь�)^�J═��═��═��═��═��═��u ■°�Бj�╧j�╧j�╧j�╧ ┴�┐ р�║�/┼�╧�Б�Б�Б�Б�БС�w�Б┴�╛┴�╛┴�╛┴�╛9��о�╧к�╢=�b=�b=�b=�b=�b=�b├�b═�wd�wd�wd�wd�w╧ ▐╧�k╧ ╞╧ ыЦ�u╕�╢░�w░�w░�w░�w░�wС�o░�w╕�к╕�к╕�к╕�км��├�╢м��╧�╢/�БЦ�wЮ+ЮsЮj�╧j�╧С�\A 4: �╧°�Б\�o�╧�· HR��У�╧Ц�\A 5: У�╧┼�╧┤�\A 6: ╢�╧═��├�╧�╧�╧9�j�╧=��y�R┼�╧┼�╧У�╧s��ч�╧┴�╧�Б╢�╧о�╧°�Б1�"; }
