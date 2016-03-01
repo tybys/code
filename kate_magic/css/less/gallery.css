@@ -414,12 +414,6 @@
   .gallery .big-gallery .slick-slide .text-block {
     width: 100%;
   }
-  .gallery .big-gallery .slick-slide .text-block.sel .chat .post .message {
-    width: auto;
-  }
-  .gallery .big-gallery .slick-slide .text-block.sel .chat .post.operator .message {
-    width: auto;
-  }
   .gallery .big-gallery .slick-slide .text-block.sel .chat .post > span {
     display: inline-block;
   }

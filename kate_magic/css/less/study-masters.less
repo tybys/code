@@ -629,8 +629,17 @@ body.st-u {
 		@media @tablet {
 			margin-bottom: 45px;
 		}
+		@media @mobile {
+			white-space: nowrap;
+			img {
+				margin-right: 35px !important;
+			}
+		}
 		img {
 			margin-right: 40px;
+			&:last-of-type {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -803,8 +812,8 @@ body.st-u {
 			h3 {
 				color: white;
 				font-size: 22px;
-				padding-left: 0;
-				text-align: center;
+				padding-left: 115px;
+				//text-align: center;
 			}
 			.inner {
 				padding-top: 7px;
@@ -995,8 +1004,8 @@ body.st-u {
 				h2 {
 					//color: white;
 					font-size: 22px;
-					padding-left: 0;
-					text-align: center;
+					padding-left: 115px;
+					//text-align: center;
 				}
 			}
 
@@ -1004,11 +1013,11 @@ body.st-u {
 				float: none;
 				font-size: 14px;
 				width: 175px;
-				margin: 0 auto 56px auto;
+				margin: 0 auto 56px 115px;
 				padding-top: 20px;
 				.big {
 					font-size: 55px;
-					font-weight: 600;
+					font-weight: 300;
 					float: left;
 				}
 				.medium {
@@ -1302,8 +1311,12 @@ body.st-u {
 				left: 0;
 				right: 0;
 				margin: 0 auto;
-				text-align: center;
+				//text-align: center;
+				padding-left: 115px;
 				top: 6px;
+				.digits {
+					margin-left: 0;
+				}
 				.left, .right {
 					display: none;
 				}
@@ -1315,8 +1328,8 @@ body.st-u {
 				h2 {
 					//color: white;
 					font-size: 22px;
-					padding-left: 0;
-					text-align: center;
+					padding-left: 115px;
+					//text-align: center;
 				}
 			}
 			.img-wrap {
