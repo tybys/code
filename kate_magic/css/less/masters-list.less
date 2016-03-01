@@ -318,7 +318,7 @@
 			display: block;
 			height: 60px;
 			width: 60px;
-			background: url(../img/btn_sl_com_next.png) no-repeat 50% 50%;
+			background: url(../../img/btn_sl_com_next.png) no-repeat 50% 50%;
 			border: none;
 			text-indent: -9999px;
 			overflow: hidden;
@@ -332,14 +332,14 @@
 			border-radius: 3px 0 0 3px;
 
 			&:hover {
-				background-image: url(../img/btn_sl_com_next_hover.png);
+				background-image: url(../../img/btn_sl_com_next_hover.png);
 			}
 		}
 		.slick-prev {
 			display: block;
 			height: 60px;
 			width: 60px;
-			background: url(../img/btn_sl_com_prev.png) no-repeat 50% 50%;
+			background: url(../../img/btn_sl_com_prev.png) no-repeat 50% 50%;
 			border: none;
 			text-indent: -9999px;
 			overflow: hidden;
@@ -353,7 +353,7 @@
 			border-radius: 0 3px 3px 0;
 
 			&:hover {
-				background-image: url(../img/btn_sl_com_prev_hover.png);
+				background-image: url(../../img/btn_sl_com_prev_hover.png);
 			}
 		}
 	}
@@ -385,8 +385,14 @@
 			}
 
 		}
-		.filter-custom span {
-			display: none;
+		.filter-custom {
+			width: 100%;
+			span {
+				display: none;
+			}
+			a {
+				padding: 0 10px;
+			}
 		}
 
 		.slick-dots {

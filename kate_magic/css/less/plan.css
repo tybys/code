@@ -4,6 +4,37 @@
 .plan {
   margin-bottom: 81px;
 }
+.plan .form-custom-wrap {
+  background: white;
+  padding-bottom: 43px;
+}
+.plan .form-custom-wrap form {
+  width: 95%;
+  margin: 0 auto;
+}
+.plan .form-custom-wrap form .col-sm-6 {
+  margin-bottom: 4%;
+}
+.plan .form-custom-wrap form button {
+  display: block;
+  width: 100%;
+  height: 64px;
+  background: #ff8200;
+  line-height: 64px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+}
+.plan .form-custom-wrap h2 {
+  text-transform: none;
+  font-size: 27px;
+  clear: both;
+  padding-top: 35px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
 @media (max-width: 1900px) and (min-width: 767px) {
   .plan .hasDatepicker {
     display: inline-block;
@@ -74,7 +105,7 @@
   .plan .hasDatepicker td a {
     font-weight: 600;
     background: #f5f7f8;
-    width: 188px;
+    width: 188px !important;
     height: 95px;
     line-height: 41px;
     text-align: right;
@@ -105,6 +136,11 @@
     background: #cbd3d9;
   }
 }
+@media only screen and (max-width: 1199px) {
+  .plan .hasDatepicker td a {
+    width: 155px !important;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 1px) {
   .content_box {
     padding-bottom: 0;
@@ -113,7 +149,7 @@
     padding-bottom: 27px;
   }
   .plan .hasDatepicker .ui-state-default {
-    width: 118px;
+    width: 118px!important;
     height: 65px;
   }
 }
@@ -188,7 +224,7 @@
     display: none;
   }
   .plan .hasDatepicker .ui-state-default {
-    width: 49px;
+    width: 49px !important;
     height: 38px;
     text-align: center;
     line-height: 38px;
