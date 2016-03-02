@@ -72,10 +72,37 @@
 							border: none;
 							padding: 0;
 
-							.ui-datepicker-next,
-							.ui-datepicker-prev,
-							.ui-datepicker-year {
-								display: none;
+							// .ui-datepicker-next,
+							// .ui-datepicker-prev,
+							// .ui-datepicker-year {
+							// 	display: none;
+							// }
+							.ui-datepicker-next {
+								width: 17px;
+								height: 29px;
+								&:hover {
+									top: 0;
+									right: 0;
+									border: none;
+								}
+								&.ui-datepicker .ui-datepicker-next-hover {
+									right: 0;
+									top: 0;
+								} 
+								&.ui-state-hover {
+									border: none;
+									top: 0;
+									right: 0;
+								}
+								span {
+									background-image: url('../../img/btn_slider_next.png');
+									left: 0;
+									top: 0;
+									background-position: 0 0;
+									width: 17px;
+									height: 29px;
+									margin: 0;
+								}
 							}
 							.ui-datepicker-title {
 								line-height: 54px;

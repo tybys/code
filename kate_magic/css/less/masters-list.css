@@ -69,10 +69,32 @@
   border: none;
   padding: 0;
 }
-.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next,
-.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
-.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-year {
-  display: none;
+.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  width: 17px;
+  height: 29px;
+}
+.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover {
+  top: 0;
+  right: 0;
+  border: none;
+}
+.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-datepicker .ui-datepicker-next-hover {
+  right: 0;
+  top: 0;
+}
+.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-state-hover {
+  border: none;
+  top: 0;
+  right: 0;
+}
+.masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-next span {
+  background-image: url('../../img/btn_slider_next.png');
+  left: 0;
+  top: 0;
+  background-position: 0 0;
+  width: 17px;
+  height: 29px;
+  margin: 0;
 }
 .masters-list .masters .master .info + a + .hasDatepicker .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
   line-height: 54px;

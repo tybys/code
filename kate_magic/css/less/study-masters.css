@@ -1897,3 +1897,12 @@ body.st-u #main {
     height: 100%;
   }
 }
+.study-masters .achievement .title-wrap h2,
+.study-masters .separated .title-wrap h2 {
+  color: #fd7e01;
+}
+@media all and (min-width: 1000px) {
+  .study-masters .achs-carousel .slick-dots {
+    display: none !important;
+  }
+}
