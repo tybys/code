@@ -31,7 +31,7 @@
   left: -webkit-calc(50% - 40px);
   margin: 0 auto 15px auto;
   border-radius: 100%;
-  background: #ffffff url('../../img/photo.png') no-repeat center;
+  background: white url('../../img/photo.png') no-repeat center;
 }
 .history .photo .img-wrap + span {
   display: block;
@@ -83,7 +83,7 @@
 }
 .history .record.background .inner {
   box-shadow: 1px 0 12px rgba(0, 0, 0, 0.14);
-  background: #ffffff url('../../img/date-palka.jpg') repeat-y;
+  background: white url('../../img/date-palka.jpg') repeat-y;
   background-position: 45px 0;
   padding: 0 10000px;
   margin: 0 -10000px;
@@ -190,7 +190,7 @@
 .history .record-right .list li {
   width: 50%;
 }
-.history .star-rating-rtl {
+.history .star-rating {
   margin-top: 5px;
   margin-left: 13px;
   display: inline-block;
@@ -201,14 +201,15 @@
   display: block;
   margin-left: 74px;
 }
-.history .rating-container-rtl {
+.history .rating-container {
   font-size: 19px;
+  color: #E9EDF0;
 }
-.history .rating-container-rtl:before {
+.history .rating-container:before {
   text-shadow: 0 0 1px black;
 }
-.history .rating-container-rtl .rating-stars {
-  color: #E9EDF0;
+.history .rating-container .rating-stars {
+  color: #fde16d;
 }
 .history .index_coments .list li {
   margin-top: 33px;
@@ -234,7 +235,7 @@
 .history .masters ul li .name {
   margin-right: 0;
 }
-.history .masters .star-rating-rtl {
+.history .masters .star-rating {
   margin-top: -6px;
   vertical-align: middle;
 }
@@ -263,7 +264,7 @@
   .history .masters ul li .name {
     width: 65%;
   }
-  .history .masters .star-rating-rtl {
+  .history .masters .star-rating {
     margin-top: 15px;
   }
   .history .masters {
@@ -341,7 +342,7 @@
   .history .masters ul li .name {
     width: auto;
   }
-  .history .masters .star-rating-rtl {
+  .history .masters .star-rating {
     margin-top: -5px;
   }
   .history .masters .btn-orange.white {
@@ -431,7 +432,7 @@
   .history .photo {
     margin-left: 102px;
   }
-  .history .masters .star-rating-rtl {
+  .history .masters .star-rating {
     display: block;
     margin-bottom: 27px;
     margin-left: 0;

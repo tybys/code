@@ -523,10 +523,8 @@
         readonly: false,
         rtl: false,
         size: 'md',
-        //showClear: true,
-        //showCaption: true,
-        showClear: false,
-        showCaption: false,
+        // showClear: false,
+        // showCaption: false,
         starCaptionClasses: {
             0.5: 'label label-danger',
             1: 'label label-danger',

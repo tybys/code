@@ -36,16 +36,39 @@ h2 {
 	margin-bottom: 70px;
 	width: ~"calc(100% - 30px)";
 	width: ~"-webkit-calc(100% - 30px)";
+	&:before {
+		content: '';
+		width: 244px;
+		height: 100%;
+		background: url('../../img/vk.jpg') no-repeat;
+		background-position: center;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		background-size: cover;
+		position: absolute;
+		
+		@media @mobile {
+			height: 166px;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
 	img {
 		float: left;
 	}
-
+	@media @mobile {
+		h3 {
+			padding-top: 30% !important;
+		}
+	}
 	h3, p {
 		margin-left: 271px;
 	}
 	a {
-		margin-left: 27px;
+		margin-left: 270px;
 		margin-top: 0;
+		margin-bottom: 15px;
 	}
 
 	p {
@@ -213,3 +236,6 @@ form {
 		}
 	}
 }
+
+@tablet: ~"only screen and (min-width: 1px) and (max-width: 992px)";
+@mobile: ~"only screen and (min-width: 0px) and (max-width: 767px)";

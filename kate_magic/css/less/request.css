@@ -36,16 +36,41 @@ h2 {
   width: calc(100% - 30px);
   width: -webkit-calc(100% - 30px);
 }
+.widget:before {
+  content: '';
+  width: 244px;
+  height: 100%;
+  background: url('../../img/vk.jpg') no-repeat;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  position: absolute;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .widget:before {
+    height: 166px;
+    right: 0;
+    margin: 0 auto;
+  }
+}
 .widget img {
   float: left;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .widget h3 {
+    padding-top: 30% !important;
+  }
 }
 .widget h3,
 .widget p {
   margin-left: 271px;
 }
 .widget a {
-  margin-left: 27px;
+  margin-left: 270px;
   margin-top: 0;
+  margin-bottom: 15px;
 }
 .widget p {
   font-size: 14px;

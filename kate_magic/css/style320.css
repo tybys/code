@@ -166,9 +166,14 @@
 	.achievements {padding:0 15px;}
 	.achievements_cont {display:none;}
 	.achievements_one  {padding:0;border-bottom:1px solid #babec0; }
-	.achievements_one .title {margin:0 -15px; padding:13px 15px;}
+	.achievements_one .title {margin:0 -15px; padding:13px 15px; cursor: pointer;}
 	.achievements_one .title:after {display:none;}
 	.achievements_one .title span { font-size:18px;}
+	
+	.achievements_one.active .title {
+		cursor: default;
+	}
+	
 	.achievements_one.active .title span { font-weight:bold;}
 	.achievements_one.active .achievements_cont {display:block;}
 	.achievements_cont ul {margin-top:-40px; padding-bottom:60px;}
