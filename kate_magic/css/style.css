@@ -1099,3 +1099,7 @@ div.sell_orange .select {width:100%; font-size: 16px; color:#292a2f; line-height
 -ms-transition: all 0.3s ease;
 transition: all 0.3s ease;
 } 
+
+.all_service .jspVerticalBar .jspDrag {
+	background: #e3e8eb !important;
+}
