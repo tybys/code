@@ -3,19 +3,19 @@
   <component name="LessManager">
     <option name="lessProfileMap">
       <map>
-        <entry key="0">
+        <entry key="1">
           <value>
             <LessProfile>
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="C:\Users\tybys\Documents\GitHub\kate_magic\css" />
+                    <option name="path" value="C:\Users\tybys\Documents\GitHub\af\css" />
                   </CssDirectory>
                 </list>
               </option>
-              <option name="id" value="0" />
-              <option name="lessDirPath" value="C:\Users\tybys\Documents\GitHub\kate_magic\css" />
-              <option name="name" value="kate" />
+              <option name="id" value="1" />
+              <option name="lessDirPath" value="C:\Users\tybys\Documents\GitHub\af\css" />
+              <option name="name" value="af" />
             </LessProfile>
           </value>
         </entry>

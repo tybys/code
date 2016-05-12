@@ -335,7 +335,7 @@ html,
 .row.content.content-work .third.sl + div.rest .padding1 .eillips {
   width: 135px;
   height: 135px;
-  background: white url('../images/temp/nadivane/time.jpg') no-repeat center;
+  background: #ffffff url('../images/temp/nadivane/time.jpg') no-repeat center;
   border-radius: 100%;
   position: absolute;
   top: -90px;
@@ -684,7 +684,7 @@ html,
 }
 .row.content.content-work .slide[data-index="3"] + div.rest .padding6,
 .row.content.content-work .third.sl + div.rest .padding6 {
-  background: white url('../images/temp/nadivane/back7.jpg') no-repeat center right;
+  background: #ffffff url('../images/temp/nadivane/back7.jpg') no-repeat center right;
 }
 .row.content.content-work .slide[data-index="3"] + div.rest .padding6 h3,
 .row.content.content-work .third.sl + div.rest .padding6 h3 {
@@ -1245,7 +1245,7 @@ html,
 }
 .row .articles {
   background: #dbdfe2;
-  padding: 40px 0 90px 115px;
+  padding: 40px 0 90px 162px;
 }
 .row .articles .wr {
   width: 850px;
@@ -1293,7 +1293,7 @@ html,
   background: -webkit-linear-gradient(left, #473835 0%, #4d5256 34%, #51626a 74%, #4d6067 100%);
   background: linear-gradient(to right, #473835 0%, #4d5256 34%, #51626a 74%, #4d6067 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#473835', endColorstr='#4d6067', GradientType=1);
-  padding-left: 250px;
+  padding-left: 162px;
   padding-top: 50px;
 }
 .row .fluid-portfolio:after {
@@ -1303,7 +1303,8 @@ html,
 }
 .row .fluid-portfolio .item {
   margin-right: 75px;
-  width: 282px;
+  width: 27.333333%;
+  max-width: 282px;
   float: left;
 }
 .row .fluid-portfolio .item:last-of-type {
@@ -2206,7 +2207,7 @@ html,
   top: calc(50% - 25.5px);
   top: -webkit-calc(50% - 25.5px);
   left: -32.5px;
-  background: #fff url('../images/icons/medium-arrows.png') no-repeat center;
+  background: #ffffff url('../images/icons/medium-arrows.png') no-repeat center;
   box-shadow: 0 0 0 5px #48302d;
   border-radius: 100%;
   z-index: 5;
