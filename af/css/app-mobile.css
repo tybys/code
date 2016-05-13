@@ -632,6 +632,52 @@
   .row.news .right ul li ul li.empty.last {
     background: url('../images/icons/empty-close.jpg') no-repeat center;
   }
+  .row.content.content-work .first-sl {
+    background-color: #ced5db;
+    background-size: 200%;
+    background-position: bottom;
+  }
+  .row.content.content-work .first-sl .inner {
+    margin-top: 0 !important;
+    margin-left: 15px !important;
+    padding-top: 58px;
+  }
+  .row.content.content-work .first-sl .inner h1 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .row.content.content-work .first-sl .inner p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .row.content.content-work .first-sl > img {
+    width: 163px;
+    position: absolute;
+    top: 183px;
+    left: 15px;
+  }
+  .row.content.content-work .padding1 img:first-of-type {
+    max-width: 289px;
+    width: 100%;
+  }
+  .row.content.content-work .padding1 img:last-of-type {
+    display: none;
+  }
+  .row.content.content-work .padding2 img {
+    max-width: 289px;
+    width: 100%;
+  }
+  .row.content.content-work .padding3 img {
+    width: 100%;
+  }
+  .row.content.content-work .padding4 .video-wrap iframe {
+    width: 100%;
+    height: 167px;
+  }
+  .row.content.content-work .padding4 img {
+    max-width: 289px;
+    width: 100%;
+  }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape), only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   .row.content {

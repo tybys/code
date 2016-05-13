@@ -1,10 +1,7 @@
 ﻿$(function () {
     var bodyClass = $('body').hasClass('about content-wrk');
-    var is_iPad = navigator.userAgent.match(/iPad/i) != null;
 
-    if (!$('body').hasClass('about')  && is_iPad || !is_iPad) {
-        slides();
-    }
+    slides();
 
     if ($(window).width() < 500) {
         $('body').removeClass('menu-collapsed')
@@ -158,10 +155,15 @@ $.fn.Exists = function () {
     return this.length > 0
 };
 
+var is_iPad = navigator.userAgent.match(/iPad/i) != null;
+var is_iPhone = navigator.userAgent.match(/iPhone/i) != null;
+
 function slides() {
     var portOfSlides = $('.row.portfolio.single').find('.item');
     var numbersOfSlides = $('.slide');
     var topPos = 0;
+
+    if (($('body').hasClass('content-wrk') && is_iPhone)) return;
 
     if (portOfSlides.Exists()) {
         $.each(portOfSlides, function (i) {

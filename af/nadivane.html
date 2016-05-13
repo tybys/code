@@ -14,6 +14,7 @@
 
     <link href="css/app.css" rel="stylesheet">
     <link href="css/app-tablet.css" rel="stylesheet">
+    <link href="css/app-mobile.css" rel="stylesheet">
     <link href="css/jquery.onepage-scroll.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,35 +31,45 @@
         }
     </style>
 </head>
-<body style="overflow: visible" class="menu-collapsed content-wrk">
-    <div class="row menu">
-        <div>
-            <a href="index.html">
-                <img src="images/logotype.gif" alt="делай пиздато сразу, хуево само получится" />
-            </a>
+<body style="overflow: visible" class="content-wrk">
+<div class="row menu">
+    <div>
+        <a class="logotype" href="index.html">
+            <img src="images/logotype.gif" alt="делай пиздато сразу, хуево само получится" />
+        </a>
 
-            <div class="pages">
-                <a href="#" class="company"><span>компания</span></a>
-                <a href="#" class="service"><span>услуги</span></a>
-                <a href="#" class="portfolio"><span>работы</span></a>
-                <a href="#" class="blog"><span>блог</span></a>
-                <a href="#" class="contacts"><span>контакты</span></a>
-            </div>
+        <div class="pages">
+            <a href="#" class="company"><span>компания</span></a>
+            <a href="#" class="service"><span>услуги</span></a>
+            <a href="#" class="portfolio"><span>работы</span></a>
+            <a href="#" class="blog"><span>блог</span></a>
+            <a href="#" class="contacts"><span>контакты</span></a>
+        </div>
 
-            <div class="helpers">
-                <a href="#" class="search"><span>поиск</span></a>
+        <div class="helpers">
+            <a href="#" class="search hidden-xs"><span>поиск</span></a>
+            <form class="hidden-lg hidden-sm hidden-md mobile-search">
+                <input type="text" placeholder="Поиск" />
+            </form>
+
+            <div class="helpers-inner">
                 <a href="#" class="clients"><span>клиентам</span></a>
-                <!--<div class="lang-switch">-->
+
                 <a href="#" class="lang"><span>in english</span></a>
                 <a href="#" class="lang"><span>по русски</span></a>
-                <!--</div>-->
             </div>
+
+        </div>
+
+        <div class="burger-menu hidden-sm hidden-md hidden-lg">
+            <div class="burger"></div>
         </div>
     </div>
+</div>
 
     <div class="row content content-work">
         <div class="slide first-sl">
-            <img src="images/temp/nadivane/divan-logo.jpg" style="position: absolute; top: 294px; left: 117px;" />
+            <img src="images/temp/nadivane/divan-logo.jpg" />
             <div class="inner">
                 <h1>
                     Удобный интернет-магазин

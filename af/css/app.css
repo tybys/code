@@ -143,9 +143,14 @@ html,
   font-weight: 300;
   color: #5a656e;
 }
+.row.content.content-work .first-sl > img {
+  position: absolute;
+  top: 294px;
+  left: 117px;
+}
 .row.content.content-work .first-sl .inner {
-  margin-top: 370px;
-  margin-left: 117px;
+  margin-top: 370px !important;
+  margin-left: 117px !important;
 }
 .row.content.content-work .first-sl h1 {
   font-weight: 300;
