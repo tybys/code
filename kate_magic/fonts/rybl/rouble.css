@@ -1,56 +1,0 @@
-/*
-Error: Invalid CSS after "wOFF�": expected selector, was "����t�����"`..."
-        on line 1 of rouble.woff
-
-1: wOFF�����t�����"`�����������������������FFTM��А������dёZ}GDEF��Ь�������'�OS/2��╕���L���`aГИ|cmap�����f��ZТ4cvt ��l������Oцfpgm��|����sYЬ7gasp��А���������glyf��И��
-2: ┬��аw$head��L���2���6Ы▌ёhhea��А��� ���$▓hmtx��а���d���dAВ
-3: loca�����4���4AFъmaxp��8������ &"name��X��[��rwjpost��┤���P���du%WHprep�����h���ЦNїuwebf��l������иU��������╨╚°є����├Фb����╤%═'x┌c`d``рb1 fb`B	 fє�ж�Gx┌c`f┌╩8ББХБЕiSCДf╝╦`─ЁЛББ	(┼�вXА$#И
-4: 
-5: fp`рU¤├Їю?P╔>░0X
-6: ╙0[ББ�йR
-
-Backtrace:
-rouble.woff:1
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:21:in `parse_selector'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.9/bin/scss:13:in `<top (required)>'
-C:/Ruby21-x64/bin/scss:23:in `load'
-C:/Ruby21-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"wOFF�\": expected selector, was \"����t�����\"`...\"\A         on line 1 of rouble.woff\A \A 1: wOFF�����t�����\"`�����������������������FFTM��А������dёZ}GDEF��Ь�������'�OS/2��╕���L���`aГИ|cmap�����f��ZТ4cvt ��l������Oцfpgm��|����sYЬ7gasp��А���������glyf��И��\A 2: ┬��аw$head��L���2���6Ы▌ёhhea��А��� ���$▓hmtx��а���d���dAВ\A 3: loca�����4���4AFъmaxp��8������ &\"name��X��[��rwjpost��┤���P���du%WHprep�����h���ЦNїuwebf��l������иU��������╨╚°є����├Фb����╤%═'x┌c`d``рb1 fb`B	 fє�ж�Gx┌c`f┌╩8ББХБЕiSCДf╝╦`─ЁЛББ	(┼�вXА$#И\A 4: \A 5: fp`рU¤├Їю?P╔>░0X\A 6: ╙0[ББ�йR"; }
-��"; }

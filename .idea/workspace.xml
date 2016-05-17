@@ -5,8 +5,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/css/app-mobile.css" afterPath="$PROJECT_DIR$/af/css/app-mobile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/css/app-mobile.less" afterPath="$PROJECT_DIR$/af/css/app-mobile.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/css/app-tablet.css" afterPath="$PROJECT_DIR$/af/css/app-tablet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/css/app-tablet.less" afterPath="$PROJECT_DIR$/af/css/app-tablet.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/css/app.css" afterPath="$PROJECT_DIR$/af/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/css/app.less" afterPath="$PROJECT_DIR$/af/css/app.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/ipdrom.html" afterPath="$PROJECT_DIR$/af/ipdrom.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/js/app.js" afterPath="$PROJECT_DIR$/af/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/af/nadivane.html" afterPath="$PROJECT_DIR$/af/nadivane.html" />
     </list>
@@ -33,8 +36,8 @@
       <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/af/css/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.3396225">
-              <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="713" column="19" selection-start-line="713" selection-start-column="19" selection-end-line="713" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -43,8 +46,8 @@
       <file leaf-file-name="nadivane.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/af/nadivane.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
-              <caret line="71" column="59" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="6" selection-start-line="34" selection-start-column="0" selection-end-line="67" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -54,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/af/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
+              <caret line="167" column="49" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -63,15 +66,25 @@
       <file leaf-file-name="app-mobile.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/af/css/app-mobile.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.95163584">
-              <caret line="769" column="32" selection-start-line="769" selection-start-column="32" selection-end-line="769" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.65665233">
+              <caret line="1566" column="38" selection-start-line="1566" selection-start-column="38" selection-end-line="1566" selection-end-column="38" />
               <folding>
-                <element signature="e#999#4424#0" expanded="false" />
-                <element signature="e#4437#7479#0" expanded="false" />
-                <element signature="e#7494#7956#0" expanded="false" />
-                <element signature="e#7968#11316#0" expanded="false" />
-                <element signature="e#11326#13157#0" expanded="false" />
+                <element signature="e#1043#4468#0" expanded="false" />
+                <element signature="e#4481#7523#0" expanded="false" />
+                <element signature="e#7538#8000#0" expanded="false" />
+                <element signature="e#8012#11360#0" expanded="false" />
+                <element signature="e#11370#13201#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ipdrom.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/af/ipdrom.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,18 +93,10 @@
         <entry file="file://$PROJECT_DIR$/af/css/app-tablet.less">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/af/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="73" selection-end-column="10" />
-              <folding />
+              <caret line="342" column="4" selection-start-line="342" selection-start-column="4" selection-end-line="747" selection-end-column="5" />
+              <folding>
+                <element signature="e#305#6167#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,10 +160,11 @@
         <option value="$PROJECT_DIR$/kate_magic/statistic.html" />
         <option value="$PROJECT_DIR$/kate_magic/css/less/stats.less" />
         <option value="$PROJECT_DIR$/kate_magic/css/less/masters-list.less" />
-        <option value="$PROJECT_DIR$/af/ipdrom.html" />
-        <option value="$PROJECT_DIR$/af/js/app.js" />
         <option value="$PROJECT_DIR$/af/nadivane.html" />
         <option value="$PROJECT_DIR$/af/css/app.less" />
+        <option value="$PROJECT_DIR$/af/ipdrom.html" />
+        <option value="$PROJECT_DIR$/af/css/app-tablet.less" />
+        <option value="$PROJECT_DIR$/af/js/app.js" />
         <option value="$PROJECT_DIR$/af/css/app-mobile.less" />
       </list>
     </option>
@@ -176,7 +182,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1554" />
-    <option name="height" value="916" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -229,96 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="af" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="af" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="af" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="af" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="af" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,11 +325,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1554" height="912" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22623828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24230254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -732,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="288" column="38" selection-start-line="288" selection-start-column="38" selection-end-line="288" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,63 +665,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/af/ipdrom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3323442">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/af/css/app-tablet.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/af/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="73" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="0.628734">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/af/js/app.js">
+    <entry file="file://$PROJECT_DIR$/af/css/app.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
+          <caret line="713" column="19" selection-start-line="713" selection-start-column="19" selection-end-line="713" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/af/nadivane.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="71" column="59" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="6" selection-start-line="34" selection-start-column="0" selection-end-line="67" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/af/css/app.less">
+    <entry file="file://$PROJECT_DIR$/af/ipdrom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.3396225">
-          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/af/css/app-tablet.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="342" column="4" selection-start-line="342" selection-start-column="4" selection-end-line="747" selection-end-column="5" />
+          <folding>
+            <element signature="e#305#6167#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/af/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="49" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/af/css/app-mobile.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95163584">
-          <caret line="769" column="32" selection-start-line="769" selection-start-column="32" selection-end-line="769" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.65665233">
+          <caret line="1566" column="38" selection-start-line="1566" selection-start-column="38" selection-end-line="1566" selection-end-column="38" />
           <folding>
-            <element signature="e#999#4424#0" expanded="false" />
-            <element signature="e#4437#7479#0" expanded="false" />
-            <element signature="e#7494#7956#0" expanded="false" />
-            <element signature="e#7968#11316#0" expanded="false" />
-            <element signature="e#11326#13157#0" expanded="false" />
+            <element signature="e#1043#4468#0" expanded="false" />
+            <element signature="e#4481#7523#0" expanded="false" />
+            <element signature="e#7538#8000#0" expanded="false" />
+            <element signature="e#8012#11360#0" expanded="false" />
+            <element signature="e#11370#13201#0" expanded="false" />
           </folding>
         </state>
       </provider>

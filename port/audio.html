@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>autio</title>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script>
+		/*
+		https://oauth.vk.com/authorize?client_id=5346177&redirect_uri=http://127.0.0.1:81/&scope=audio&response_type=token
+		список альбомов
+		https://api.vk.com/method/audio.getAlbums?owner_id=933405&access_token=280f8664f89ca4330ec333110f0667980400cae8ecd5e2cd3c45086d724704bf86909fe6e9041484fc6a5&expires_in=86400&user_id=179812794
+		альбом
+		https://api.vk.com/method/audio.get?owner_id=933405&album_id=68640280&access_token=280f8664f89ca4330ec333110f0667980400cae8ecd5e2cd3c45086d724704bf86909fe6e9041484fc6a5&expires_in=86400&user_id=179812794
+		*/
+		
+		/**
+		 * зашли на страницу
+		 * нажали кнопки <get_access>
+		 * получили token, вернулись на предыдущую страницу
+		 * токен подставился в запрос к апи
+		 * в инпуте <owner_id> выбрали пользователя
+		 * в инпуте <album_id> выбрали плейлист (папку)
+		 * нажали на кнопку <get>
+		 * получили ответ с данными о группе
+		 * 
+		 * парсим данные, формируем отображение данных, формируем для каждой песни ссылку на скачивание
+		 * 
+		 * пишем функцию, поочередно скачивающую каждую песню в плейлисте, обязательно додавшись скачивания предыдущей
+		 */
+		
+		var get_url = "https://api.vk.com/method/audio.get?owner_id="+"933405"+"&album_id="+"68640280"+"&access_token=280f8664f89ca4330ec333110f0667980400cae8ecd5e2cd3c45086d724704bf86909fe6e9041484fc6a5&expires_in=86400&user_id=179812794"
+		var url = "https://api.vkontakte.ru/method/wall.get?";
+		var offset = 0;
+		var postsCount = 0;
+		var count  = 0;
+		var domain = "tabasov";
+		var old = {};
+
+		// get all posts
+		function getAudios(own_id, alb_id) {
+			//if (href !== undefined) {
+				$.ajax({
+					url: "https://api.vk.com/method/audio.get?owner_id="+own_id+"&album_id="+alb_id+"&access_token=6d190f73b84276aeb044519b47e25f89ab98ca5143f962d07b1bd7416235c0a8867483be853e0c9bb2353&expires_in=86400&user_id=179812794",
+					dataType: "jsonp",
+					success: function (data) {
+						var audios = data.response;	
+					}
+				});
+			//} 
+				
+		};
+		
+		$(function () {
+			$('#get').click(function (e) {
+				e.preventDefault();
+				var own = $('#owner_id').val();
+				var alb = $('#album_id').val();
+				getAudios(own, alb);
+				//debugger
+			});
+			
+			$('#get_access').click(function (e) {
+				e.preventDefault();
+				
+				document.location = "https://oauth.vk.com/authorize?client_id=5346177&redirect_uri=http://127.0.0.1:81/&scope=audio&response_type=token"
+			});
+		});
+	</script>
+</head>
+<body>
+	<a href="#" id="get_access">get access</a>
+	<input type="text" id="owner_id" placeholder="owner_id" />
+	<input type="text" id="album_id" placeholder="album_id" />
+	<a href="#" id="get">get</a>
+</body>
+</html>
