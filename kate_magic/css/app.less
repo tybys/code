@@ -1,0 +1,137 @@
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.title_box_right {
+	ul {
+		a {
+			font-size: 18px;
+			color: #ff8200;
+			text-decoration: none;
+			padding: 0 5px 5px;
+			display: inline-block;
+			&.active {
+				border-bottom: 3px solid #fd7e01;
+				color: #000;
+			}
+		}
+	}
+}
+
+.one-col {
+	padding: 0 15px;
+
+}
+
+.left {
+	width: ~"calc(100% - 274px)";
+
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+
+	& + .right {
+		width: 274px;
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+
+		&.banner {
+			padding: 0;
+		}
+	}
+}
+
+.content_box.custom {
+	padding-right: 15px;
+}
+
+form {
+	button {
+		&.orange {
+			background: none;
+			border: none;
+			//width: 100%;
+			margin: 8px 0 0 2px;
+			span {
+				display: block;
+				width: 100%;
+				height: 34px;
+				background: #ff8200;
+				line-height: 34px;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 600;
+				text-transform: uppercase;
+				padding: 0 17px;
+			}
+		}
+	}
+	&.short {
+
+		.dTypo {
+			display: inline-block;
+		}
+		[type="text"] {
+			width: 202px;
+			height: 34px;
+		}
+	}
+}
+
+.btn-orange {
+	display: block;
+	height: 64px;
+	width: 368px;
+	background: #ff8200;
+	margin: 62px auto 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	line-height: 64px;
+	&.medium {
+		height: 42px;
+		line-height: 42px;
+		padding: 0 36px;
+		width: auto;
+		display: inline-block;
+	}
+	&.white {
+		border-radius: 0 !important;
+		font-size: 12px;
+		background: #ffffff;
+		border: 2px solid #ff8200;
+		color: #ff8200;
+		border-radius: 4px;
+		text-transform: uppercase;
+		line-height: 35px;
+		height: 35px;
+		padding: 0 25px;
+		width: auto;
+		display: inline-block;
+	}
+
+	&:hover {
+		background: #f28f28;
+		color: white;
+	}
+}
+
+// mb
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.btn-orange.show-more {
+		width: auto;
+		display: inline-block;
+		padding: 0 37px;
+		margin-left: 10px;
+	}
+}
